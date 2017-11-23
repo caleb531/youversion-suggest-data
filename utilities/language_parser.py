@@ -22,6 +22,6 @@ def get_language_name(language_id):
 
     language_name = lang_elem.text()
     if not language_name:
-        raise RuntimeError('Cannot retrieve language data. Aborting.')
+        raise RuntimeError('Cannot retrieve language data')
 
     return language_name

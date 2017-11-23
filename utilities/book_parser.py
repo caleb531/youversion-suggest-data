@@ -60,10 +60,10 @@ def get_books(default_version):
 
     raw_books = get_raw_books(script_elems)
     if not raw_books:
-        raise RuntimeError('Cannot find raw Bible data. Aborting.')
+        raise RuntimeError('Cannot find raw Bible data')
 
     books = get_canon_books(get_book(raw_book) for raw_book in raw_books)
     if not books:
-        raise RuntimeError('Cannot retrieve book data. Aborting.')
+        raise RuntimeError('Cannot retrieve book data')
 
     return books

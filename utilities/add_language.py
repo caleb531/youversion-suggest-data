@@ -41,7 +41,7 @@ def get_bible_data(language_id, default_version=None):
     elif not any(version['id'] == default_version for version in
                  bible['versions']):
         raise RuntimeError(
-            'Given default version does not exist in language. Aborting.')
+            'Given default version does not exist in language')
 
     bible['default_version'] = default_version
     bible['books'] = book_parser.get_books(default_version=default_version)
