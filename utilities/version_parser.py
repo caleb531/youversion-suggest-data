@@ -3,7 +3,9 @@
 
 from __future__ import unicode_literals
 
+import itertools
 import re
+from operator import itemgetter
 
 import requests
 from pyquery import PyQuery as pq
@@ -36,13 +38,30 @@ def get_version(version_elem):
     }
 
 
+# Returns a copy of the given version list with duplicates removed
+def get_unique_versions(versions):
+
+    unique_versions = []
+    for name, group in itertools.groupby(versions, key=itemgetter('name')):
+        # When duplicates are encountered, favor the version with the lowest ID
+        version = min(group, key=itemgetter('id'))
+        unique_versions.append(version)
+
+    return unique_versions
+
+
 # Retrieves all versions listed on the chapter page in the given language code
 def get_versions(language_id):
 
     d = pq(requests.get(
         'https://www.bible.com/languages/{}'.format(language_id)).text)
-
     version_elems = d('a[href*="/versions/"]')
 
-    return [get_version(version_elem)
-            for version_elem in version_elems]
+    versions = [get_version(elem) for elem in version_elems]
+    if not versions:
+        raise RuntimeError('Cannot retrieve version data. Aborting.')
+
+    versions.sort(key=itemgetter('id'))
+    unique_versions = get_unique_versions(versions)
+
+    return unique_versions

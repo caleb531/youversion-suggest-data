@@ -10,7 +10,6 @@ from __future__ import unicode_literals
 
 import argparse
 import io
-import itertools
 import json
 import os
 from operator import itemgetter
@@ -36,31 +35,6 @@ def get_language_name(language_id):
     if not language_name:
         raise RuntimeError('Cannot retrieve language data. Aborting.')
     return language_name
-
-
-# Returns a copy of the given version list with duplicates removed
-def get_unique_versions(versions):
-
-    unique_versions = []
-    for name, group in itertools.groupby(versions, key=itemgetter('name')):
-        # When duplicates are encountered, favor the version with the lowest ID
-        version = min(group, key=itemgetter('id'))
-        unique_versions.append(version)
-
-    return unique_versions
-
-
-# Retrieves a list of dictionaries representing Bible versions
-def get_versions(language_id):
-
-    versions = version_parser.get_versions(language_id)
-    if not versions:
-        raise RuntimeError('Cannot retrieve version data. Aborting.')
-
-    versions.sort(key=itemgetter('id'))
-    unique_versions = get_unique_versions(versions)
-
-    return unique_versions
 
 
 # Retrieves map of chapter counts for every book of the Bible
@@ -96,7 +70,7 @@ def get_books(default_version):
 def get_bible_data(language_id, default_version=None):
 
     bible = {}
-    bible['versions'] = get_versions(language_id)
+    bible['versions'] = version_parser.get_versions(language_id)
 
     # If no explicit default version is given, use version with smallest ID
     if not default_version:
