@@ -9,7 +9,7 @@ from __future__ import unicode_literals
 
 import argparse
 import json
-import os
+import os.path
 
 import utilities
 from utilities.add_language import add_language
