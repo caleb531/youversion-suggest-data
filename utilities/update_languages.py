@@ -1,4 +1,4 @@
-# utilities.update_languages
+#!/usr/bin/env python
 
 # This language utility updates all existing Bible data files
 

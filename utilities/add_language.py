@@ -1,4 +1,4 @@
-# utilities.add_language
+#!/usr/bin/env python
 # coding=utf-8
 
 # This language utility adds support for a language to YouVersion Suggest by

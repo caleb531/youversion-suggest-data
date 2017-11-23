@@ -1,4 +1,4 @@
-# tests.test_add_language.test_update_language_list
+#!/usr/bin/env python
 # coding=utf-8
 
 from __future__ import unicode_literals
