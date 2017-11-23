@@ -3,6 +3,8 @@
 
 from __future__ import unicode_literals
 
+import cachetools
+import cachetools.func
 import requests
 
 from utilities.yv_parser import YVParser
@@ -50,12 +52,16 @@ class LanguageParser(YVParser):
             self.language_name_parts.append(data)
 
 
+# fetch to speed up subsequent requests
+@cachetools.func.lru_cache(maxsize=1)
+def get_languages_html():
+    return requests.get('https://www.bible.com/languages').text
+
+
 # Retrieves the language with
 def get_language_name(language_id):
 
-    entry_key = 'languages.html'
-    page_html = requests.get(
-        'https://www.bible.com/languages'.format(language_id)).text
+    page_html = get_languages_html()
 
     parser = LanguageParser(language_id)
     parser.feed(page_html)
