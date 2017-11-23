@@ -15,19 +15,17 @@ from pyquery import PyQuery as pq
 def get_version_id(version_elem):
     patt = r'(?<=/versions/)(\d+)-([a-z]+\d*)'
     matches = re.search(patt, version_elem.attr.href, flags=re.UNICODE)
-    if matches:
-        return int(matches.group(1))
-    else:
-        return None
+    if not matches:
+        raise RuntimeError('Cannot parse version ID')
+    return int(matches.group(1))
 
 
 # Parse the version name from the given version element
 def get_version_name(version_elem):
     matches = re.search(r'\(\s*([^\)]+)\s*\)\s*$', version_elem.text())
-    if matches:
-        return matches.group(1)
-    else:
-        return None
+    if not matches:
+        raise RuntimeError('Cannot parse version name')
+    return matches.group(1)
 
 
 # Convert the given version element to a JSON dictionary

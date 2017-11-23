@@ -66,6 +66,24 @@ def test_get_versions_url(requests_get):
 
 
 @nose.with_setup(set_up, tear_down)
+@patch('requests.get', return_value=NonCallableMock(
+       text='<a href="/versions/foo">Foo Bar Baz (FBB)</a>'))
+def test_get_versions_unknown_id(requests_get):
+    """should raise error when version ID cannot be parsed"""
+    with nose.assert_raises(RuntimeError):
+        get_versions('eng')
+
+
+@nose.with_setup(set_up, tear_down)
+@patch('requests.get', return_value=NonCallableMock(
+       text='<a href="/versions/123-foo">Foo Bar Baz</a>'))
+def test_get_versions_unknown_name(requests_get):
+    """should raise error when version name cannot be parsed"""
+    with nose.assert_raises(RuntimeError):
+        get_versions('eng')
+
+
+@nose.with_setup(set_up, tear_down)
 @patch('requests.get', return_value=NonCallableMock(text='abc'))
 def test_get_versions_nonexistent(requests_get):
     """should raise error when version list cannot be found"""
