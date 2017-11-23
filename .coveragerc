@@ -20,4 +20,3 @@ include =
     utilities/version_parser.py
     utilities/update_language.py
     utilities/update_languages.py
-    utilities/yv_parser.py
