@@ -6,9 +6,8 @@ from __future__ import unicode_literals
 import nose.tools as nose
 from mock import patch
 
-# import utilities
-import utilities.add_language as add_lang
 from tests import set_up, tear_down
+from utilities.add_language import get_bible_data
 
 VERSIONS = [
     {'id': 234, 'name': 'ABC'},
@@ -30,7 +29,7 @@ def test_get_bible_data_default_version_explicit(get_versions, get_books):
     """should store explicitly-supplied default version into Bible data"""
     language_id = 'spa'
     default_version = 345
-    bible = add_lang.get_bible_data(language_id, default_version)
+    bible = get_bible_data(language_id, default_version)
     get_versions.assert_called_once_with(language_id)
     nose.assert_equal(bible['books'], BOOKS)
     nose.assert_equal(bible['default_version'], default_version)
@@ -42,7 +41,7 @@ def test_get_bible_data_default_version_explicit(get_versions, get_books):
 @patch('utilities.version_parser.get_versions', return_value=VERSIONS)
 def test_get_bible_data_default_version_implicit(get_versions, get_books):
     """should retrieve implicit default version if none is explicitly given"""
-    bible = add_lang.get_bible_data(language_id='spa')
+    bible = get_bible_data(language_id='spa')
     nose.assert_equal(bible['books'], BOOKS)
     nose.assert_equal(bible['default_version'], 123)
     nose.assert_equal(bible['versions'], VERSIONS)
@@ -56,4 +55,4 @@ def test_get_bible_data_default_version_nonexistent(get_versions, get_books):
     language_id = 'spa'
     default_version = 999
     with nose.assert_raises(RuntimeError):
-        add_lang.get_bible_data(language_id, default_version)
+        get_bible_data(language_id, default_version)

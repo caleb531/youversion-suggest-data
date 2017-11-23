@@ -7,7 +7,7 @@ import nose.tools as nose
 from mock import NonCallableMock, patch
 
 import tests
-import utilities.version_parser as version_parser
+from utilities.version_parser import get_versions
 
 with open('tests/html/versions.html') as html_file:
     html_content = html_file.read().decode('utf-8')
@@ -29,7 +29,7 @@ def tear_down():
 @nose.with_setup(set_up, tear_down)
 def test_get_versions():
     """should fetch version list in proper format"""
-    versions = version_parser.get_versions('deu')
+    versions = get_versions('deu')
     nose.assert_equal(len(versions), 5)
     nose.assert_list_equal(versions, [
         {
@@ -60,7 +60,7 @@ def test_get_versions():
 def test_get_versions_url(requests_get):
     """should fetch version list for the given language ID"""
     language_id = 'nld'
-    version_parser.get_versions(language_id)
+    get_versions(language_id)
     requests_get.assert_called_once_with(
         'https://www.bible.com/languages/{}'.format(language_id))
 
@@ -70,4 +70,4 @@ def test_get_versions_url(requests_get):
 def test_get_versions_nonexistent(requests_get):
     """should raise error when version list cannot be found"""
     with nose.assert_raises(RuntimeError):
-        version_parser.get_versions('xyz')
+        get_versions('xyz')
