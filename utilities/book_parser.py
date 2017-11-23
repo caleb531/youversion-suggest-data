@@ -56,10 +56,9 @@ def get_books(default_version):
 
     d = pq(requests.get(
         'https://www.bible.com/bible/{}/jhn.1'.format(default_version)).text)
-
     script_elems = d('script')
-    raw_books = get_raw_books(script_elems)
 
+    raw_books = get_raw_books(script_elems)
     if not raw_books:
         raise RuntimeError('Cannot find raw Bible data. Aborting.')
 
