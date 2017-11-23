@@ -5,7 +5,6 @@ from __future__ import unicode_literals
 
 import copy
 import json
-import os
 import os.path
 
 import nose.tools as nose
