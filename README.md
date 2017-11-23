@@ -9,7 +9,7 @@ generator and schema will be eventually included in this repository, but for
 now, you can find them in [my original YouVersion Suggest repository][alfred].
 
 [chrome]: https://github.com/caleb531/youversion-suggest-chrome
-[alfred]: https://github.com/caleb531/youversion-suggest
+[alfred]: https://github.com/caleb531/youversion-suggest-alfred
 
 ## Disclaimer
 
