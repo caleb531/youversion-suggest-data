@@ -13,7 +13,7 @@ with open('tests/html/books.html') as html_file:
     html_content = html_file.read().decode('utf-8')
     patch_urlopen = patch(
         'requests.get', return_value=NonCallableMock(
-            text=html_content.decode('utf-8')))
+            text=html_content))
 
 
 def set_up():
