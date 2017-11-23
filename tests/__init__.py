@@ -23,7 +23,7 @@ def set_up():
     packaged_data_dir_path_patcher.start()
     try:
         shutil.copytree(
-            orig_packaged_data_dir_path,
+            os.path.join(orig_packaged_data_dir_path, 'bible'),
             os.path.join(utilities.PACKAGED_DATA_DIR_PATH, 'bible'))
     except shutil.Error:
         pass
