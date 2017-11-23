@@ -24,7 +24,7 @@ BOOKS = [
 
 
 @nose.with_setup(set_up, tear_down)
-@patch('utilities.add_language.get_books', return_value=BOOKS)
+@patch('utilities.book_parser.get_books', return_value=BOOKS)
 @patch('utilities.version_parser.get_versions', return_value=VERSIONS)
 def test_get_bible_data_default_version_explicit(get_versions, get_books):
     """should store explicitly-supplied default version into Bible data"""
@@ -38,7 +38,7 @@ def test_get_bible_data_default_version_explicit(get_versions, get_books):
 
 
 @nose.with_setup(set_up, tear_down)
-@patch('utilities.add_language.get_books', return_value=BOOKS)
+@patch('utilities.book_parser.get_books', return_value=BOOKS)
 @patch('utilities.version_parser.get_versions', return_value=VERSIONS)
 def test_get_bible_data_default_version_implicit(get_versions, get_books):
     """should retrieve implicit default version if none is explicitly given"""
@@ -49,7 +49,7 @@ def test_get_bible_data_default_version_implicit(get_versions, get_books):
 
 
 @nose.with_setup(set_up, tear_down)
-@patch('utilities.add_language.get_books', return_value=BOOKS)
+@patch('utilities.book_parser.get_books', return_value=BOOKS)
 @patch('utilities.version_parser.get_versions', return_value=VERSIONS)
 def test_get_bible_data_default_version_nonexistent(get_versions, get_books):
     """should raise error if given default version does not exist in list"""

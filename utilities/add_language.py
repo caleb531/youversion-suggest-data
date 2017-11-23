@@ -28,34 +28,6 @@ JSON_PARAMS = {
 }
 
 
-# Retrieves map of chapter counts for every book of the Bible
-def get_chapter_data():
-
-    chapter_data_path = os.path.join(
-        utilities.PACKAGED_DATA_DIR_PATH, 'bible', 'chapters.json')
-    with open(chapter_data_path, 'r') as chapter_data_file:
-        return json.load(chapter_data_file)
-
-
-# Retrieves a list of books available in this language
-def get_books(default_version):
-
-    books = []
-    chapter_data = get_chapter_data()
-
-    books = book_parser.get_books(default_version)
-    if not books:
-        raise RuntimeError('Cannot retrieve book data. Aborting.')
-
-    # Ensure that returned books are recognized by the workflow (where the
-    # workflow only recognizes books within the Biblical canon)
-    books[:] = [book for book in books if book['id'] in chapter_data]
-    if len(books) == 0:
-        raise RuntimeError('Book data is empty. Aborting.')
-
-    return books
-
-
 # Constructs object representing all Bible data for a particular version
 # This data includes the list of books, list of versions, and default version
 def get_bible_data(language_id, default_version=None):
@@ -72,7 +44,7 @@ def get_bible_data(language_id, default_version=None):
             'Given default version does not exist in language. Aborting.')
 
     bible['default_version'] = default_version
-    bible['books'] = get_books(default_version=default_version)
+    bible['books'] = book_parser.get_books(default_version=default_version)
     return bible
 
 

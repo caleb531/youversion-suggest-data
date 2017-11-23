@@ -7,7 +7,7 @@ import nose.tools as nose
 from mock import NonCallableMock, patch
 
 import tests
-import utilities.add_language as add_lang
+import utilities.book_parser as book_parser
 
 with open('tests/html/books.html') as html_file:
     html_content = html_file.read().decode('utf-8')
@@ -29,7 +29,7 @@ def tear_down():
 @nose.with_setup(set_up, tear_down)
 def test_get_books():
     """should fetch book list in proper format"""
-    books = add_lang.get_books(default_version=75)
+    books = book_parser.get_books(default_version=75)
     nose.assert_equal(len(books), 3)
     nose.assert_list_equal(books, [
         {
@@ -52,7 +52,7 @@ def test_get_books():
 def test_get_books_url(get_url_content):
     """should fetch book list for the given default version"""
     default_version = 75
-    add_lang.get_books(default_version)
+    book_parser.get_books(default_version)
     get_url_content.assert_called_once_with(
         'https://www.bible.com/bible/{}/jhn.1'.format(default_version))
 
@@ -62,13 +62,13 @@ def test_get_books_url(get_url_content):
 def test_get_books_nonexistent(get_url_content):
     """should raise error when book list cannot be found"""
     with nose.assert_raises(RuntimeError):
-        add_lang.get_books(default_version=123)
+        book_parser.get_books(default_version=123)
 
 
 @nose.with_setup(set_up, tear_down)
 @patch('requests.get', return_value=NonCallableMock(text=html_content))
-@patch('utilities.add_language.get_chapter_data', return_value={})
+@patch('utilities.book_parser.get_chapter_data', return_value={})
 def test_get_books_empty(get_chapter_data, get_url_content):
     """should raise error when book list is empty"""
     with nose.assert_raises(RuntimeError):
-        add_lang.get_books(default_version=123)
+        book_parser.get_books(default_version=123)
