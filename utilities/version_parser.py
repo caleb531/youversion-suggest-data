@@ -4,6 +4,7 @@
 from __future__ import unicode_literals
 
 import re
+
 import requests
 from pyquery import PyQuery as pq
 

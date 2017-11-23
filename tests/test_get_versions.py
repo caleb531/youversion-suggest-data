@@ -2,9 +2,9 @@
 # coding=utf-8
 
 from __future__ import unicode_literals
-from mock import patch, NonCallableMock
 
 import nose.tools as nose
+from mock import NonCallableMock, patch
 
 import tests
 import utilities.add_language as add_lang

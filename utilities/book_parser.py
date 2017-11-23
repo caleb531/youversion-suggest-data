@@ -9,7 +9,6 @@ import re
 import requests
 from pyquery import PyQuery as pq
 
-
 # The pattern used to identify the <script> tag containing the relevant Bible
 # data
 bible_data_patt = r'window\.Bible\.__INITIAL_STATE__ = ({(?:.*?)});'
