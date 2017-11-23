@@ -41,7 +41,8 @@ def get_unique_versions(versions):
 
     unique_versions = []
     for name, group in itertools.groupby(versions, key=itemgetter('name')):
-        # When duplicates are encountered, favor the version with the lowest ID
+        # When multiple versions with the same name are encountered, favor the
+        # version with the lowest ID
         version = min(group, key=itemgetter('id'))
         unique_versions.append(version)
 
@@ -59,7 +60,7 @@ def get_versions(language_id):
     if not versions:
         raise RuntimeError('Cannot retrieve version data')
 
-    versions.sort(key=itemgetter('id'))
     unique_versions = get_unique_versions(versions)
+    unique_versions.sort(key=itemgetter('id'))
 
     return unique_versions

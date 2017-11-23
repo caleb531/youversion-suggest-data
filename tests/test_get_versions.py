@@ -30,7 +30,7 @@ def tear_down():
 def test_get_versions():
     """should fetch version list in proper format"""
     versions = get_versions('deu')
-    nose.assert_equal(len(versions), 5)
+    nose.assert_equal(len(versions), 6)
     nose.assert_list_equal(versions, [
         {
             'id': 8,
@@ -42,6 +42,10 @@ def test_get_versions():
         },
         {
             'id': 207,
+            'name': 'WEB-上帝上'
+        },
+        {
+            'id': 208,
             'name': 'WEB-上帝'
         },
         {
