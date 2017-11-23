@@ -20,4 +20,8 @@ def get_language_name(language_id):
     d = pq(get_languages_html())
     lang_elem = d('a[href="/languages/{}"]'.format(language_id))
 
-    return lang_elem.text()
+    language_name = lang_elem.text()
+    if not language_name:
+        raise RuntimeError('Cannot retrieve language data. Aborting.')
+
+    return language_name

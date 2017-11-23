@@ -8,8 +8,7 @@ import requests
 from mock import NonCallableMock, patch
 
 import tests
-import utilities.add_language as add_lang
-import utilities.language_parser as lang_parser
+import utilities.language_parser as language_parser
 
 with open('tests/html/languages.html') as html_file:
     html_content = html_file.read().decode('utf-8')
@@ -31,17 +30,17 @@ def tear_down():
 @nose.with_setup(set_up, tear_down)
 def test_get_language_name():
     """should fetch language name for the given language ID"""
-    language_name = add_lang.get_language_name('spa_es')
+    language_name = language_parser.get_language_name('spa_es')
     nose.assert_equal(language_name, 'Español (España) - Spanish (Spain)')
 
 
 @nose.with_setup(set_up, tear_down)
 def test_get_language_name_cache():
     """should cache languages HTML after initial fetch"""
-    if hasattr(lang_parser.get_languages_html, 'cache_clear'):
-        lang_parser.get_languages_html.cache_clear()
-    add_lang.get_language_name('spa')
-    language_name = add_lang.get_language_name('fra')
+    if hasattr(language_parser.get_languages_html, 'cache_clear'):
+        language_parser.get_languages_html.cache_clear()
+    language_parser.get_language_name('spa')
+    language_name = language_parser.get_language_name('fra')
     requests.get.assert_called_once()
     nose.assert_equal(language_name, 'Français - French')
 
@@ -50,4 +49,4 @@ def test_get_language_name_cache():
 def test_get_language_name_nonexistent():
     """should raise error when language name cannot be found"""
     with nose.assert_raises(RuntimeError):
-        add_lang.get_language_name(language_id='xyz')
+        language_parser.get_language_name(language_id='xyz')

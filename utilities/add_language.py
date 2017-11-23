@@ -28,15 +28,6 @@ JSON_PARAMS = {
 }
 
 
-# Retrieve the language name from the YouVersion website
-def get_language_name(language_id):
-
-    language_name = language_parser.get_language_name(language_id)
-    if not language_name:
-        raise RuntimeError('Cannot retrieve language data. Aborting.')
-    return language_name
-
-
 # Retrieves map of chapter counts for every book of the Bible
 def get_chapter_data():
 
@@ -125,7 +116,7 @@ def update_language_list(language_id, language_name):
 def add_language(language_id, default_version=None):
 
     print('- Fetching language data...')
-    language_name = get_language_name(language_id)
+    language_name = language_parser.get_language_name(language_id)
 
     print('- Adding Bible data...')
     bible = get_bible_data(
