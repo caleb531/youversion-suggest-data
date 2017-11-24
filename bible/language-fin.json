@@ -2,71 +2,71 @@
   "books": [
     {
       "id": "gen",
-      "name": "Genesis"
+      "name": "1. Mooseksen kirja"
     },
     {
       "id": "exo",
-      "name": "Exodus"
+      "name": "2. Mooseksen kirja"
     },
     {
       "id": "lev",
-      "name": "Leviticus"
+      "name": "3. Mooseksen kirja"
     },
     {
       "id": "num",
-      "name": "Numbers"
+      "name": "4. Mooseksen kirja"
     },
     {
       "id": "deu",
-      "name": "Deuteronomy"
+      "name": "5. Mooseksen kirja"
     },
     {
       "id": "jos",
-      "name": "Joshua"
+      "name": "Joosua"
     },
     {
       "id": "jdg",
-      "name": "Judges"
+      "name": "Tuomarien Kirja"
     },
     {
       "id": "rut",
-      "name": "Ruth"
+      "name": "Ruut"
     },
     {
       "id": "1sa",
-      "name": "1 Samuel"
+      "name": "1. Samuelin kirja"
     },
     {
       "id": "2sa",
-      "name": "2 Samuel"
+      "name": "2. Samuelin kirja"
     },
     {
       "id": "1ki",
-      "name": "1 Kings"
+      "name": "1. Kuningasten kirja"
     },
     {
       "id": "2ki",
-      "name": "2 Kings"
+      "name": "2. Kuningasten kirja"
     },
     {
       "id": "1ch",
-      "name": "1 Chronicles"
+      "name": "1. Aikakirja"
     },
     {
       "id": "2ch",
-      "name": "2 Chronicles"
+      "name": "2. Aikakirja"
     },
     {
       "id": "ezr",
-      "name": "Ezra"
+      "name": "Esra"
     },
     {
       "id": "neh",
-      "name": "Nehemiah"
+      "name": "Nehemia"
     },
     {
       "id": "est",
-      "name": "Esther (Hebrew)"
+      "name": "Ester"
     },
     {
       "id": "job",
@@ -74,63 +74,63 @@
     },
     {
       "id": "psa",
-      "name": "Psalms"
+      "name": "Psalmit"
     },
     {
       "id": "pro",
-      "name": "Proverbs"
+      "name": "Sananlaskut"
     },
     {
       "id": "ecc",
-      "name": "Ecclesiastes"
+      "name": "Saarnaaja"
     },
     {
       "id": "sng",
-      "name": "Song of Songs"
+      "name": "Laulujen laulu"
     },
     {
       "id": "isa",
-      "name": "Isaiah"
+      "name": "Jesaja"
     },
     {
       "id": "jer",
-      "name": "Jeremiah"
+      "name": "Jeremia"
     },
     {
       "id": "lam",
-      "name": "Lamentations"
+      "name": "Valitusvirret"
     },
     {
       "id": "ezk",
-      "name": "Ezekiel"
+      "name": "Hesekiel"
     },
     {
       "id": "dan",
-      "name": "Daniel (Hebrew)"
+      "name": "Daniel"
     },
     {
       "id": "hos",
-      "name": "Hosea"
+      "name": "Hoosea"
     },
     {
       "id": "jol",
-      "name": "Joel"
+      "name": "Jooel"
     },
     {
       "id": "amo",
-      "name": "Amos"
+      "name": "Aamos"
     },
     {
       "id": "oba",
-      "name": "Obadiah"
+      "name": "Obadja"
     },
     {
       "id": "jon",
-      "name": "Jonah"
+      "name": "Joona"
     },
     {
       "id": "mic",
-      "name": "Micah"
+      "name": "Miika"
     },
     {
       "id": "nam",
@@ -138,11 +138,11 @@
     },
     {
       "id": "hab",
-      "name": "Habakkuk"
+      "name": "Habakuk"
     },
     {
       "id": "zep",
-      "name": "Zephaniah"
+      "name": "Sefanja"
     },
     {
       "id": "hag",
@@ -150,119 +150,119 @@
     },
     {
       "id": "zec",
-      "name": "Zechariah"
+      "name": "Sakarja"
     },
     {
       "id": "mal",
-      "name": "Malachi"
+      "name": "Malakia"
     },
     {
       "id": "mat",
-      "name": "Matthew"
+      "name": "Matteus"
     },
     {
       "id": "mrk",
-      "name": "Mark"
+      "name": "Markus"
     },
     {
       "id": "luk",
-      "name": "Luke"
+      "name": "Luukas"
     },
     {
       "id": "jhn",
-      "name": "John"
+      "name": "Johannes"
     },
     {
       "id": "act",
-      "name": "Acts"
+      "name": "Apostolien teot"
     },
     {
       "id": "rom",
-      "name": "Romans"
+      "name": "Roomalaiskirje"
     },
     {
       "id": "1co",
-      "name": "1 Corinthians"
+      "name": "1. Korinttilaiskirje"
     },
     {
       "id": "2co",
-      "name": "2 Corinthians"
+      "name": "2. Korinttilaiskirje"
     },
     {
       "id": "gal",
-      "name": "Galatians"
+      "name": "Galatalaiskirje"
     },
     {
       "id": "eph",
-      "name": "Ephesians"
+      "name": "Efesolaiskirje"
     },
     {
       "id": "php",
-      "name": "Philippians"
+      "name": "Filippiläiskirje"
     },
     {
       "id": "col",
-      "name": "Colossians"
+      "name": "Kolossalaiskirje"
     },
     {
       "id": "1th",
-      "name": "1 Thessalonians"
+      "name": "1. Tessalonikalaiskirje"
     },
     {
       "id": "2th",
-      "name": "2 Thessalonians"
+      "name": "2. Tessalonikalaiskirje"
     },
     {
       "id": "1ti",
-      "name": "1 Timothy"
+      "name": "1. Timoteuskirje"
     },
     {
       "id": "2ti",
-      "name": "2 Timothy"
+      "name": "2. Timoteuskirje"
     },
     {
       "id": "tit",
-      "name": "Titus"
+      "name": "Tituskirje"
     },
     {
       "id": "phm",
-      "name": "Philemon"
+      "name": "Filemonkirje"
     },
     {
       "id": "heb",
-      "name": "Hebrews"
+      "name": "Heprealaiskirje"
     },
     {
       "id": "jas",
-      "name": "James"
+      "name": "Jaakobin kirje"
     },
     {
       "id": "1pe",
-      "name": "1 Peter"
+      "name": "1. Pietarin kirje"
     },
     {
       "id": "2pe",
-      "name": "2 Peter"
+      "name": "2. Pietarin kirje"
     },
     {
       "id": "1jn",
-      "name": "1 John"
+      "name": "1. Johanneksen kirje"
     },
     {
       "id": "2jn",
-      "name": "2 John"
+      "name": "2. Johanneksen kirje"
     },
     {
       "id": "3jn",
-      "name": "3 John"
+      "name": "3. Johanneksen kirje"
     },
     {
       "id": "jud",
-      "name": "Jude"
+      "name": "Juudaksen kirje"
     },
     {
       "id": "rev",
-      "name": "Revelation"
+      "name": "Ilmestyskirja"
     }
   ],
   "default_version": 330,
@@ -282,6 +282,10 @@
     {
       "id": 365,
       "name": "FB38"
+    },
+    {
+      "id": 1745,
+      "name": "FINRK"
     }
   ]
 }
