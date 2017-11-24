@@ -1,5 +1,11 @@
 # YouVersion Suggest Data
 
+*Copyright 2014-2017 Caleb Evans*  
+*Code released under the MIT license*
+
+*This project is not affiliated with YouVersion, and all Bible content is
+copyright of the respective publishers.*
+
 [![Build Status](https://travis-ci.org/caleb531/youversion-suggest-data.svg?branch=master)](https://travis-ci.org/caleb531/youversion-suggest-data)
 [![Coverage Status](https://coveralls.io/repos/caleb531/youversion-suggest-data/badge.svg?branch=master)](https://coveralls.io/r/caleb531/youversion-suggest-data?branch=master)
 
@@ -13,8 +19,3 @@ now, you can find them in [my original YouVersion Suggest repository][alfred].
 
 [chrome]: https://github.com/caleb531/youversion-suggest-chrome
 [alfred]: https://github.com/caleb531/youversion-suggest-alfred
-
-## Disclaimer
-
-This project is not affiliated with YouVersion, and all Bible content is
-copyright of the respective publishers.
