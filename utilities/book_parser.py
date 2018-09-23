@@ -54,16 +54,16 @@ def get_canon_books(books):
 # Retrieves all books listed on the chapter page in the given default version
 def get_books(default_version):
 
-    d = pq(requests.get(
-        'https://www.bible.com/bible/{}/jhn.1'.format(default_version)).text)
-    script_elems = d('script')
+    books_url = 'https://www.bible.com/json/bible/books/{}'.format(
+        default_version)
+    raw_books = json.loads(requests.get(books_url).text)
 
-    raw_books = get_raw_books(script_elems)
     if not raw_books:
-        raise RuntimeError('Cannot find raw Bible data')
+        raise RuntimeError('Cannot find raw book data')
 
-    books = get_canon_books(get_book(raw_book) for raw_book in raw_books)
+    books = get_canon_books(
+        get_book(raw_book) for raw_book in raw_books['items'])
     if not books:
-        raise RuntimeError('Cannot retrieve book data')
+        raise RuntimeError('Cannot parse book data')
 
     return books
