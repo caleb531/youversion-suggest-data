@@ -9,11 +9,11 @@ from mock import NonCallableMock, patch
 import tests
 from utilities.book_parser import get_books
 
-with open('tests/html/books.html') as html_file:
-    html_content = html_file.read().decode('utf-8')
+with open('tests/json/books.json') as json_file:
+    json_content = json_file.read().decode('utf-8')
     patch_urlopen = patch(
         'requests.get', return_value=NonCallableMock(
-            text=html_content))
+            text=json_content))
 
 
 def set_up():
@@ -48,17 +48,17 @@ def test_get_books():
 
 
 @nose.with_setup(set_up, tear_down)
-@patch('requests.get', return_value=NonCallableMock(text=html_content))
+@patch('requests.get', return_value=NonCallableMock(text=json_content))
 def test_get_books_url(requests_get):
     """should fetch book list for the given default version"""
     default_version = 75
     get_books(default_version)
     requests_get.assert_called_once_with(
-        'https://www.bible.com/bible/{}/jhn.1'.format(default_version))
+        'https://www.bible.com/json/bible/books/{}'.format(default_version))
 
 
 @nose.with_setup(set_up, tear_down)
-@patch('requests.get', return_value=NonCallableMock(text='abc'))
+@patch('requests.get', return_value=NonCallableMock(text='{}'))
 def test_get_books_nonexistent(requests_get):
     """should raise error when book list cannot be found"""
     with nose.assert_raises(RuntimeError):
@@ -66,7 +66,7 @@ def test_get_books_nonexistent(requests_get):
 
 
 @nose.with_setup(set_up, tear_down)
-@patch('requests.get', return_value=NonCallableMock(text=html_content))
+@patch('requests.get', return_value=NonCallableMock(text=json_content))
 @patch('utilities.book_parser.get_chapter_data', return_value={})
 def test_get_books_empty(get_chapter_data, requests_get):
     """should raise error when book list is empty"""
