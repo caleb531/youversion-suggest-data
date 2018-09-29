@@ -5,26 +5,12 @@ from __future__ import unicode_literals
 
 import json
 import os.path
-import re
 
 import requests
-from pyquery import PyQuery as pq
 
 # The pattern used to identify the <script> tag containing the relevant Bible
 # data
 raw_books_patt = r'window\.Bible\.__INITIAL_STATE__ = ({(?:.*?)});'
-
-
-# Retrieve the raw book data from the script element containing it (among the
-# given set)
-def get_raw_books(script_elems):
-    for script_elem in script_elems:
-        matches = re.search(raw_books_patt, pq(script_elem).text(),
-                            re.UNICODE | re.DOTALL)
-        if matches:
-            bible_data = json.loads(matches.group(1))
-            return bible_data['bibleReader']['books']['all']
-    return None
 
 
 # Retrieves map of chapter counts for every book of the Bible
