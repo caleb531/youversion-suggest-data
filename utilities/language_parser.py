@@ -27,10 +27,13 @@ def get_language_name(language_id):
 
     raw_languages = get_languages_json()
 
+    if not raw_languages:
+        raise RuntimeError('Cannot fetch language list')
+
     languages = [get_language(raw_language)
                  for raw_language in raw_languages['items']]
     if not languages:
-        raise RuntimeError('Cannot retrieve language data')
+        raise RuntimeError('Language list is empty')
 
     for language in languages:
         if language['id'] == language_id:

@@ -45,11 +45,11 @@ def get_books(default_version):
     raw_books = json.loads(requests.get(books_url).text)
 
     if not raw_books:
-        raise RuntimeError('Cannot find raw book data')
+        raise RuntimeError('Cannot fetch book list')
 
     books = get_canon_books(
         get_book(raw_book) for raw_book in raw_books['items'])
     if not books:
-        raise RuntimeError('Cannot parse book data')
+        raise RuntimeError('Book list is empty')
 
     return books

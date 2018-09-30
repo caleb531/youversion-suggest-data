@@ -39,12 +39,12 @@ def get_versions(language_id):
     raw_versions = json.loads(requests.get(versions_url).text)
 
     if not raw_versions:
-        raise RuntimeError('Cannot retrieve version data')
+        raise RuntimeError('Cannot fetch version list')
 
     versions = [get_version(raw_version)
                 for raw_version in raw_versions['items']]
     if not versions:
-        raise RuntimeError('Cannot parse version data')
+        raise RuntimeError('Version list is empty')
 
     unique_versions = get_unique_versions(versions)
     unique_versions.sort(key=itemgetter('id'))
