@@ -70,7 +70,7 @@ def test_get_versions_url(requests_get):
 
 
 @nose.with_setup(set_up, tear_down)
-@patch('requests.get', return_value=NonCallableMock(text='{"items": {}}'))
+@patch('requests.get', return_value=NonCallableMock(text='{"items":[]}'))
 def test_get_versions_empty(requests_get):
     """should raise error when version list is empty"""
     with nose.assert_raises(RuntimeError):
