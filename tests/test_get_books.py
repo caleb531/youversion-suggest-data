@@ -11,18 +11,18 @@ from utilities.book_parser import get_books
 
 with open('tests/json/books.json') as json_file:
     json_content = json_file.read().decode('utf-8')
-    patch_urlopen = patch(
+    patch_requests_get = patch(
         'requests.get', return_value=NonCallableMock(
             text=json_content))
 
 
 def set_up():
-    patch_urlopen.start()
+    patch_requests_get.start()
     tests.set_up()
 
 
 def tear_down():
-    patch_urlopen.stop()
+    patch_requests_get.stop()
     tests.tear_down()
 
 
