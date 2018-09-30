@@ -9,11 +9,11 @@ from mock import NonCallableMock, patch
 import tests
 from utilities.version_parser import get_versions
 
-with open('tests/html/versions.html') as html_file:
-    html_content = html_file.read().decode('utf-8')
+with open('tests/json/versions.json') as json_file:
+    json_content = json_file.read().decode('utf-8')
     patch_urlopen = patch(
         'requests.get', return_value=NonCallableMock(
-            text=html_content))
+            text=json_content))
 
 
 def set_up():
@@ -60,36 +60,26 @@ def test_get_versions():
 
 
 @nose.with_setup(set_up, tear_down)
-@patch('requests.get', return_value=NonCallableMock(text=html_content))
+@patch('requests.get', return_value=NonCallableMock(text=json_content))
 def test_get_versions_url(requests_get):
     """should fetch version list for the given language ID"""
     language_id = 'nld'
     get_versions(language_id)
     requests_get.assert_called_once_with(
-        'https://www.bible.com/languages/{}'.format(language_id))
+        'https://www.bible.com/json/bible/versions/{}'.format(language_id))
 
 
 @nose.with_setup(set_up, tear_down)
-@patch('requests.get', return_value=NonCallableMock(
-       text='<a href="/versions/foo">Foo Bar Baz (FBB)</a>'))
-def test_get_versions_unknown_id(requests_get):
-    """should raise error when version ID cannot be parsed"""
+@patch('requests.get', return_value=NonCallableMock(text='{"items": {}}'))
+def test_get_versions_empty(requests_get):
+    """should raise error when version list is empty"""
     with nose.assert_raises(RuntimeError):
         get_versions('eng')
 
 
 @nose.with_setup(set_up, tear_down)
-@patch('requests.get', return_value=NonCallableMock(
-       text='<a href="/versions/123-foo">Foo Bar Baz</a>'))
-def test_get_versions_unknown_name(requests_get):
-    """should raise error when version name cannot be parsed"""
-    with nose.assert_raises(RuntimeError):
-        get_versions('eng')
-
-
-@nose.with_setup(set_up, tear_down)
-@patch('requests.get', return_value=NonCallableMock(text='abc'))
+@patch('requests.get', return_value=NonCallableMock(text='{}'))
 def test_get_versions_nonexistent(requests_get):
-    """should raise error when version list cannot be found"""
+    """should raise error when language does not exist"""
     with nose.assert_raises(RuntimeError):
         get_versions('xyz')

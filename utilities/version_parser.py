@@ -4,35 +4,17 @@
 from __future__ import unicode_literals
 
 import itertools
-import re
+import json
 from operator import itemgetter
 
 import requests
-from pyquery import PyQuery as pq
-
-
-# Parse the numeric version ID from the given version element
-def get_version_id(version_elem):
-    patt = r'(?<=/versions/)(\d+)-([a-z]+\d*)'
-    matches = re.search(patt, version_elem.attr.href, flags=re.UNICODE)
-    if not matches:
-        raise RuntimeError('Cannot parse version ID')
-    return int(matches.group(1))
-
-
-# Parse the version name from the given version element
-def get_version_name(version_elem):
-    matches = re.search(r'\(\s*([^\)]+)\s*\)\s*$', version_elem.text())
-    if not matches:
-        raise RuntimeError('Cannot parse version name')
-    return matches.group(1)
 
 
 # Convert the given version element to a JSON dictionary
-def get_version(version_elem):
+def get_version(raw_version):
     return {
-        'id': get_version_id(pq(version_elem)),
-        'name': get_version_name(pq(version_elem))
+        'id': raw_version['id'],
+        'name': raw_version['local_abbreviation']
     }
 
 
@@ -52,13 +34,17 @@ def get_unique_versions(versions):
 # Retrieves all versions listed on the chapter page in the given language code
 def get_versions(language_id):
 
-    d = pq(requests.get(
-        'https://www.bible.com/languages/{}'.format(language_id)).text)
-    version_elems = d('a[href*="/versions/"]')
+    versions_url = 'https://www.bible.com/json/bible/versions/{}'.format(
+        language_id)
+    raw_versions = json.loads(requests.get(versions_url).text)
 
-    versions = [get_version(elem) for elem in version_elems]
-    if not versions:
+    if not raw_versions:
         raise RuntimeError('Cannot retrieve version data')
+
+    versions = [get_version(raw_version)
+                for raw_version in raw_versions['items']]
+    if not versions:
+        raise RuntimeError('Cannot parse version data')
 
     unique_versions = get_unique_versions(versions)
     unique_versions.sort(key=itemgetter('id'))
