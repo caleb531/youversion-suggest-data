@@ -5,7 +5,7 @@
 # language (using existing data, such as default version, to recreate the data
 # file)
 
-from __future__ import unicode_literals
+from __future__ import print_function, unicode_literals
 
 import argparse
 import json
