@@ -6,7 +6,7 @@
 # language files; this utility can also be used to update any Bible data for an
 # already-supported language
 
-from __future__ import print_function, unicode_literals
+from __future__ import unicode_literals
 
 import argparse
 import io
