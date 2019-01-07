@@ -1,4 +1,5 @@
 {
   "language": "eng",
-  "version": 111
+  "version": 111,
+  "refformat": "{i} ({v})\n{c}"
 }
