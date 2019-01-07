@@ -1,5 +1,5 @@
 {
   "language": "eng",
   "version": 111,
-  "refformat": "{i} ({v})\n{c}"
+  "refformat": "{i} ({v})\n\n{c}"
 }
