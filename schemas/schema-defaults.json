@@ -12,8 +12,12 @@
       "description": "The preferred version (in the current preferred language) to use as the default for Bible references",
       "type": "integer",
       "minimum": 1
+    },
+    "refformat": {
+      "description": "The format string for all copied Bible references",
+      "type": "string"
     }
   },
-  "required": ["language", "version"],
+  "required": ["language", "version", "refformat"],
   "additionalProperties": false
 }
