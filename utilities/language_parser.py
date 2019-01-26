@@ -30,8 +30,8 @@ def get_language_name(language_id):
     if not raw_languages:
         raise RuntimeError('Cannot fetch language list')
 
-    languages = [get_language(raw_language)
-                 for raw_language in raw_languages['items']]
+    languages = (get_language(raw_language)
+                 for raw_language in raw_languages['items'])
 
     for language in languages:
         if language['id'] == language_id:
