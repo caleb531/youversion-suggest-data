@@ -55,14 +55,6 @@ def test_get_language_name_no_data(requests_get):
 
 
 @nose.with_setup(set_up, tear_down)
-@patch('requests.get', return_value=NonCallableMock(text='{"items":[]}'))
-def test_get_language_name_empty(requests_get):
-    """should raise error when language list is empty"""
-    with nose.assert_raises(RuntimeError):
-        get_language_name(language_id='eng')
-
-
-@nose.with_setup(set_up, tear_down)
 def test_get_language_name_nonexistent():
     """should raise error when language name cannot be found"""
     with nose.assert_raises(RuntimeError):

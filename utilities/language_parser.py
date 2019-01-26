@@ -32,8 +32,6 @@ def get_language_name(language_id):
 
     languages = [get_language(raw_language)
                  for raw_language in raw_languages['items']]
-    if not languages:
-        raise RuntimeError('Language list is empty')
 
     for language in languages:
         if language['id'] == language_id:
