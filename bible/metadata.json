@@ -1,0 +1,202 @@
+{
+  "books": {
+    "gen": {
+      "chapters": 50
+    },
+    "exo": {
+      "chapters": 40
+    },
+    "lev": {
+      "chapters": 27
+    },
+    "num": {
+      "chapters": 36
+    },
+    "deu": {
+      "chapters": 34
+    },
+    "jos": {
+      "chapters": 24
+    },
+    "jdg": {
+      "chapters": 21
+    },
+    "rut": {
+      "chapters": 4
+    },
+    "1sa": {
+      "chapters": 31
+    },
+    "2sa": {
+      "chapters": 24
+    },
+    "1ki": {
+      "chapters": 22
+    },
+    "2ki": {
+      "chapters": 25
+    },
+    "1ch": {
+      "chapters": 29
+    },
+    "2ch": {
+      "chapters": 36
+    },
+    "ezr": {
+      "chapters": 10
+    },
+    "neh": {
+      "chapters": 13
+    },
+    "est": {
+      "chapters": 10
+    },
+    "job": {
+      "chapters": 42
+    },
+    "psa": {
+      "chapters": 150
+    },
+    "pro": {
+      "chapters": 31
+    },
+    "ecc": {
+      "chapters": 12
+    },
+    "sng": {
+      "chapters": 8
+    },
+    "isa": {
+      "chapters": 66
+    },
+    "jer": {
+      "chapters": 52
+    },
+    "lam": {
+      "chapters": 5
+    },
+    "ezk": {
+      "chapters": 48
+    },
+    "dan": {
+      "chapters": 12
+    },
+    "hos": {
+      "chapters": 14
+    },
+    "jol": {
+      "chapters": 3
+    },
+    "amo": {
+      "chapters": 9
+    },
+    "oba": {
+      "chapters": 1
+    },
+    "jon": {
+      "chapters": 4
+    },
+    "mic": {
+      "chapters": 7
+    },
+    "nam": {
+      "chapters": 3
+    },
+    "hab": {
+      "chapters": 3
+    },
+    "zep": {
+      "chapters": 3
+    },
+    "hag": {
+      "chapters": 2
+    },
+    "zec": {
+      "chapters": 14
+    },
+    "mal": {
+      "chapters": 4
+    },
+    "mat": {
+      "chapters": 28
+    },
+    "mrk": {
+      "chapters": 16
+    },
+    "luk": {
+      "chapters": 24
+    },
+    "jhn": {
+      "chapters": 21
+    },
+    "act": {
+      "chapters": 28
+    },
+    "rom": {
+      "chapters": 16
+    },
+    "1co": {
+      "chapters": 16
+    },
+    "2co": {
+      "chapters": 13
+    },
+    "gal": {
+      "chapters": 6
+    },
+    "eph": {
+      "chapters": 6
+    },
+    "php": {
+      "chapters": 4
+    },
+    "col": {
+      "chapters": 4
+    },
+    "1th": {
+      "chapters": 5
+    },
+    "2th": {
+      "chapters": 3
+    },
+    "1ti": {
+      "chapters": 6
+    },
+    "2ti": {
+      "chapters": 4
+    },
+    "tit": {
+      "chapters": 3
+    },
+    "phm": {
+      "chapters": 1
+    },
+    "heb": {
+      "chapters": 13
+    },
+    "jas": {
+      "chapters": 5
+    },
+    "1pe": {
+      "chapters": 5
+    },
+    "2pe": {
+      "chapters": 3
+    },
+    "1jn": {
+      "chapters": 5
+    },
+    "2jn": {
+      "chapters": 1
+    },
+    "3jn": {
+      "chapters": 1
+    },
+    "jud": {
+      "chapters": 1
+    },
+    "rev": {
+      "chapters": 22
+    }
+  }
+}
