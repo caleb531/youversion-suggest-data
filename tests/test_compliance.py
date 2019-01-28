@@ -39,7 +39,7 @@ def test_json():
         'schema-languages': 'bible/languages.json',
         'schema-defaults': 'preferences/defaults.json',
         'schema-chapters': 'bible/chapters.json',
-        'schema-bible': 'bible/language-*.json'
+        'schema-language': 'bible/language-*.json'
     }
     for schema_name, data_path_glob in schemas.iteritems():
         schema_path = 'schemas/{}.json'.format(schema_name)
