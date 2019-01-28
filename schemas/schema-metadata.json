@@ -13,8 +13,14 @@
               "description": "The number of chapters in this book",
               "type": "integer",
               "minimum": 1
+            },
+            "canon": {
+              "description": "The Biblical canon in which this book resides (can be either \"ot\" or \"nt\")",
+              "type": "string",
+              "enum": ["ot", "nt"]
             }
-          }
+          },
+          "additionalProperties": false
         }
       }
     }
