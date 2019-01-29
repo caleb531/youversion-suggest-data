@@ -67,8 +67,8 @@ def test_get_books_nonexistent(requests_get):
 
 @nose.with_setup(set_up, tear_down)
 @patch('requests.get', return_value=NonCallableMock(text=json_content))
-@patch('utilities.book_parser.get_bible_metadata', return_value={'books': {}})
-def test_get_books_empty(get_bible_metadata, requests_get):
+@patch('utilities.book_parser.get_book_metadata', return_value={'books': {}})
+def test_get_books_empty(get_book_metadata, requests_get):
     """should raise error when book list is empty"""
     with nose.assert_raises(RuntimeError):
         get_books(default_version=123)

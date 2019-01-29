@@ -14,11 +14,11 @@ raw_books_patt = r'window\.Bible\.__INITIAL_STATE__ = ({(?:.*?)});'
 
 
 # Retrieves metadata for every book of the Bible
-def get_bible_metadata():
+def get_book_metadata():
 
-    bible_metadata_path = os.path.join('bible', 'metadata.json')
-    with open(bible_metadata_path, 'r') as bible_metadata_file:
-        return json.load(bible_metadata_file)
+    book_metadata_path = os.path.join('bible', 'book-metadata.json')
+    with open(book_metadata_path, 'r') as book_metadata_file:
+        return json.load(book_metadata_file)
 
 
 # Convert the given raw book JSON to a schema-compliant dictionary
@@ -33,8 +33,8 @@ def get_book(raw_book):
 # Retrieve only the books for which this project has associated chapter data;
 # this project has chosen to only include books from the Biblical Canon
 def get_canon_books(books):
-    bible_metadata = get_bible_metadata()
-    return [book for book in books if book['id'] in bible_metadata['books']]
+    book_metadata = get_book_metadata()
+    return [book for book in books if book['id'] in book_metadata]
 
 
 # Retrieves all books listed on the chapter page in the given default version
