@@ -34,7 +34,7 @@ def get_unique_versions(versions):
 # Retrieves all versions listed on the chapter page in the given language code
 def get_versions(language_id):
 
-    versions_url = 'https://www.bible.com/json/bible/versions/{}'.format(
+    versions_url = 'https://www.bible.com/json/bible/versions/{}?'.format(
         language_id)
     raw_versions = json.loads(requests.get(versions_url).text)
 
