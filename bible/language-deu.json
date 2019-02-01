@@ -268,40 +268,59 @@
   "default_version": 51,
   "versions": [
     {
+      "full_name": "Lutherbibel 1912",
       "id": 51,
       "name": "DELUT"
     },
     {
+      "full_name": "Elberfelder 1905",
       "id": 57,
       "name": "ELB"
     },
     {
+      "full_name": "Elberfelder 1871",
       "id": 58,
       "name": "ELB71"
     },
     {
+      "full_name": "Albrecht NT und Psalmen",
       "id": 65,
       "name": "GANTP"
     },
     {
+      "full_name": "Hoffnung für alle",
       "id": 73,
       "name": "HFA"
     },
     {
+      "full_name": "Neue Genfer Übersetzung",
       "id": 108,
       "name": "NGU2011"
     },
     {
+      "full_name": "Schlachter 2000",
       "id": 157,
       "name": "SCH2000"
     },
     {
+      "full_name": "Schlachter 1951",
       "id": 158,
       "name": "SCH51"
     },
     {
+      "full_name": "NeÜ bibel.heute",
       "id": 877,
       "name": "NBH"
+    },
+    {
+      "full_name": "Darby Unrevidierte Elberfelder",
+      "id": 2170,
+      "name": "ELO"
+    },
+    {
+      "full_name": "Textbibel von Kautzsch und Weizsäcker",
+      "id": 2200,
+      "name": "TKW"
     }
   ]
 }

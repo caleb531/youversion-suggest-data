@@ -1,15 +1,15 @@
 [
   {
     "id": "arb",
-    "name": "العربية - Arabic"
+    "name": "العربية"
   },
   {
     "id": "bul",
-    "name": "български - Bulgarian"
+    "name": "български"
   },
   {
     "id": "deu",
-    "name": "Deutsch - German"
+    "name": "Deutsch"
   },
   {
     "id": "eng",
@@ -17,78 +17,78 @@
   },
   {
     "id": "fin",
-    "name": "Suomi - Finnish"
+    "name": "Suomi"
   },
   {
     "id": "fra",
-    "name": "Français - French"
+    "name": "Français"
   },
   {
     "id": "hin",
-    "name": "हिन्दी - Hindi"
+    "name": "हिन्दी"
   },
   {
     "id": "ind",
-    "name": "Bahasa Indonesia - Indonesian"
+    "name": "Bahasa Indonesia"
   },
   {
     "id": "ita",
-    "name": "Italiano - Italian"
+    "name": "Italiano"
   },
   {
     "id": "jpn",
-    "name": "日本語 - Japanese"
+    "name": "日本語"
   },
   {
     "id": "kor",
-    "name": "한국어 - Korean"
+    "name": "한국어"
   },
   {
     "id": "nld",
-    "name": "Nederlands - Dutch"
+    "name": "Nederlands"
   },
   {
     "id": "pes",
-    "name": "فارسی - Farsi (Persian)"
+    "name": "فارسی"
   },
   {
     "id": "pol",
-    "name": "Polski - Polish"
+    "name": "Polski"
   },
   {
     "id": "por",
-    "name": "Português (Brasil) - Portuguese (Brazil)"
+    "name": "Português (Brasil)"
   },
   {
     "id": "por_pt",
-    "name": "Português (Portugal) - Portuguese (Portugal)"
+    "name": "Português (Portugal)"
   },
   {
     "id": "rus",
-    "name": "Русский - Russian"
+    "name": "Русский"
   },
   {
     "id": "spa",
-    "name": "Español (América Latina) - Spanish"
+    "name": "Español (América Latina)"
   },
   {
     "id": "spa_es",
-    "name": "Español (España) - Spanish (Spain)"
+    "name": "Español (España)"
   },
   {
     "id": "swe",
-    "name": "Svenska - Swedish"
+    "name": "Svenska"
   },
   {
     "id": "swh",
-    "name": "Kiswahili - Swahili"
+    "name": "Kiswahili"
   },
   {
     "id": "zho",
-    "name": "简体中文 - Chinese (Simplified)"
+    "name": "简体中文"
   },
   {
     "id": "zho_tw",
-    "name": "繁體中文 - Chinese (Traditional)"
+    "name": "繁體中文"
   }
 ]

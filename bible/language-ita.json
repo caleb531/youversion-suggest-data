@@ -22,7 +22,7 @@
     },
     {
       "id": "jos",
-      "name": "Giosué"
+      "name": "Giosuè"
     },
     {
       "id": "jdg",
@@ -34,27 +34,27 @@
     },
     {
       "id": "1sa",
-      "name": "1 Samuele"
+      "name": "Primo libro di Samuele"
     },
     {
       "id": "2sa",
-      "name": "2 Samuele"
+      "name": "Secondo libro di Samuele"
     },
     {
       "id": "1ki",
-      "name": "1 Re"
+      "name": "Primo libro dei Re"
     },
     {
       "id": "2ki",
-      "name": "2 Re"
+      "name": "Secondo libro dei Re"
     },
     {
       "id": "1ch",
-      "name": "1 Cronache"
+      "name": "Primo libro delle Cronache"
     },
     {
       "id": "2ch",
-      "name": "2 Cronache"
+      "name": "Secondo libro delle Cronache"
     },
     {
       "id": "ezr",
@@ -134,7 +134,7 @@
     },
     {
       "id": "nam",
-      "name": "Nahum"
+      "name": "Naum"
     },
     {
       "id": "hab",
@@ -158,148 +158,142 @@
     },
     {
       "id": "mat",
-      "name": "Matteo"
+      "name": "Vangelo secondo Matteo"
     },
     {
       "id": "mrk",
-      "name": "Marco"
+      "name": "Vangelo secondo Marco"
     },
     {
       "id": "luk",
-      "name": "Luca"
+      "name": "Vangelo secondo Luca"
     },
     {
       "id": "jhn",
-      "name": "Giovanni"
+      "name": "Vangelo secondo Giovanni"
     },
     {
       "id": "act",
-      "name": "Atti"
+      "name": "Atti degli Apostoli"
     },
     {
       "id": "rom",
-      "name": "Romani"
+      "name": "Lettera ai Romani"
     },
     {
       "id": "1co",
-      "name": "1 Corinzi"
+      "name": "Prima lettera ai Corinzi"
     },
     {
       "id": "2co",
-      "name": "2 Corinzi"
+      "name": "Seconda lettera ai Corinzi"
     },
     {
       "id": "gal",
-      "name": "Galati"
+      "name": "Lettera ai Galati"
     },
     {
       "id": "eph",
-      "name": "Efesini"
+      "name": "Lettera agli Efesini"
     },
     {
       "id": "php",
-      "name": "Filippesi"
+      "name": "Lettera ai Filippesi"
     },
     {
       "id": "col",
-      "name": "Colossesi"
+      "name": "Lettera ai Colossesi"
     },
     {
       "id": "1th",
-      "name": "1 Tessalonicesi"
+      "name": "Prima lettera ai Tessalonicesi"
     },
     {
       "id": "2th",
-      "name": "2 Tessalonicesi"
+      "name": "Seconda lettera ai Tessalonicesi"
     },
     {
       "id": "1ti",
-      "name": "1 Timoteo"
+      "name": "Prima lettera a Timoteo"
     },
     {
       "id": "2ti",
-      "name": "2 Timoteo"
+      "name": "Seconda lettera a Timoteo"
     },
     {
       "id": "tit",
-      "name": "Tito"
+      "name": "Lettera a Tito"
     },
     {
       "id": "phm",
-      "name": "Filemone"
+      "name": "Lettera a Filemone"
     },
     {
       "id": "heb",
-      "name": "Ebrei"
+      "name": "Lettera agli Ebrei"
     },
     {
       "id": "jas",
-      "name": "Giacomo"
+      "name": "Lettera di Giacomo"
     },
     {
       "id": "1pe",
-      "name": "1 Pietro"
+      "name": "Prima lettera di Pietro"
     },
     {
       "id": "2pe",
-      "name": "2 Pietro"
+      "name": "Seconda lettera di Pietro"
     },
     {
       "id": "1jn",
-      "name": "1 Giovanni"
+      "name": "Prima lettera di Giovanni"
     },
     {
       "id": "2jn",
-      "name": "2 Giovanni"
+      "name": "Seconda lettera di Giovanni"
     },
     {
       "id": "3jn",
-      "name": "3 Giovanni"
+      "name": "Terza lettera di Giovanni"
     },
     {
       "id": "jud",
-      "name": "Giuda"
+      "name": "Lettera di Giuda"
     },
     {
       "id": "rev",
-      "name": "Apocalisse"
+      "name": "Apocalisse di Giovanni"
     }
   ],
-  "default_version": 80,
+  "default_version": 122,
   "versions": [
     {
+      "full_name": "Diodati Bible",
       "id": 54,
       "name": "DO885"
     },
     {
-      "id": 78,
-      "name": "IGD"
-    },
-    {
-      "id": 80,
-      "name": "ITRIV"
-    },
-    {
-      "id": 92,
-      "name": "PEV"
-    },
-    {
+      "full_name": "Nuova Riveduta 2006",
       "id": 122,
       "name": "NR06"
     },
     {
+      "full_name": "Nuova Riveduta 1994",
       "id": 123,
       "name": "NR94"
     },
     {
+      "full_name": "Versione Diodati Riveduta",
       "id": 141,
       "name": "RDV24"
     },
     {
+      "full_name": "Traduzione Interconfessionale in Lingua Corrente",
       "id": 1196,
       "name": "ICL00D"
     },
     {
+      "full_name": "Traduzione Interconfessionale in Lingua Corrente",
       "id": 1197,
       "name": "ICL00"
     }

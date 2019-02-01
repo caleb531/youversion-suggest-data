@@ -268,24 +268,34 @@
   "default_version": 74,
   "versions": [
     {
+      "full_name": "Biblia Habari Njema",
       "id": 74,
       "name": "BHN"
     },
     {
+      "full_name": "Swahili Union Version",
       "id": 164,
       "name": "SUV"
     },
     {
+      "full_name": "Biblia Habari Njema",
       "id": 393,
       "name": "BHND"
     },
     {
+      "full_name": "Neno: Bibilia Takatifu 2014",
       "id": 1627,
       "name": "NEN"
     },
     {
+      "full_name": "Swahili Revised Union Version",
       "id": 1817,
       "name": "SUVDC"
+    },
+    {
+      "full_name": "Biblia Habari Njema: Toleo la Kujifunza",
+      "id": 2144,
+      "name": "BHNTLK"
     }
   ]
 }

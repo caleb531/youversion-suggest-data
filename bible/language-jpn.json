@@ -268,12 +268,24 @@
   "default_version": 81,
   "versions": [
     {
+      "full_name": "Colloquial Japanese (1955)",
       "id": 81,
       "name": "JA1955"
     },
     {
+      "full_name": "リビングバイブル",
       "id": 83,
       "name": "JCB"
+    },
+    {
+      "full_name": "Seisho Shinkyoudoyaku 聖書 新共同訳",
+      "id": 1819,
+      "name": "新共同訳"
+    },
+    {
+      "full_name": "Japanese: 聖書　口語訳",
+      "id": 1820,
+      "name": "口語訳"
     }
   ]
 }

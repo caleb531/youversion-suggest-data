@@ -14,7 +14,8 @@ import requests
 def get_version(raw_version):
     return {
         'id': raw_version['id'],
-        'name': raw_version['local_abbreviation']
+        'name': raw_version['local_abbreviation'],
+        'full_name': raw_version['local_title']
     }
 
 

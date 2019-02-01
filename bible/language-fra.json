@@ -268,48 +268,69 @@
   "default_version": 21,
   "versions": [
     {
+      "full_name": "La Bible du Semeur",
       "id": 21,
       "name": "BDS"
     },
     {
+      "full_name": "Martin 1744",
       "id": 62,
       "name": "FMAR"
     },
     {
+      "full_name": "Bible en français courant",
       "id": 63,
-      "name": "FRC97"
+      "name": "BFC"
     },
     {
+      "full_name": "Bible Darby en français",
       "id": 64,
       "name": "FRDBY"
     },
     {
+      "full_name": "Bible Segond 1910",
       "id": 93,
       "name": "LSG"
     },
     {
+      "full_name": "Nouvelle Bible Segond",
       "id": 104,
       "name": "NBS"
     },
     {
+      "full_name": "Nouvelle Edition de Genève 1979",
       "id": 106,
       "name": "NEG79"
     },
     {
+      "full_name": "Ostervald",
       "id": 131,
       "name": "OST"
     },
     {
+      "full_name": "Parole de Vie 2017",
       "id": 133,
-      "name": "PDV"
+      "name": "PDV2017"
     },
     {
+      "full_name": "Bible Segond 21",
       "id": 152,
       "name": "S21"
     },
     {
+      "full_name": "Bible catholique Crampon 1923",
       "id": 504,
       "name": "BCC1923"
+    },
+    {
+      "full_name": "Nouvelle Segond révisée",
+      "id": 2053,
+      "name": "NVS78P"
+    },
+    {
+      "full_name": "La Bible en français courant",
+      "id": 2096,
+      "name": "FRC97"
     }
   ]
 }

@@ -268,88 +268,119 @@
   "default_version": 128,
   "versions": [
     {
+      "full_name": "La Palabra (versión hispanoamericana)",
       "id": 28,
       "name": "BLPH"
     },
     {
+      "full_name": "Biblia Dios Habla Hoy",
       "id": 52,
       "name": "DHH94I"
     },
     {
+      "full_name": "La Biblia de las Americas",
       "id": 89,
       "name": "LBLA"
     },
     {
+      "full_name": "Nueva Biblia Latinoamericana de Hoy",
       "id": 103,
       "name": "NBLH"
     },
     {
+      "full_name": "Nueva Traducción Viviente",
       "id": 127,
       "name": "NTV"
     },
     {
+      "full_name": "Nueva Versión Internacional - Español",
       "id": 128,
       "name": "NVI"
     },
     {
+      "full_name": "Reina Valera Contemporánea",
       "id": 146,
       "name": "RVC"
     },
     {
+      "full_name": "Reina-Valera Antigua",
       "id": 147,
       "name": "RVES"
     },
     {
+      "full_name": "Biblia Reina Valera 1960",
       "id": 149,
       "name": "RVR1960"
     },
     {
+      "full_name": "Biblia Reina Valera 1995",
       "id": 150,
       "name": "RVR95"
     },
     {
+      "full_name": "Traducción en Lenguaje Actual",
       "id": 176,
       "name": "TLA"
     },
     {
+      "full_name": "Traducción en Lenguaje Actual Interconfesional",
       "id": 178,
-      "name": "TLAD"
+      "name": "TLAI"
     },
     {
+      "full_name": "La Biblia: La Palabra de Dios para Todos",
       "id": 197,
       "name": "PDT"
     },
     {
+      "full_name": "La Biblia Hispanoamericana (Traducción Interconfesional, versión hispanoamericana)",
       "id": 222,
       "name": "BHTI"
     },
     {
+      "full_name": "Biblia Dios Habla Hoy",
       "id": 411,
       "name": "DHH94PC"
     },
     {
+      "full_name": "Nueva Biblia Viva",
       "id": 753,
-      "name": "NBD"
+      "name": "NBV"
     },
     {
+      "full_name": "Biblia del Jubileo",
       "id": 1076,
       "name": "JBS"
     },
     {
+      "full_name": "Biblia del Oso 1573",
       "id": 1715,
       "name": "BDO1573"
     },
     {
+      "full_name": "Biblia Reina Valera 1909",
       "id": 1718,
       "name": "RVR09"
     },
     {
+      "full_name": "Reina Valera Actualizada",
+      "id": 1782,
+      "name": "RVA2015"
+    },
+    {
+      "full_name": "Dios Habla Hoy DK",
       "id": 1845,
       "name": "DHHDK"
     },
     {
+      "full_name": "Dios habla Hoy Estándar 1994",
       "id": 1846,
       "name": "DHHS94"
+    },
+    {
+      "full_name": "El Nuevo Testamento, Versión Biblia Libre",
+      "id": 1952,
+      "name": "VBL"
     }
   ]
 }

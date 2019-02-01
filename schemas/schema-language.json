@@ -34,6 +34,10 @@
       "items": {
         "type": "object",
         "properties": {
+          "full_name": {
+            "description": "The full, unabbreviated name of this version",
+            "type": "string"
+          },
           "id": {
             "description": "The ID used by YouVersion to uniquely identify this version",
             "type": "integer",

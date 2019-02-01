@@ -268,14 +268,17 @@
   "default_version": 86,
   "versions": [
     {
+      "full_name": "현대인의 성경",
       "id": 86,
       "name": "KLB"
     },
     {
+      "full_name": "개역한글",
       "id": 88,
       "name": "KRV"
     },
     {
+      "full_name": "새번역",
       "id": 142,
       "name": "RNKSV"
     }

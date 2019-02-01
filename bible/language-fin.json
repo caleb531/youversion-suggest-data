@@ -268,22 +268,27 @@
   "default_version": 330,
   "versions": [
     {
+      "full_name": "Finnish 1776",
       "id": 60,
       "name": "FI1776"
     },
     {
+      "full_name": "Finnish 1938",
       "id": 61,
       "name": "FINPR"
     },
     {
+      "full_name": "Kirkkoraamattu 1992",
       "id": 330,
       "name": "FB92"
     },
     {
+      "full_name": "Kirkkoraamattu 1933/38",
       "id": 365,
       "name": "FB38"
     },
     {
+      "full_name": "Raamattu Kansalle",
       "id": 1745,
       "name": "FINRK"
     }

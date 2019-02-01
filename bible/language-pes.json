@@ -268,18 +268,22 @@
   "default_version": 118,
   "versions": [
     {
+      "full_name": "هزارۀ نو",
       "id": 118,
       "name": "NMV"
     },
     {
+      "full_name": "Persian Old Version",
       "id": 136,
       "name": "POV-FAS"
     },
     {
+      "full_name": "مژده برای عصر جدید",
       "id": 181,
       "name": "TPV"
     },
     {
+      "full_name": "کتاب مقدس، ترجمه تفسیری",
       "id": 1619,
       "name": "FCB"
     }

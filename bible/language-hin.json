@@ -268,20 +268,34 @@
   "default_version": 819,
   "versions": [
     {
+      "full_name": "Hindi Holy Bible",
       "id": 819,
       "name": "HHBD"
     },
     {
+      "full_name": "सरल हिन्दी बाइबल",
       "id": 1628,
       "name": "SHB"
     },
     {
+      "full_name": "पवित्र बाइबिल CL (BSI)",
       "id": 1682,
       "name": "HINDICL-BSI"
     },
     {
+      "full_name": "Hindi O.V. - Re-edited (BSI)",
       "id": 1683,
       "name": "HINDI-BSI"
+    },
+    {
+      "full_name": "नया नियम",
+      "id": 1953,
+      "name": "HIN2017"
+    },
+    {
+      "full_name": "पवित्र बाइबिल",
+      "id": 1980,
+      "name": "HINIRV"
     }
   ]
 }

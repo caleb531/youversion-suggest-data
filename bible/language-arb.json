@@ -268,32 +268,44 @@
   "default_version": 13,
   "versions": [
     {
+      "full_name": "الكتاب المقدس",
       "id": 13,
       "name": "AVD"
     },
     {
+      "full_name": "الكتاب المقدس  (تخفيف تشكيل)",
       "id": 14,
       "name": "AVDDV"
     },
     {
+      "full_name": "الترجمة العربية المشتركة",
       "id": 67,
       "name": "المشتركة"
     },
     {
+      "full_name": "Ketab El Hayat",
       "id": 101,
-      "name": "NAV"
+      "name": "KEH"
     },
     {
+      "full_name": "Sharif Arabic Bible",
       "id": 153,
       "name": "SAB"
     },
     {
+      "full_name": "الكتاب المقدس، الترجمة العربية المبسطة",
       "id": 195,
       "name": "SAT"
     },
     {
+      "full_name": "True Meaning Arabic",
       "id": 1714,
       "name": "TMA"
+    },
+    {
+      "full_name": "الترجمة الكاثوليكيّة (اليسوعيّة)",
+      "id": 1981,
+      "name": "ت.ك.ع"
     }
   ]
 }

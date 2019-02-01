@@ -33,28 +33,34 @@ def test_get_versions():
     nose.assert_equal(len(versions), 6)
     nose.assert_list_equal(versions, [
         {
+            'full_name': 'Amplified Bible, Classic Edition',
             'id': 8,
-            'name': 'AMPC'
+            'name': 'AMPC',
         },
         {
+            'full_name': 'World English Bible 神',
             'id': 206,
-            'name': 'WEB-神'
+            'name': 'WEB-神',
         },
         {
+            'full_name': 'World English Bible 上帝上',
             'id': 207,
-            'name': 'WEB-上帝上'
+            'name': 'WEB-上帝上',
         },
         {
+            'full_name': 'World English Bible 上帝',
             'id': 208,
-            'name': 'WEB-上帝'
+            'name': 'WEB-上帝',
         },
         {
+            'full_name': 'Revised Version 1885',
             'id': 477,
-            'name': 'RV1885'
+            'name': 'RV1885',
         },
         {
+            'full_name': 'NeÜ bibel.heute',
             'id': 877,
-            'name': 'NBH'
+            'name': 'NBH',
         }
     ])
 

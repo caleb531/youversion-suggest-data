@@ -268,36 +268,54 @@
   "default_version": 53,
   "versions": [
     {
+      "full_name": "Dios Habla Hoy Versión Española",
       "id": 53,
       "name": "DHHE"
     },
     {
+      "full_name": "La Biblia de las Americas",
+      "id": 89,
+      "name": "LBLA"
+    },
+    {
+      "full_name": "Reina-Valera Antigua",
       "id": 147,
       "name": "RVES"
     },
     {
+      "full_name": "Biblia Reina Valera 1960",
       "id": 149,
       "name": "RVR1960"
     },
     {
+      "full_name": "Biblia Reina Valera 1995",
       "id": 150,
       "name": "RVR95"
     },
     {
+      "full_name": "La Palabra (versión española)",
       "id": 210,
       "name": "BLP"
     },
     {
+      "full_name": "La Biblia, Traducción Interconfesional (versión española)",
       "id": 214,
       "name": "BTI"
     },
     {
+      "full_name": "Dios Habla Hoy Con Deuterocanónicos Versión Española",
       "id": 442,
       "name": "DHHED"
     },
     {
+      "full_name": "Nueva Versión Internacional - Castellano",
       "id": 1637,
-      "name": "NVIC"
+      "name": "NVI"
+    },
+    {
+      "full_name": "Biblia del Oso 1573",
+      "id": 1715,
+      "name": "BDO1573"
     }
   ]
 }

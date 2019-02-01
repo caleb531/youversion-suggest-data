@@ -194,7 +194,7 @@
     },
     {
       "id": "eph",
-      "name": "Ef"
+      "name": "Efesus"
     },
     {
       "id": "php",
@@ -268,18 +268,22 @@
   "default_version": 306,
   "versions": [
     {
+      "full_name": "Alkitab dalam Bahasa Indonesia Masa Kini",
       "id": 27,
       "name": "BIMK"
     },
     {
+      "full_name": "Perjanjian Baru: Versi Mudah Dibaca",
       "id": 199,
       "name": "AMD"
     },
     {
+      "full_name": "Alkitab Terjemahan Baru",
       "id": 306,
       "name": "TB"
     },
     {
+      "full_name": "Perjanjian Baru dalam Terjemahan Sederhana Indonesia Edisi 2.3",
       "id": 320,
       "name": "TSI"
     }

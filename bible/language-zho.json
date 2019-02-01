@@ -268,26 +268,32 @@
   "default_version": 47,
   "versions": [
     {
+      "full_name": "圣经当代译本修订版",
       "id": 36,
       "name": "CCB"
     },
     {
+      "full_name": "新译本",
       "id": 41,
       "name": "CNVS"
     },
     {
+      "full_name": "中文标准译本",
       "id": 43,
       "name": "CSBS"
     },
     {
+      "full_name": "新标点和合本, 上帝版",
       "id": 47,
       "name": "CUNPSS-上帝"
     },
     {
+      "full_name": "新标点和合本, 神版",
       "id": 48,
       "name": "CUNPSS-神"
     },
     {
+      "full_name": "和合本修订版",
       "id": 140,
       "name": "RCUVSS"
     }

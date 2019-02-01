@@ -268,38 +268,52 @@
   "default_version": 154,
   "versions": [
     {
+      "full_name": "Nya Levande Bibeln",
       "id": 33,
       "name": "BSV"
     },
     {
+      "full_name": "Bibel 2000",
       "id": 154,
       "name": "B2000"
     },
     {
+      "full_name": "Svenska Folkbibeln",
       "id": 160,
       "name": "SFB98"
     },
     {
+      "full_name": "Karl XII 1873",
       "id": 161,
       "name": "SK73"
     },
     {
+      "full_name": "Svenska 1917",
       "id": 166,
       "name": "SVEN"
     },
     {
+      "full_name": "Bible 2000, Swedish Translation",
       "id": 417,
       "name": "B2000D"
     },
     {
+      "full_name": "Svenskbibel",
       "id": 542,
       "name": "SB"
     },
     {
+      "full_name": "nuBibeln",
       "id": 916,
-      "name": "NB"
+      "name": "NUB"
     },
     {
+      "full_name": "Svenska Kärnbibeln",
+      "id": 1111,
+      "name": "SKB"
+    },
+    {
+      "full_name": "Svenska Folkbibeln 2015",
       "id": 1223,
       "name": "SFB15"
     }

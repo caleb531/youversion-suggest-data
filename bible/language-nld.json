@@ -268,20 +268,29 @@
   "default_version": 75,
   "versions": [
     {
+      "full_name": "Het Boek",
       "id": 75,
       "name": "HTB"
     },
     {
+      "full_name": "Statenvertaling",
       "id": 165,
       "name": "SV1750"
     },
     {
+      "full_name": "NBG-vertaling 1951",
       "id": 328,
       "name": "NBG51"
     },
     {
+      "full_name": "BasisBijbel",
       "id": 1276,
       "name": "BB"
+    },
+    {
+      "full_name": "Herziene Statenvertaling",
+      "id": 1990,
+      "name": "HSV"
     }
   ]
 }

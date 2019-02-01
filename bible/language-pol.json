@@ -268,20 +268,34 @@
   "default_version": 132,
   "versions": [
     {
+      "full_name": "Biblia Gdańska",
       "id": 132,
       "name": "PBG"
     },
     {
+      "full_name": "Słowo Życia",
       "id": 137,
       "name": "PSZ"
     },
     {
+      "full_name": "Uwspółcześniona Biblia Gdańska",
       "id": 138,
       "name": "PUBG"
     },
     {
+      "full_name": "Nowa Biblia Gdańska",
       "id": 319,
       "name": "NBG"
+    },
+    {
+      "full_name": "Biblia, to jest Pismo Święte Starego i Nowego Przymierza Wydanie pierwsze 2018",
+      "id": 2095,
+      "name": "SNP"
+    },
+    {
+      "full_name": "UWSPÓŁCZEŚNIONA BIBLIA GDAŃSKA",
+      "id": 2149,
+      "name": "UBG"
     }
   ]
 }

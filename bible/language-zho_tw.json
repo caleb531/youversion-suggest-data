@@ -268,28 +268,39 @@
   "default_version": 46,
   "versions": [
     {
+      "full_name": "新譯本",
       "id": 40,
       "name": "CNV"
     },
     {
+      "full_name": "新標點和合本, 神版",
       "id": 46,
       "name": "CUNP-神"
     },
     {
+      "full_name": "和合本修訂版",
       "id": 139,
       "name": "RCUV"
     },
     {
+      "full_name": "中文標準譯本",
       "id": 312,
       "name": "CSBT"
     },
     {
+      "full_name": "新標點和合本, 上帝版",
       "id": 414,
       "name": "CUNP-上帝"
     },
     {
+      "full_name": "聖經當代譯本修訂版",
       "id": 1392,
       "name": "CCB"
+    },
+    {
+      "full_name": "次經全書 ( 繁體 )",
+      "id": 1889,
+      "name": "次經"
     }
   ]
 }

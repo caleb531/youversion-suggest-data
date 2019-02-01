@@ -58,7 +58,7 @@
     },
     {
       "id": "ezr",
-      "name": "Еsdras"
+      "name": "Esdras"
     },
     {
       "id": "neh",
@@ -66,7 +66,7 @@
     },
     {
       "id": "est",
-      "name": "Еster"
+      "name": "Ester"
     },
     {
       "id": "job",
@@ -110,7 +110,7 @@
     },
     {
       "id": "hos",
-      "name": "Oséias"
+      "name": "Oseias"
     },
     {
       "id": "jol",
@@ -118,7 +118,7 @@
     },
     {
       "id": "amo",
-      "name": "Аmós"
+      "name": "Amós"
     },
     {
       "id": "oba",
@@ -130,7 +130,7 @@
     },
     {
       "id": "mic",
-      "name": "Мiquéias"
+      "name": "Miqueias"
     },
     {
       "id": "nam",
@@ -268,32 +268,49 @@
   "default_version": 129,
   "versions": [
     {
+      "full_name": "Nova Versão Internacional - Português",
       "id": 129,
-      "name": "PTNVI"
+      "name": "NVI"
     },
     {
+      "full_name": "Perjanjian Novo Testamento: Versão Fácil de Ler",
       "id": 200,
       "name": "VFL"
     },
     {
+      "full_name": "Nova Tradução na Linguagem de Hoje",
       "id": 211,
       "name": "NTLH"
     },
     {
+      "full_name": "Almeida Revista e Corrigida",
       "id": 212,
-      "name": "ARC95"
+      "name": "ARC"
     },
     {
+      "full_name": "Tradução Brasileira",
       "id": 277,
-      "name": "TB10"
+      "name": "TB"
     },
     {
+      "full_name": "Almeida Revista e Atualizada",
       "id": 1608,
       "name": "ARA"
     },
     {
+      "full_name": "Nova Almeida Atualizada",
       "id": 1840,
-      "name": "NA17"
+      "name": "NAA"
+    },
+    {
+      "full_name": "Bíblia Sagrada, Nova Versão Transformadora",
+      "id": 1930,
+      "name": "NVT"
+    },
+    {
+      "full_name": "Nova Bíblia Viva Português",
+      "id": 1966,
+      "name": "NBV-P"
     }
   ]
 }

@@ -268,16 +268,24 @@
   "default_version": 215,
   "versions": [
     {
+      "full_name": "Almeida Revista e Corrigida (Portugal)",
       "id": 215,
       "name": "ARC"
     },
     {
+      "full_name": "a BÍBLIA para todos Edição Católica",
       "id": 228,
       "name": "BPT09DC"
     },
     {
+      "full_name": "a BÍBLIA para todos Edição Comum",
       "id": 432,
       "name": "BPT09"
+    },
+    {
+      "full_name": "O Livro",
+      "id": 1967,
+      "name": "OL"
     }
   ]
 }

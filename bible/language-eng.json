@@ -268,200 +268,299 @@
   "default_version": 111,
   "versions": [
     {
+      "full_name": "King James Version",
       "id": 1,
       "name": "KJV"
     },
     {
+      "full_name": "Amplified Bible, Classic Edition",
       "id": 8,
       "name": "AMPC"
     },
     {
+      "full_name": "American Standard Version",
       "id": 12,
       "name": "ASV"
     },
     {
+      "full_name": "The Books of the Bible NT",
       "id": 31,
       "name": "BOOKS"
     },
     {
+      "full_name": "Common English Bible",
       "id": 37,
       "name": "CEB"
     },
     {
+      "full_name": "Catholic Public Domain Version",
       "id": 42,
       "name": "CPDV"
     },
     {
+      "full_name": "Douay-Rheims Challoner Revision 1752",
       "id": 55,
       "name": "DRC1752"
     },
     {
+      "full_name": "English Standard Version",
       "id": 59,
       "name": "ESV"
     },
     {
+      "full_name": "Good News Translation",
       "id": 68,
       "name": "GNT"
     },
     {
+      "full_name": "Good News Translation (US Version)",
       "id": 69,
       "name": "GNTD"
     },
     {
+      "full_name": "GOD'S WORD Translation",
       "id": 70,
       "name": "GW"
     },
     {
+      "full_name": "Holman Christian Standard Bible",
       "id": 72,
       "name": "HCSB"
     },
     {
+      "full_name": "Lexham English Bible",
       "id": 90,
       "name": "LEB"
     },
     {
+      "full_name": "The Message",
       "id": 97,
       "name": "MSG"
     },
     {
+      "full_name": "New American Standard Bible",
       "id": 100,
       "name": "NASB"
     },
     {
+      "full_name": "New Century Version",
       "id": 105,
       "name": "NCV"
     },
     {
+      "full_name": "New English Translation",
       "id": 107,
       "name": "NET"
     },
     {
+      "full_name": "New International Reader's Version",
       "id": 110,
       "name": "NIRV"
     },
     {
+      "full_name": "New International Version",
       "id": 111,
       "name": "NIV"
     },
     {
+      "full_name": "New International Version (Anglicised)",
       "id": 113,
       "name": "NIVUK"
     },
     {
+      "full_name": "New King James Version",
       "id": 114,
       "name": "NKJV"
     },
     {
+      "full_name": "New Living Translation",
       "id": 116,
       "name": "NLT"
     },
     {
+      "full_name": "Orthodox Jewish Bible",
       "id": 130,
       "name": "OJB"
     },
     {
+      "full_name": "World English Bible",
       "id": 206,
       "name": "WEB"
     },
     {
+      "full_name": "Contemporary English Version (Anglicised) 2012",
       "id": 294,
       "name": "CEVUK"
     },
     {
+      "full_name": "Good News Bible",
       "id": 296,
       "name": "GNB"
     },
     {
+      "full_name": "Contemporary English Version",
       "id": 303,
-      "name": "CEVDCUS06"
+      "name": "CEVDC"
     },
     {
+      "full_name": "Tree of Life Version",
       "id": 314,
       "name": "TLV"
     },
     {
+      "full_name": "The Scriptures 2009",
       "id": 316,
       "name": "TS2009"
     },
     {
+      "full_name": "Contemporary English Version",
       "id": 392,
-      "name": "CEVUS06"
+      "name": "CEV"
     },
     {
+      "full_name": "Holy Bible: Easy-to-Read Version",
       "id": 406,
       "name": "ERV"
     },
     {
+      "full_name": "Good News Bible (Anglicised)",
       "id": 416,
       "name": "GNBDC"
     },
     {
+      "full_name": "Good News Bible (Catholic edition in Septuagint order)",
       "id": 431,
       "name": "GNBDK"
     },
     {
+      "full_name": "New American Bible, revised edition",
       "id": 463,
       "name": "NABRE"
     },
     {
+      "full_name": "Revised Version 1885",
       "id": 477,
       "name": "RV1885"
     },
     {
+      "full_name": "Darby's Translation 1890",
       "id": 478,
       "name": "DARBY"
     },
     {
+      "full_name": "King James Version with Apocrypha, American Edition",
       "id": 546,
       "name": "KJVA"
     },
     {
+      "full_name": "Young's Literal Translation 3rd Revision 1898",
       "id": 821,
-      "name": "YLT98"
+      "name": "YLT1898"
     },
     {
+      "full_name": "St Paul from the Trenches 1916",
       "id": 1047,
       "name": "GWC"
     },
     {
+      "full_name": "Jubilee Bible",
       "id": 1077,
       "name": "JUB"
     },
     {
+      "full_name": "Modern English Version",
       "id": 1171,
       "name": "MEV"
     },
     {
+      "full_name": "World English Bible British Edition",
       "id": 1204,
       "name": "WEBBE"
     },
     {
+      "full_name": "World Messianic Bible British Edition",
       "id": 1207,
       "name": "WMBBE"
     },
     {
+      "full_name": "World Messianic Bible",
       "id": 1209,
       "name": "WMB"
     },
     {
+      "full_name": "Complete Jewish Bible",
       "id": 1275,
       "name": "CJB"
     },
     {
+      "full_name": "International Children’s Bible",
       "id": 1359,
       "name": "ICB"
     },
     {
+      "full_name": "Metrical Psalms 1650",
       "id": 1365,
       "name": "MP1650"
     },
     {
+      "full_name": "Amplified Bible",
       "id": 1588,
       "name": "AMP"
     },
     {
+      "full_name": "Christian Standard Bible",
       "id": 1713,
       "name": "CSB"
+    },
+    {
+      "full_name": "The Passion Translation",
+      "id": 1849,
+      "name": "TPT"
+    },
+    {
+      "full_name": "Revised Version with Apocrypha 1895",
+      "id": 1922,
+      "name": "RV1895"
+    },
+    {
+      "full_name": "Free Bible Version New Testament with Psalms",
+      "id": 1932,
+      "name": "FBVNTPSALMS"
+    },
+    {
+      "full_name": "New Revised Standard Version Catholic Interconfessional",
+      "id": 2015,
+      "name": "NRSV-CI"
+    },
+    {
+      "full_name": "New Revised Standard Version",
+      "id": 2016,
+      "name": "NRSV"
+    },
+    {
+      "full_name": "Revised Standard Version",
+      "id": 2017,
+      "name": "RSV-CI"
+    },
+    {
+      "full_name": "Revised Standard Version",
+      "id": 2020,
+      "name": "RSV"
+    },
+    {
+      "full_name": "EasyEnglish Bible 2018",
+      "id": 2079,
+      "name": "EASY"
+    },
+    {
+      "full_name": "New Messianic Version Bible",
+      "id": 2135,
+      "name": "NMV"
+    },
+    {
+      "full_name": "Geneva Bible",
+      "id": 2163,
+      "name": "GNV"
     }
   ]
 }
