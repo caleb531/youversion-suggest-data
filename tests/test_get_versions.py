@@ -66,7 +66,8 @@ def test_get_versions_url(requests_get):
     language_id = 'nld'
     get_versions(language_id)
     requests_get.assert_called_once_with(
-        'https://www.bible.com/json/bible/versions/{}?'.format(language_id))
+        'https://www.bible.com/json/bible/versions/{}?filter='.format(
+            language_id))
 
 
 @nose.with_setup(set_up, tear_down)
