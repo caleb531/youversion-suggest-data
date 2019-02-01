@@ -107,7 +107,7 @@ def parse_cli_args():
     parser.add_argument(
         'language_id',
         metavar='code',
-        help='the ISO 639-1 code of the language')
+        help='the ISO 639-3 code of the language')
     parser.add_argument(
         '--default-version',
         type=int,
