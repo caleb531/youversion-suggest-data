@@ -22,14 +22,11 @@ def get_version(raw_version):
 # Returns a copy of the given version list with duplicates removed
 def get_unique_versions(versions):
 
-    unique_versions = []
-    for name, group in itertools.groupby(versions, key=itemgetter('name')):
-        # When multiple versions with the same name are encountered, favor the
-        # version with the lowest ID
-        version = min(group, key=itemgetter('id'))
-        unique_versions.append(version)
-
-    return unique_versions
+    # When multiple versions with the same name are encountered, favor the
+    # version with the lowest ID
+    return [min(group, key=itemgetter('id'))
+            for name, group in itertools.groupby(versions,
+                                                 key=itemgetter('name'))]
 
 
 # Retrieves all versions listed on the chapter page in the given language code
