@@ -6,6 +6,7 @@
     "books": {
       "description": "The list of Bible books available in this language",
       "type": "array",
+      "minItems": 1,
       "items": {
         "type": "object",
         "properties": {
@@ -31,6 +32,7 @@
     "versions": {
       "description": "The list of Bible versions for this language",
       "type": "array",
+      "minItems": 1,
       "items": {
         "type": "object",
         "properties": {
