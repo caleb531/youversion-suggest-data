@@ -28,19 +28,19 @@ def parse_cli_args():
 
 
 # Retrieves bible data object (books, versions, etc.) for the given language
-def get_bible_data(language_id):
+def get_bible(language_id):
 
-    bible_data_path = os.path.join(
+    bible_path = os.path.join(
         utilities.PACKAGED_DATA_DIR_PATH, 'bible',
-        'language-{}.json'.format(language_id))
-    with open(bible_data_path, 'r') as bible_data_file:
-        return json.load(bible_data_file)
+        'bible-{}.json'.format(language_id))
+    with open(bible_path, 'r') as bible_file:
+        return json.load(bible_file)
 
 
 # Updates the Bible data file for the language with the given ID
 def update_language(language_id):
 
-    bible = get_bible_data(language_id)
+    bible = get_bible(language_id)
     default_version = bible['default_version']
 
     print('Updating language \'{}\' data...'.format(

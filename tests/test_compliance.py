@@ -39,7 +39,7 @@ def test_json():
         'schema-languages': 'bible/languages.json',
         'schema-defaults': 'preferences/defaults.json',
         'schema-book-metadata': 'bible/book-metadata.json',
-        'schema-language': 'bible/language-*.json'
+        'schema-bible': 'bible/bible-*.json'
     }
     for schema_name, data_path_glob in schemas.iteritems():
         schema_path = 'schemas/{}.json'.format(schema_name)
@@ -72,5 +72,5 @@ def test_language_id_correspondence():
     for language in languages:
         nose.assert_true(
             os.path.exists(os.path.join(
-                'bible', 'language-{}.json'.format(language['id']))),
-            'language-{}.json does not exist'.format(language['id']))
+                'bible', 'bible-{}.json'.format(language['id']))),
+            'bible-{}.json does not exist'.format(language['id']))

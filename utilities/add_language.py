@@ -30,7 +30,7 @@ JSON_PARAMS = {
 
 # Constructs object representing all Bible data for a particular version
 # This data includes the list of books, list of versions, and default version
-def get_bible_data(language_id, default_version=None):
+def get_bible(language_id, default_version=None):
 
     bible = {}
     bible['versions'] = version_parser.get_versions(language_id)
@@ -57,11 +57,11 @@ def write_json(json_object, json_file):
 
 
 # Constructs the Bible data object and save it to a JSON file
-def save_bible_data(language_id, bible):
+def save_bible(language_id, bible):
 
     bible_path = os.path.join(
         utilities.PACKAGED_DATA_DIR_PATH, 'bible',
-        'language-{}.json'.format(language_id))
+        'bible-{}.json'.format(language_id))
     with io.open(bible_path, 'w', encoding='utf-8') as bible_file:
         write_json(bible, bible_file)
 
@@ -91,10 +91,10 @@ def add_language(language_id, default_version=None):
     language_name = language_parser.get_language_name(language_id)
 
     print('- Adding Bible data...')
-    bible = get_bible_data(
+    bible = get_bible(
         language_id=language_id,
         default_version=default_version)
-    save_bible_data(language_id, bible)
+    save_bible(language_id, bible)
 
     print('- Updating language list...')
     update_language_list(language_id, language_name)

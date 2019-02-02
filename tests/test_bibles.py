@@ -13,9 +13,9 @@ def get_book_metadata():
 
 
 def get_language_bibles():
-    for file_path in glob.iglob('bible/language-*.json'):
+    for file_path in glob.iglob('bible/bible-*.json'):
         with open(file_path, 'r') as language_file:
-            language_id = re.search('language-(.*?).json', file_path).group(1)
+            language_id = re.search('bible-(.*?).json', file_path).group(1)
             yield language_id, json.load(language_file)
 
 
