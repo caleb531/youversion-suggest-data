@@ -21,11 +21,13 @@ def test_add_language(out, get_language_name, get_bible, save_bible,
                       update_language_list):
     """should perform all necessary steps to add a language"""
     language_id = 'swe'
+    language_name = 'Swedish'
     default_version = 33
     add_lang.add_language(language_id, default_version)
     get_language_name.assert_called_once_with(language_id)
     get_bible.assert_called_once_with(
         language_id=language_id,
+        language_name=language_name,
         default_version=default_version)
     update_language_list.assert_called_once_with(
         language_id, get_language_name.return_value)

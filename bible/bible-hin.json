@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 819,
+  "language": {
+    "id": "hin",
+    "name": "हिन्दी"
+  },
   "versions": [
     {
       "full_name": "Hindi Holy Bible",

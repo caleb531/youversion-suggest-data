@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 46,
+  "language": {
+    "id": "zho_tw",
+    "name": "繁體中文"
+  },
   "versions": [
     {
       "full_name": "新譯本",

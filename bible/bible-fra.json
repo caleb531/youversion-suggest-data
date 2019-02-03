@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 21,
+  "language": {
+    "id": "fra",
+    "name": "Français"
+  },
   "versions": [
     {
       "full_name": "La Bible du Semeur",

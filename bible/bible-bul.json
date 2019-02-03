@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 22,
+  "language": {
+    "id": "bul",
+    "name": "български"
+  },
   "versions": [
     {
       "full_name": "Цариградски",

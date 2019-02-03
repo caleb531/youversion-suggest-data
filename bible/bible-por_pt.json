@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 215,
+  "language": {
+    "id": "por_pt",
+    "name": "Português (Portugal)"
+  },
   "versions": [
     {
       "full_name": "Almeida Revista e Corrigida (Portugal)",

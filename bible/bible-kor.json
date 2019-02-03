@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 86,
+  "language": {
+    "id": "kor",
+    "name": "한국어"
+  },
   "versions": [
     {
       "full_name": "현대인의 성경",

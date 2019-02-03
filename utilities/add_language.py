@@ -30,9 +30,13 @@ JSON_PARAMS = {
 
 # Constructs object representing all Bible data for a particular version
 # This data includes the list of books, list of versions, and default version
-def get_bible(language_id, default_version=None):
+def get_bible(language_id, language_name, default_version=None):
 
     bible = {}
+    bible['language'] = {
+        'id': language_id,
+        'name': language_name
+    }
     bible['versions'] = version_parser.get_versions(language_id)
 
     # If no explicit default version is given, use version with smallest ID
@@ -93,6 +97,7 @@ def add_language(language_id, default_version=None):
     print('- Adding Bible data...')
     bible = get_bible(
         language_id=language_id,
+        language_name=language_name,
         default_version=default_version)
     save_bible(language_id, bible)
 

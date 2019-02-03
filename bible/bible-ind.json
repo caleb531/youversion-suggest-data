@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 306,
+  "language": {
+    "id": "ind",
+    "name": "Bahasa Indonesia"
+  },
   "versions": [
     {
       "full_name": "Alkitab dalam Bahasa Indonesia Masa Kini",

@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 330,
+  "language": {
+    "id": "fin",
+    "name": "Suomi"
+  },
   "versions": [
     {
       "full_name": "Finnish 1776",

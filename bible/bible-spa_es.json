@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 53,
+  "language": {
+    "id": "spa_es",
+    "name": "Español (España)"
+  },
   "versions": [
     {
       "full_name": "Dios Habla Hoy Versión Española",

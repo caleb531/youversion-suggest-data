@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 132,
+  "language": {
+    "id": "pol",
+    "name": "Polski"
+  },
   "versions": [
     {
       "full_name": "Biblia Gdańska",

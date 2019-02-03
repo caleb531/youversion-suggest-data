@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 128,
+  "language": {
+    "id": "spa",
+    "name": "Español (América Latina)"
+  },
   "versions": [
     {
       "full_name": "La Palabra (versión hispanoamericana)",

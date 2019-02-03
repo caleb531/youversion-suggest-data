@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 51,
+  "language": {
+    "id": "deu",
+    "name": "Deutsch"
+  },
   "versions": [
     {
       "full_name": "Lutherbibel 1912",

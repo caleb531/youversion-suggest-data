@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 129,
+  "language": {
+    "id": "por",
+    "name": "Português (Brasil)"
+  },
   "versions": [
     {
       "full_name": "Nova Versão Internacional - Português",

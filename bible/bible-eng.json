@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 111,
+  "language": {
+    "id": "eng",
+    "name": "English"
+  },
   "versions": [
     {
       "full_name": "King James Version",

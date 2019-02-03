@@ -4,18 +4,22 @@
 
 from __future__ import unicode_literals
 
-import glob
-import re
+import json
 
 from update_language import update_language
+
+
+# Retrieve the basic JSON data for all languages
+def get_languages():
+    with open('bible/languages.json', 'r') as languages_file:
+        return json.load(languages_file)
 
 
 # Updates the Bible data file for every stored language
 def update_languages():
 
-    for file_path in glob.iglob('bible/bible-*.json'):
-        language_id = re.search('bible-(.*?).json', file_path).group(1)
-        update_language(language_id)
+    for language in get_languages():
+        update_language(language['id'])
         print('')
 
 

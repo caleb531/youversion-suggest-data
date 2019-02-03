@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 75,
+  "language": {
+    "id": "nld",
+    "name": "Nederlands"
+  },
   "versions": [
     {
       "full_name": "Het Boek",

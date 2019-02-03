@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 74,
+  "language": {
+    "id": "swh",
+    "name": "Kiswahili"
+  },
   "versions": [
     {
       "full_name": "Biblia Habari Njema",

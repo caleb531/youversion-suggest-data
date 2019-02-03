@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 122,
+  "language": {
+    "id": "ita",
+    "name": "Italiano"
+  },
   "versions": [
     {
       "full_name": "Diodati Bible",

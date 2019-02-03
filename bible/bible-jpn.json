@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 81,
+  "language": {
+    "id": "jpn",
+    "name": "日本語"
+  },
   "versions": [
     {
       "full_name": "Colloquial Japanese (1955)",

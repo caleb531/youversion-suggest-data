@@ -110,6 +110,10 @@
     }
   ],
   "default_version": 45,
+  "language": {
+    "id": "rus",
+    "name": "Русский"
+  },
   "versions": [
     {
       "full_name": "Библия на церковнославянском языке",

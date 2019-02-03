@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 13,
+  "language": {
+    "id": "arb",
+    "name": "العربية"
+  },
   "versions": [
     {
       "full_name": "الكتاب المقدس",

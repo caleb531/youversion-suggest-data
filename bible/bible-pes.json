@@ -266,6 +266,10 @@
     }
   ],
   "default_version": 118,
+  "language": {
+    "id": "pes",
+    "name": "فارسی"
+  },
   "versions": [
     {
       "full_name": "هزارۀ نو",
