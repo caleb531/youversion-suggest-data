@@ -1,4 +1,5 @@
-# tests.test_compliance
+#!/usr/bin/env python
+# coding=utf-8
 
 import glob
 import json
