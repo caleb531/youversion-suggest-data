@@ -16,8 +16,12 @@
     "refformat": {
       "description": "The format string for all copied Bible references",
       "type": "string"
+    },
+    "versenumbers": {
+      "description": "Whether or not to include verse numbers in copied Bible references",
+      "type": "boolean"
     }
   },
-  "required": ["language", "version", "refformat"],
+  "required": ["language", "version", "refformat", "versenumbers"],
   "additionalProperties": false
 }

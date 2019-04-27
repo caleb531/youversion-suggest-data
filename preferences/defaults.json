@@ -1,5 +1,6 @@
 {
   "language": "eng",
   "version": 111,
-  "refformat": "{name} ({version})\n\n{content}"
+  "refformat": "{name} ({version})\n\n{content}",
+  "versenumbers": false
 }
