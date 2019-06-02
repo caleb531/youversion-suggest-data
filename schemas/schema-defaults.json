@@ -20,6 +20,10 @@
     "versenumbers": {
       "description": "Whether or not to include verse numbers in copied Bible references",
       "type": "boolean"
+    },
+    "copybydefault": {
+      "description": "Whether or not the default action for each reference result should be to copy it to the clipboard",
+      "type": "boolean"
     }
   },
   "required": ["language", "version", "refformat", "versenumbers"],
