@@ -38,7 +38,6 @@ def test_json():
     """All JSON files should comply with the respective schemas"""
     schemas = {
         'schema-languages': 'bible/languages.json',
-        'schema-defaults': 'preferences/defaults.json',
         'schema-book-metadata': 'bible/book-metadata.json',
         'schema-bible': 'bible/bible-*.json'
     }

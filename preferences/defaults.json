@@ -1,7 +1,0 @@
-{
-  "language": "eng",
-  "version": 111,
-  "refformat": "{name} ({version})\n\n{content}",
-  "versenumbers": false,
-  "copybydefault": false
-}
