@@ -1,268 +1,112 @@
 {
   "books": [
     {
-      "id": "gen",
-      "name": "លោកុប្បត្តិ"
-    },
-    {
-      "id": "exo",
-      "name": "និក្ខមនំ"
-    },
-    {
-      "id": "lev",
-      "name": "លេវីវិន័យ"
-    },
-    {
-      "id": "num",
-      "name": "ជនគណនា"
-    },
-    {
-      "id": "deu",
-      "name": "ទុតិយកថា"
-    },
-    {
-      "id": "jos",
-      "name": "យ៉ូស្វេ"
-    },
-    {
-      "id": "jdg",
-      "name": "ចៅហ្វាយ"
-    },
-    {
-      "id": "rut",
-      "name": "នាងរស់"
-    },
-    {
-      "id": "1sa",
-      "name": "១ សាំយូអែល"
-    },
-    {
-      "id": "2sa",
-      "name": "២ សាំយូអែល"
-    },
-    {
-      "id": "1ki",
-      "name": "១ ពង្សាវតារក្សត្រ"
-    },
-    {
-      "id": "2ki",
-      "name": "២ ពង្សាវតារក្សត្រ"
-    },
-    {
-      "id": "1ch",
-      "name": "១ របាក្សត្រ"
-    },
-    {
-      "id": "2ch",
-      "name": "២ របាក្សត្រ"
-    },
-    {
-      "id": "ezr",
-      "name": "អែសរ៉ា"
-    },
-    {
-      "id": "neh",
-      "name": "នេហេមា"
-    },
-    {
-      "id": "est",
-      "name": "នាងអេសធើរ"
-    },
-    {
-      "id": "job",
-      "name": "យ៉ូប"
-    },
-    {
-      "id": "psa",
-      "name": "ទំនុកតម្កើង"
-    },
-    {
-      "id": "pro",
-      "name": "សុភាសិត"
-    },
-    {
-      "id": "ecc",
-      "name": "សាស្ដា"
-    },
-    {
-      "id": "sng",
-      "name": "បទចម្រៀង"
-    },
-    {
-      "id": "isa",
-      "name": "អេសាយ"
-    },
-    {
-      "id": "jer",
-      "name": "យេរេមា"
-    },
-    {
-      "id": "lam",
-      "name": "បរិទេវ"
-    },
-    {
-      "id": "ezk",
-      "name": "អេសេគាល"
-    },
-    {
-      "id": "dan",
-      "name": "ដានីយ៉ែល"
-    },
-    {
-      "id": "hos",
-      "name": "ហូសេ"
-    },
-    {
-      "id": "jol",
-      "name": "យ៉ូអែល"
-    },
-    {
-      "id": "amo",
-      "name": "អេម៉ុស"
-    },
-    {
-      "id": "oba",
-      "name": "អូបាឌា"
-    },
-    {
-      "id": "jon",
-      "name": "យ៉ូណាស"
-    },
-    {
-      "id": "mic",
-      "name": "មីកា"
-    },
-    {
-      "id": "nam",
-      "name": "ណាហ៊ូម"
-    },
-    {
-      "id": "hab",
-      "name": "ហាបាគូក"
-    },
-    {
-      "id": "zep",
-      "name": "សេផានី"
-    },
-    {
-      "id": "hag",
-      "name": "ហាកាយ"
-    },
-    {
-      "id": "zec",
-      "name": "សាការី"
-    },
-    {
-      "id": "mal",
-      "name": "ម៉ាឡាគី"
-    },
-    {
       "id": "mat",
-      "name": "ម៉ាថាយ"
+      "name": "Matthew"
     },
     {
       "id": "mrk",
-      "name": "ម៉ាកុស"
+      "name": "Mark"
     },
     {
       "id": "luk",
-      "name": "លូកា"
+      "name": "Luke"
     },
     {
       "id": "jhn",
-      "name": "យ៉ូហាន"
+      "name": "John"
     },
     {
       "id": "act",
-      "name": "កិច្ចការ"
+      "name": "Acts of the Apostles"
     },
     {
       "id": "rom",
-      "name": "រ៉ូម"
+      "name": "Romans"
     },
     {
       "id": "1co",
-      "name": "១ កូរិនថូស"
+      "name": "1 Corinthians"
     },
     {
       "id": "2co",
-      "name": "២ កូរិនថូស"
+      "name": "2 Corinthians"
     },
     {
       "id": "gal",
-      "name": "កាឡាទី"
+      "name": "Galatians"
     },
     {
       "id": "eph",
-      "name": "អេភេសូ"
+      "name": "Ephesians"
     },
     {
       "id": "php",
-      "name": "ភីលីព"
+      "name": "Philippians"
     },
     {
       "id": "col",
-      "name": "កូឡូស"
+      "name": "Colossians"
     },
     {
       "id": "1th",
-      "name": "១ ថេស្សាឡូនិក"
+      "name": "1 Thessalonians"
     },
     {
       "id": "2th",
-      "name": "២ ថេស្សាឡូនិក"
+      "name": "2 Thessalonians"
     },
     {
       "id": "1ti",
-      "name": "១ ធីម៉ូថេ"
+      "name": "1 Timothy"
     },
     {
       "id": "2ti",
-      "name": "២ ធីម៉ូថេ"
+      "name": "2 Timothy"
     },
     {
       "id": "tit",
-      "name": "ទីតុស"
+      "name": "Titus"
     },
     {
       "id": "phm",
-      "name": "ភីលេម៉ូន"
+      "name": "Philemon"
     },
     {
       "id": "heb",
-      "name": "ហេប្រឺ"
+      "name": "Hebrews"
     },
     {
       "id": "jas",
-      "name": "យ៉ាកុប"
+      "name": "James"
     },
     {
       "id": "1pe",
-      "name": "១ ពេត្រុស"
+      "name": "1 Peter"
     },
     {
       "id": "2pe",
-      "name": "២ ពេត្រុស"
+      "name": "2 Peter"
     },
     {
       "id": "1jn",
-      "name": "១ យ៉ូហាន"
+      "name": "1 John"
     },
     {
       "id": "2jn",
-      "name": "២ យ៉ូហាន"
+      "name": "2 John"
     },
     {
       "id": "3jn",
-      "name": "៣ យ៉ូហាន"
+      "name": "3 John"
     },
     {
       "id": "jud",
-      "name": "យូដាស"
+      "name": "Jude"
     },
     {
       "id": "rev",
-      "name": "វិវរណៈ"
+      "name": "Revelation"
     }
   ],
   "default_version": 315,

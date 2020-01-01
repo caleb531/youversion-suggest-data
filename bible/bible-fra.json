@@ -335,6 +335,11 @@
       "full_name": "La Bible en français courant",
       "id": 2096,
       "name": "FRC97"
+    },
+    {
+      "full_name": "Nouvelle Français courant",
+      "id": 2367,
+      "name": "NFC"
     }
   ]
 }

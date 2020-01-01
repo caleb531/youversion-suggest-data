@@ -141,7 +141,7 @@
       "name": "BTI"
     },
     {
-      "full_name": "Священное Писание, Восточный Перевод",
+      "full_name": "Восточный Перевод",
       "id": 385,
       "name": "CARS"
     },
@@ -156,14 +156,14 @@
       "name": "CASS"
     },
     {
-      "full_name": "Священное Писание, Восточный Перевод",
+      "full_name": "Восточный перевод, версия с «Аллахом»",
       "id": 840,
-      "name": "CARSA"
+      "name": "CARS-A"
     },
     {
-      "full_name": "Священное Писание, Восточный Перевод",
+      "full_name": "Central Asian Russian Scriptures (CARS-Tajikistan)",
       "id": 853,
-      "name": "CARST"
+      "name": "CARS-T"
     },
     {
       "full_name": "Современный русский перевод (2-е изд.)",

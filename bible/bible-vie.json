@@ -2,23 +2,23 @@
   "books": [
     {
       "id": "gen",
-      "name": "Sáng Thế Ký"
+      "name": "Sáng Thế"
     },
     {
       "id": "exo",
-      "name": "Xuất Ai Cập Ký"
+      "name": "Xuất Ai Cập"
     },
     {
       "id": "lev",
-      "name": "Lê-vi Ký"
+      "name": "Lê-vi"
     },
     {
       "id": "num",
-      "name": "Dân Số Ký"
+      "name": "Dân Số"
     },
     {
       "id": "deu",
-      "name": "Phục Truyền Luật Lệ Ký"
+      "name": "Phục Truyền"
     },
     {
       "id": "jos",
@@ -174,7 +174,7 @@
     },
     {
       "id": "act",
-      "name": "Công Vụ Các Sứ Đồ"
+      "name": "Công vụ"
     },
     {
       "id": "rom",
@@ -277,9 +277,9 @@
       "name": "BD2011"
     },
     {
-      "full_name": "Revised Vietnamese Version Bible",
+      "full_name": "Kinh Thánh Hiệu Đính 2010 - Revised Vietnamese Bible",
       "id": 151,
-      "name": "RVV11"
+      "name": "VIE2010"
     },
     {
       "full_name": "Kinh Thánh Bản Truyền Thống 1925",
@@ -300,11 +300,6 @@
       "full_name": "Kinh Thánh Hiện Đại",
       "id": 1638,
       "name": "KTHD"
-    },
-    {
-      "full_name": "Kinh Thánh",
-      "id": 2201,
-      "name": "VIE1934"
     }
   ]
 }

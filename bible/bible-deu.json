@@ -325,6 +325,11 @@
       "full_name": "Textbibel von Kautzsch und Weizsäcker",
       "id": 2200,
       "name": "TKW"
+    },
+    {
+      "full_name": "Elberfelder Übersetzung (Version von bibelkommentare.de)",
+      "id": 2351,
+      "name": "ELBBK"
     }
   ]
 }

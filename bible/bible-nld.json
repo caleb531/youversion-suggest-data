@@ -277,9 +277,9 @@
       "name": "HTB"
     },
     {
-      "full_name": "Statenvertaling",
+      "full_name": "Statenvertaling Jongbloed-editie",
       "id": 165,
-      "name": "SV1750"
+      "name": "SV-RJ"
     },
     {
       "full_name": "NBG-vertaling 1951",
@@ -295,6 +295,11 @@
       "full_name": "Herziene Statenvertaling",
       "id": 1990,
       "name": "HSV"
+    },
+    {
+      "full_name": "De Heilige Schrift, Petrus Canisiusvertaling, 1939",
+      "id": 2307,
+      "name": "NLD1939"
     }
   ]
 }

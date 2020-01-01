@@ -74,7 +74,7 @@
     },
     {
       "id": "psa",
-      "name": "Psalm"
+      "name": "Psalms"
     },
     {
       "id": "pro",
@@ -357,7 +357,7 @@
       "name": "NET"
     },
     {
-      "full_name": "New International Reader's Version",
+      "full_name": "New International Reader’s Version",
       "id": 110,
       "name": "NIRV"
     },
@@ -402,9 +402,9 @@
       "name": "GNB"
     },
     {
-      "full_name": "Contemporary English Version",
+      "full_name": "Contemporary English Version Interconfessional Edition",
       "id": 303,
-      "name": "CEVDC"
+      "name": "CEVDCI"
     },
     {
       "full_name": "Tree of Life Version",
@@ -565,6 +565,11 @@
       "full_name": "Geneva Bible",
       "id": 2163,
       "name": "GNV"
+    },
+    {
+      "full_name": "Wycliffe's Bible with Modern Spelling",
+      "id": 2407,
+      "name": "WBMS"
     }
   ]
 }
