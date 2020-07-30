@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding=utf-8
 
 # This language utility adds support for a language to YouVersion Suggest by
@@ -6,11 +6,10 @@
 # language files; this utility can also be used to update any Bible data for an
 # already-supported language
 
-from __future__ import unicode_literals
-
 import argparse
 import io
 import json
+import os
 import os.path
 from operator import itemgetter
 

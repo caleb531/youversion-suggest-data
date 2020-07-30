@@ -1,12 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # This language utility updates all existing Bible data files
 
-from __future__ import unicode_literals
-
 import json
 
-from update_language import update_language
+from utilities.update_language import update_language
 
 
 # Retrieve the basic JSON data for all languages

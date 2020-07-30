@@ -1,17 +1,16 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding=utf-8
 
-from __future__ import unicode_literals
+from unittest.mock import NonCallableMock, patch
 
 import nose.tools as nose
 import requests
-from mock import NonCallableMock, patch
 
 import tests
 from utilities.language_parser import get_language_name, get_languages_json
 
 with open('tests/json/languages.json') as json_file:
-    json_content = json_file.read().decode('utf-8')
+    json_content = json_file.read()
     patch_requests_get = patch(
         'requests.get', return_value=NonCallableMock(
             text=json_content))

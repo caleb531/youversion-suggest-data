@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding=utf-8
 
 import glob
@@ -25,7 +25,7 @@ def get_language_bibles():
 
 def test_book_consistency():
     """should have books in language that also exist in book metadata"""
-    metadata_book_ids = set(get_book_metadata().iterkeys())
+    metadata_book_ids = set(get_book_metadata().keys())
     for bible_path, bible in get_language_bibles():
         bible_book_ids = set(book['id'] for book in bible['books'])
         extra_books = bible_book_ids - metadata_book_ids

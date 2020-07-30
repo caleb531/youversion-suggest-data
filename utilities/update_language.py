@@ -1,14 +1,13 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding=utf-8
 
 # This language utility updates an existing Bible data file for the given
 # language (using existing data, such as default version, to recreate the data
 # file)
 
-from __future__ import unicode_literals
-
 import argparse
 import json
+import os
 import os.path
 
 import utilities

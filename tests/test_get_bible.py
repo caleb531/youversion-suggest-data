@@ -1,10 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding=utf-8
 
-from __future__ import unicode_literals
+from unittest.mock import patch
 
 import nose.tools as nose
-from mock import patch
 
 from tests import set_up, tear_down
 from utilities.add_language import get_bible

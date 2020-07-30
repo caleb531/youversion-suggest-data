@@ -1,8 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding=utf-8
 
+from unittest.mock import patch
+
 import nose.tools as nose
-from mock import patch
 
 import utilities.update_language as update_lang
 from tests.decorators import redirect_stdout

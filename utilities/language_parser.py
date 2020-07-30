@@ -1,15 +1,13 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding=utf-8
 
-from __future__ import unicode_literals
-
+import functools
 import json
 
-import cachetools.func
 import requests
 
 
-@cachetools.func.lru_cache(maxsize=1)
+@functools.lru_cache(maxsize=1)
 def get_languages_json():
     return json.loads(
         requests.get('https://www.bible.com/json/bible/languages').text)

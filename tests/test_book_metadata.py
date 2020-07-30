@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding=utf-8
 
 import json
@@ -14,7 +14,7 @@ def get_book_metadata():
 def test_chapter_verse_correspondence():
     """should have a verse count for every chapter in the metadata store"""
     book_metadata = get_book_metadata()
-    for book_id, book_metadata_item in book_metadata.iteritems():
+    for book_id, book_metadata_item in book_metadata.items():
         chapter_count = book_metadata_item['chapters']
         verse_count = len(book_metadata_item['verses'])
         fail_msg = 'book {} has {} chapters but {} verse counts'.format(

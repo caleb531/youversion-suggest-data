@@ -1,10 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding=utf-8
-
-from __future__ import unicode_literals
 
 import copy
 import json
+import os
 import os.path
 
 import nose.tools as nose
