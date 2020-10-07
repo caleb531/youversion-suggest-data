@@ -1,6 +1,6 @@
-# YouVersion Suggest Data v3.2.0
+# YouVersion Suggest Data v3.3.0
 
-*Copyright 2014-2019 Caleb Evans*  
+*Copyright 2014-2020 Caleb Evans*  
 *Code released under the MIT license*
 
 *This project is not affiliated with YouVersion, and all Bible content is
