@@ -1,12 +1,12 @@
-# YouVersion Suggest Data v3.2.0
+# YouVersion Suggest Data v3.3.0
 
-*Copyright 2014-2019 Caleb Evans*  
+*Copyright 2014-2020 Caleb Evans*  
 *Code released under the MIT license*
 
 *This project is not affiliated with YouVersion, and all Bible content is
 copyright of the respective publishers.*
 
-[![Build Status](https://travis-ci.org/caleb531/youversion-suggest-data.svg?branch=master)](https://travis-ci.org/caleb531/youversion-suggest-data)
+[![Build Status](https://travis-ci.com/caleb531/youversion-suggest-data.svg?branch=master)](https://travis-ci.com/caleb531/youversion-suggest-data)
 [![Coverage Status](https://coveralls.io/repos/caleb531/youversion-suggest-data/badge.svg?branch=master)](https://coveralls.io/r/caleb531/youversion-suggest-data?branch=master)
 
 This repository consists of Bible language data gathered from the YouVersion
