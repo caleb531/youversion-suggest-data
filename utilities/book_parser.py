@@ -5,7 +5,7 @@ import json
 import os
 import os.path
 
-import requests
+from utilities.requester import get
 
 # The pattern used to identify the <script> tag containing the relevant Bible
 # data
@@ -41,7 +41,7 @@ def get_books(default_version):
 
     books_url = 'https://www.bible.com/json/bible/books/{}'.format(
         default_version)
-    raw_books = json.loads(requests.get(books_url).text)
+    raw_books = json.loads(get(books_url).text)
 
     if not raw_books:
         raise RuntimeError('Cannot fetch book list')

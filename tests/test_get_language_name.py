@@ -3,8 +3,8 @@
 
 from unittest.mock import NonCallableMock, patch
 
+import httpx
 import nose.tools as nose
-import requests
 
 import tests
 from utilities.language_parser import get_language_name, get_languages_json
@@ -12,7 +12,7 @@ from utilities.language_parser import get_language_name, get_languages_json
 with open('tests/json/languages.json') as json_file:
     json_content = json_file.read()
     patch_requests_get = patch(
-        'requests.get', return_value=NonCallableMock(
+        'httpx.get', return_value=NonCallableMock(
             text=json_content))
 
 
@@ -41,12 +41,12 @@ def test_get_language_name_cache():
         get_languages_json.cache_clear()
     get_language_name('spa')
     language_name = get_language_name('fra')
-    requests.get.assert_called_once()
+    httpx.get.assert_called_once()
     nose.assert_equal(language_name, 'Français')
 
 
 @nose.with_setup(set_up, tear_down)
-@patch('requests.get', return_value=NonCallableMock(text='{}'))
+@patch('httpx.get', return_value=NonCallableMock(text='{}'))
 def test_get_language_name_no_data(requests_get):
     """should raise error when language list cannot be found"""
     with nose.assert_raises(RuntimeError):

@@ -5,7 +5,7 @@ import itertools
 import json
 from operator import itemgetter
 
-import requests
+from utilities.requester import get
 
 
 # Convert the given version element to a JSON dictionary
@@ -32,7 +32,7 @@ def get_versions(language_id):
 
     url_base = 'https://www.bible.com/json/bible'
     versions_url = '{}/versions/{}?filter='.format(url_base, language_id)
-    raw_versions = json.loads(requests.get(versions_url).text)
+    raw_versions = json.loads(get(versions_url).text)
 
     if not raw_versions:
         raise RuntimeError('Cannot fetch version list')

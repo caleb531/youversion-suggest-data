@@ -4,13 +4,13 @@
 import functools
 import json
 
-import requests
+from utilities.requester import get
 
 
 @functools.lru_cache(maxsize=1)
 def get_languages_json():
     return json.loads(
-        requests.get('https://www.bible.com/json/bible/languages').text)
+        get('https://www.bible.com/json/bible/languages').text)
 
 
 def get_language(raw_language):
