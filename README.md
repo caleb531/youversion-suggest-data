@@ -1,4 +1,4 @@
-# YouVersion Suggest Data v3.3.0
+# YouVersion Suggest Data v4.0.0
 
 *Copyright 2014-2022 Caleb Evans*  
 *Code released under the MIT license*
