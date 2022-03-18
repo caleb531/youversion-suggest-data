@@ -277,7 +277,7 @@
       "name": "BHN"
     },
     {
-      "full_name": "Swahili Union Version",
+      "full_name": "Maandiko Matakatifu ya Mungu Yaitwayo Biblia",
       "id": 164,
       "name": "SUV"
     },
@@ -294,12 +294,47 @@
     {
       "full_name": "Swahili Revised Union Version",
       "id": 1817,
-      "name": "SUVDC"
+      "name": "SRUVDC"
+    },
+    {
+      "full_name": "Swahili Revised Union Version",
+      "id": 1818,
+      "name": "SRUV"
     },
     {
       "full_name": "Biblia Habari Njema: Toleo la Kujifunza",
       "id": 2144,
       "name": "BHNTLK"
+    },
+    {
+      "full_name": "Agano Jipya: Tafsiri ya Kusoma-Kwa-Urahisi",
+      "id": 2484,
+      "name": "TKU"
+    },
+    {
+      "full_name": "Neno: Maandiko Matakatifu",
+      "id": 2729,
+      "name": "NMM"
+    },
+    {
+      "full_name": "BIBLIA Yenye Vitabu vya Deuterokanoni HABARI NJEMA",
+      "id": 2936,
+      "name": "SCLDC10"
+    },
+    {
+      "full_name": "BIBLIA KISWAHILI",
+      "id": 2937,
+      "name": "RSUVDC"
+    },
+    {
+      "full_name": "New Testament in Swahili (Zanzibar) Revised Edition 1921",
+      "id": 3048,
+      "name": "SWZZB1921"
+    },
+    {
+      "full_name": "Swahili Roehl Bible 1937",
+      "id": 3049,
+      "name": "SRB37"
     }
   ]
 }

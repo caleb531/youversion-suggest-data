@@ -272,9 +272,9 @@
   },
   "versions": [
     {
-      "full_name": "Diodati Bible",
+      "full_name": "Diodati Bibbia 1885",
       "id": 54,
-      "name": "DO885"
+      "name": "DB1885"
     },
     {
       "full_name": "Nuova Riveduta 2006",
@@ -299,7 +299,7 @@
     {
       "full_name": "Traduzione Interconfessionale in Lingua Corrente",
       "id": 1197,
-      "name": "ICL00"
+      "name": "ICL00P"
     }
   ]
 }

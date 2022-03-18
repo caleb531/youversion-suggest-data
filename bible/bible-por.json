@@ -277,7 +277,7 @@
       "name": "NVI"
     },
     {
-      "full_name": "Perjanjian Novo Testamento: Versão Fácil de Ler",
+      "full_name": "Bíblia Sagrada: Versão Fácil de Ler",
       "id": 200,
       "name": "VFL"
     },
@@ -315,6 +315,16 @@
       "full_name": "Nova Bíblia Viva Português",
       "id": 1966,
       "name": "NBV-P"
+    },
+    {
+      "full_name": "Biblia Almeida Século 21",
+      "id": 2645,
+      "name": "A21"
+    },
+    {
+      "full_name": "Biblia Livre Para Todos",
+      "id": 3254,
+      "name": "BLT"
     }
   ]
 }

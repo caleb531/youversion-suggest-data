@@ -114,7 +114,7 @@
     },
     {
       "id": "jol",
-      "name": "Yoël"
+      "name": "Y\"oel"
     },
     {
       "id": "amo",
@@ -287,9 +287,29 @@
       "name": "TB"
     },
     {
-      "full_name": "Perjanjian Baru dalam Terjemahan Sederhana Indonesia Edisi 2.3",
+      "full_name": "Terjemahan Sederhana Indonesia",
       "id": 320,
       "name": "TSI"
+    },
+    {
+      "full_name": "Firman Allah Yang Hidup",
+      "id": 2727,
+      "name": "FAYH"
+    },
+    {
+      "full_name": "Alkitab Terjemahan Lama",
+      "id": 2861,
+      "name": "LAI-TL"
+    },
+    {
+      "full_name": "Indonesian Tazi NT Study Bible",
+      "id": 2862,
+      "name": "INOTAZI"
+    },
+    {
+      "full_name": "Perjanjian Baru Terjemahan Baru Edisi 2",
+      "id": 2863,
+      "name": "PBTB2"
     }
   ]
 }

@@ -282,7 +282,7 @@
       "name": "DHH94I"
     },
     {
-      "full_name": "La Bilbia de las Americas",
+      "full_name": "La Biblia de las Américas",
       "id": 89,
       "name": "LBLA"
     },
@@ -332,7 +332,7 @@
       "name": "TLAI"
     },
     {
-      "full_name": "La Biblia: La Palabra de Dios para Todos",
+      "full_name": "La Biblia: La Palabra de Dios para todos",
       "id": 197,
       "name": "PDT"
     },
@@ -385,6 +385,11 @@
       "full_name": "El Nuevo Testamento, Versión Biblia Libre",
       "id": 1952,
       "name": "VBL"
+    },
+    {
+      "full_name": "La Santa Biblia, Nueva Versión Internacional Simplificada",
+      "id": 2664,
+      "name": "NVIS"
     }
   ]
 }

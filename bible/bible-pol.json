@@ -279,12 +279,12 @@
     {
       "full_name": "Słowo Życia",
       "id": 137,
-      "name": "PSZ"
+      "name": "PLNT"
     },
     {
-      "full_name": "Uwspółcześniona Biblia Gdańska",
+      "full_name": "UWSPÓŁCZEŚNIONA BIBLIA GDAŃSKA",
       "id": 138,
-      "name": "PUBG"
+      "name": "UBG"
     },
     {
       "full_name": "Nowa Biblia Gdańska",
@@ -295,11 +295,6 @@
       "full_name": "Biblia, to jest Pismo Święte Starego i Nowego Przymierza Wydanie pierwsze 2018",
       "id": 2095,
       "name": "SNP"
-    },
-    {
-      "full_name": "UWSPÓŁCZEŚNIONA BIBLIA GDAŃSKA",
-      "id": 2149,
-      "name": "UBG"
     }
   ]
 }

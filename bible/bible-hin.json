@@ -279,17 +279,17 @@
     {
       "full_name": "सरल हिन्दी बाइबल",
       "id": 1628,
-      "name": "SHB"
+      "name": "HSS"
     },
     {
-      "full_name": "पवित्र बाइबिल CL (BSI)",
+      "full_name": "पवित्र बाइबिल CL Bible (BSI)",
       "id": 1682,
-      "name": "HINDICL-BSI"
+      "name": "HINCLBSI"
     },
     {
-      "full_name": "Hindi O.V. - Re-edited (BSI)",
+      "full_name": "पवित्र बाइबिल OV (Re-edited) Bible (BSI)",
       "id": 1683,
-      "name": "HINDI-BSI"
+      "name": "HINOVBSI"
     },
     {
       "full_name": "नया नियम",
@@ -297,9 +297,14 @@
       "name": "HIN2017"
     },
     {
-      "full_name": "पवित्र बाइबिल",
+      "full_name": "इंडियन रिवाइज्ड वर्जन (IRV) हिंदी - 2019",
       "id": 1980,
-      "name": "HINIRV"
+      "name": "IRVHIN"
+    },
+    {
+      "full_name": "पवित्र बाइबल",
+      "id": 2562,
+      "name": "HERV"
     }
   ]
 }

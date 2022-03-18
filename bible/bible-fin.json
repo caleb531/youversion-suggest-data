@@ -2,75 +2,75 @@
   "books": [
     {
       "id": "gen",
-      "name": "1. Mooseksen kirja"
+      "name": "Ensimmäinen Mooseksen kirja"
     },
     {
       "id": "exo",
-      "name": "2. Mooseksen kirja"
+      "name": "Toinen Mooseksen kirja"
     },
     {
       "id": "lev",
-      "name": "3. Mooseksen kirja"
+      "name": "Kolmas Mooseksen kirja"
     },
     {
       "id": "num",
-      "name": "4. Mooseksen kirja"
+      "name": "Neljäs Mooseksen kirja"
     },
     {
       "id": "deu",
-      "name": "5. Mooseksen kirja"
+      "name": "Viides Mooseksen kirja"
     },
     {
       "id": "jos",
-      "name": "Joosua"
+      "name": "Joosuan kirja"
     },
     {
       "id": "jdg",
-      "name": "Tuomarien Kirja"
+      "name": "Tuomarien kirja"
     },
     {
       "id": "rut",
-      "name": "Ruut"
+      "name": "Ruutin kirja"
     },
     {
       "id": "1sa",
-      "name": "1. Samuelin kirja"
+      "name": "Ensimmäinen Samuelin kirja"
     },
     {
       "id": "2sa",
-      "name": "2. Samuelin kirja"
+      "name": "Toinen Samuelin kirja"
     },
     {
       "id": "1ki",
-      "name": "1. Kuningasten kirja"
+      "name": "Ensimmäinen kuninkaiden kirja"
     },
     {
       "id": "2ki",
-      "name": "2. Kuningasten kirja"
+      "name": "Toinen kuninkaiden kirja"
     },
     {
       "id": "1ch",
-      "name": "1. Aikakirja"
+      "name": "Ensimmäinen aikakirja"
     },
     {
       "id": "2ch",
-      "name": "2. Aikakirja"
+      "name": "Toinen aikakirja"
     },
     {
       "id": "ezr",
-      "name": "Esra"
+      "name": "Esran kirja"
     },
     {
       "id": "neh",
-      "name": "Nehemia"
+      "name": "Nehemian kirja"
     },
     {
       "id": "est",
-      "name": "Ester"
+      "name": "Esterin kirja"
     },
     {
       "id": "job",
-      "name": "Job"
+      "name": "Jobin kirja"
     },
     {
       "id": "psa",
@@ -78,11 +78,11 @@
     },
     {
       "id": "pro",
-      "name": "Sananlaskut"
+      "name": "Sananlaskujen kirja"
     },
     {
       "id": "ecc",
-      "name": "Saarnaaja"
+      "name": "Saarnaajan kirja"
     },
     {
       "id": "sng",
@@ -90,11 +90,11 @@
     },
     {
       "id": "isa",
-      "name": "Jesaja"
+      "name": "Jesajan kirja"
     },
     {
       "id": "jer",
-      "name": "Jeremia"
+      "name": "Jeremian kirja"
     },
     {
       "id": "lam",
@@ -102,75 +102,75 @@
     },
     {
       "id": "ezk",
-      "name": "Hesekiel"
+      "name": "Hesekielin kirja"
     },
     {
       "id": "dan",
-      "name": "Daniel"
+      "name": "Danielin kirja"
     },
     {
       "id": "hos",
-      "name": "Hoosea"
+      "name": "Hoosean kirja"
     },
     {
       "id": "jol",
-      "name": "Jooel"
+      "name": "Joelin kirja"
     },
     {
       "id": "amo",
-      "name": "Aamos"
+      "name": "Aamoksen kirja"
     },
     {
       "id": "oba",
-      "name": "Obadja"
+      "name": "Obadjan kirja"
     },
     {
       "id": "jon",
-      "name": "Joona"
+      "name": "Joonan kirja"
     },
     {
       "id": "mic",
-      "name": "Miika"
+      "name": "Miikan kirja"
     },
     {
       "id": "nam",
-      "name": "Nahum"
+      "name": "Nahumin kirja"
     },
     {
       "id": "hab",
-      "name": "Habakuk"
+      "name": "Habakukin kirja"
     },
     {
       "id": "zep",
-      "name": "Sefanja"
+      "name": "Sefanjan kirja"
     },
     {
       "id": "hag",
-      "name": "Haggai"
+      "name": "Haggain kirja"
     },
     {
       "id": "zec",
-      "name": "Sakarja"
+      "name": "Sakarjan kirja"
     },
     {
       "id": "mal",
-      "name": "Malakia"
+      "name": "Malakian kirja"
     },
     {
       "id": "mat",
-      "name": "Matteus"
+      "name": "Evankeliumi Matteuksen mukaan"
     },
     {
       "id": "mrk",
-      "name": "Markus"
+      "name": "Evankeliumi Markuksen mukaan"
     },
     {
       "id": "luk",
-      "name": "Luukas"
+      "name": "Evankeliumi Luukkaan mukaan"
     },
     {
       "id": "jhn",
-      "name": "Johannes"
+      "name": "Evankeliumi Johanneksen mukaan"
     },
     {
       "id": "act",
@@ -178,59 +178,59 @@
     },
     {
       "id": "rom",
-      "name": "Roomalaiskirje"
+      "name": "Kirje roomalaisille"
     },
     {
       "id": "1co",
-      "name": "1. Korinttilaiskirje"
+      "name": "Ensimmäinen kirje korinttilaisille"
     },
     {
       "id": "2co",
-      "name": "2. Korinttilaiskirje"
+      "name": "Toinen kirje korinttilaisille"
     },
     {
       "id": "gal",
-      "name": "Galatalaiskirje"
+      "name": "Kirje galatalaisille"
     },
     {
       "id": "eph",
-      "name": "Efesolaiskirje"
+      "name": "Kirje efesolaisille"
     },
     {
       "id": "php",
-      "name": "Filippiläiskirje"
+      "name": "Kirje filippiläisille"
     },
     {
       "id": "col",
-      "name": "Kolossalaiskirje"
+      "name": "Kirje kolossalaisille"
     },
     {
       "id": "1th",
-      "name": "1. Tessalonikalaiskirje"
+      "name": "Ensimmäinen kirje tessalonikalaisille"
     },
     {
       "id": "2th",
-      "name": "2. Tessalonikalaiskirje"
+      "name": "Toinen kirje tessalonikalaisille"
     },
     {
       "id": "1ti",
-      "name": "1. Timoteuskirje"
+      "name": "Ensimmäinen kirje Timoteukselle"
     },
     {
       "id": "2ti",
-      "name": "2. Timoteuskirje"
+      "name": "Toinen kirje Timoteukselle"
     },
     {
       "id": "tit",
-      "name": "Tituskirje"
+      "name": "Kirje Titukselle"
     },
     {
       "id": "phm",
-      "name": "Filemonkirje"
+      "name": "Kirje Filemonille"
     },
     {
       "id": "heb",
-      "name": "Heprealaiskirje"
+      "name": "Kirje heprealaisille"
     },
     {
       "id": "jas",
@@ -238,23 +238,23 @@
     },
     {
       "id": "1pe",
-      "name": "1. Pietarin kirje"
+      "name": "Ensimmäinen Pietarin kirje"
     },
     {
       "id": "2pe",
-      "name": "2. Pietarin kirje"
+      "name": "Toinen Pietarin kirje"
     },
     {
       "id": "1jn",
-      "name": "1. Johanneksen kirje"
+      "name": "Ensimmäinen Johanneksen kirje"
     },
     {
       "id": "2jn",
-      "name": "2. Johanneksen kirje"
+      "name": "Toinen Johanneksen kirje"
     },
     {
       "id": "3jn",
-      "name": "3. Johanneksen kirje"
+      "name": "Kolmas Johanneksen kirje"
     },
     {
       "id": "jud",
@@ -262,7 +262,7 @@
     },
     {
       "id": "rev",
-      "name": "Ilmestyskirja"
+      "name": "Johanneksen ilmestys"
     }
   ],
   "default_version": 330,
@@ -275,11 +275,6 @@
       "full_name": "Finnish 1776",
       "id": 60,
       "name": "FI1776"
-    },
-    {
-      "full_name": "Finnish 1938",
-      "id": 61,
-      "name": "FINPR"
     },
     {
       "full_name": "Kirkkoraamattu 1992",

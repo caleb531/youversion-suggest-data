@@ -272,7 +272,7 @@
   },
   "versions": [
     {
-      "full_name": "La Bible du Semeur",
+      "full_name": "La Bible du Semeur 2015",
       "id": 21,
       "name": "BDS"
     },
@@ -292,7 +292,7 @@
       "name": "FRDBY"
     },
     {
-      "full_name": "Bible Segond 1910",
+      "full_name": "La Sainte Bible par Louis Segond 1910",
       "id": 93,
       "name": "LSG"
     },
@@ -332,14 +332,14 @@
       "name": "NVS78P"
     },
     {
-      "full_name": "La Bible en français courant",
-      "id": 2096,
-      "name": "FRC97"
-    },
-    {
       "full_name": "Nouvelle Français courant",
       "id": 2367,
       "name": "NFC"
+    },
+    {
+      "full_name": "Évangile de Saint Matthieu 1855 (de Sacy)",
+      "id": 2599,
+      "name": "SACY"
     }
   ]
 }

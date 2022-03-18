@@ -307,7 +307,7 @@
       "name": "DRC1752"
     },
     {
-      "full_name": "English Standard Version",
+      "full_name": "English Standard Version 2016",
       "id": 59,
       "name": "ESV"
     },
@@ -322,7 +322,7 @@
       "name": "GNTD"
     },
     {
-      "full_name": "GOD'S WORD Translation",
+      "full_name": "GOD'S WORD",
       "id": 70,
       "name": "GW"
     },
@@ -342,9 +342,9 @@
       "name": "MSG"
     },
     {
-      "full_name": "New American Standard Bible",
+      "full_name": "New American Standard Bible - NASB 1995",
       "id": 100,
-      "name": "NASB"
+      "name": "NASB1995"
     },
     {
       "full_name": "New Century Version",
@@ -382,9 +382,9 @@
       "name": "NLT"
     },
     {
-      "full_name": "Orthodox Jewish Bible",
+      "full_name": "The Orthodox Jewish Bible",
       "id": 130,
-      "name": "OJB"
+      "name": "TOJB2011"
     },
     {
       "full_name": "World English Bible",
@@ -397,9 +397,9 @@
       "name": "CEVUK"
     },
     {
-      "full_name": "Good News Bible",
+      "full_name": "Good News Bible (Anglicised) 1994",
       "id": 296,
-      "name": "GNB"
+      "name": "GNBUK"
     },
     {
       "full_name": "Contemporary English Version Interconfessional Edition",
@@ -454,12 +454,17 @@
     {
       "full_name": "King James Version with Apocrypha, American Edition",
       "id": 546,
-      "name": "KJVA"
+      "name": "KJVAAE"
     },
     {
-      "full_name": "Young's Literal Translation 3rd Revision 1898",
+      "full_name": "King James Version, American Edition",
+      "id": 547,
+      "name": "KJVAE"
+    },
+    {
+      "full_name": "Young's Literal Translation 1898",
       "id": 821,
-      "name": "YLT1898"
+      "name": "YLT98"
     },
     {
       "full_name": "St Paul from the Trenches 1916",
@@ -502,7 +507,7 @@
       "name": "ICB"
     },
     {
-      "full_name": "Metrical Psalms 1650",
+      "full_name": "Psalms of David in Metre 1650 (Scottish Psalter)",
       "id": 1365,
       "name": "MP1650"
     },
@@ -522,14 +527,14 @@
       "name": "TPT"
     },
     {
-      "full_name": "Revised Version with Apocrypha 1895",
+      "full_name": "Revised Version with Apocrypha 1885, 1895",
       "id": 1922,
       "name": "RV1895"
     },
     {
-      "full_name": "Free Bible Version New Testament with Psalms",
+      "full_name": "Free Bible Version",
       "id": 1932,
-      "name": "FBVNTPSALMS"
+      "name": "FBV"
     },
     {
       "full_name": "New Revised Standard Version Catholic Interconfessional",
@@ -570,6 +575,36 @@
       "full_name": "Wycliffe's Bible with Modern Spelling",
       "id": 2407,
       "name": "WBMS"
+    },
+    {
+      "full_name": "Plain English Version",
+      "id": 2530,
+      "name": "PEV"
+    },
+    {
+      "full_name": "New American Standard Bible - NASB",
+      "id": 2692,
+      "name": "NASB2020"
+    },
+    {
+      "full_name": "Radiate New Testament",
+      "id": 2753,
+      "name": "RAD"
+    },
+    {
+      "full_name": "Isaiah 1830, 1842 (John Jones alias Ioan Tegid)",
+      "id": 3010,
+      "name": "TEG"
+    },
+    {
+      "full_name": "English: Berean Study Bible",
+      "id": 3034,
+      "name": "BSB"
+    },
+    {
+      "full_name": "Scottish Metrical Paraphrases 1781",
+      "id": 3051,
+      "name": "MP1781"
     }
   ]
 }

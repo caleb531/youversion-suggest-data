@@ -277,7 +277,7 @@
       "name": "DELUT"
     },
     {
-      "full_name": "Elberfelder 1905",
+      "full_name": "Darby Unrevidierte Elberfelder",
       "id": 57,
       "name": "ELB"
     },
@@ -317,11 +317,6 @@
       "name": "NBH"
     },
     {
-      "full_name": "Darby Unrevidierte Elberfelder",
-      "id": 2170,
-      "name": "ELO"
-    },
-    {
       "full_name": "Textbibel von Kautzsch und Weizsäcker",
       "id": 2200,
       "name": "TKW"
@@ -330,6 +325,11 @@
       "full_name": "Elberfelder Übersetzung (Version von bibelkommentare.de)",
       "id": 2351,
       "name": "ELBBK"
+    },
+    {
+      "full_name": "luther.heute",
+      "id": 3100,
+      "name": "LUTHEUTE"
     }
   ]
 }
