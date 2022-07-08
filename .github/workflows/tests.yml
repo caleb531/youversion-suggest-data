@@ -33,8 +33,10 @@ jobs:
     - name: Test with nose
       run: |
         coverage run -m nose
+        coverage lcov -o cover/coverage.lcov
 
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:
+        path-to-lcov: coverage.lcov
         github-token: ${{ secrets.GITHUB_TOKEN }}
