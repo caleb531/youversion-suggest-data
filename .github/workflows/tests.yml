@@ -32,7 +32,7 @@ jobs:
 
     - name: Test with nose
       run: |
-        coverage run -m nose
+        coverage run -m nose tests
         coverage lcov -o cover/coverage.lcov
 
     - name: Coveralls
