@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 # coding=utf-8
 
+import unittest
 from unittest.mock import NonCallableMock, patch
 
-import nose.tools as nose
+from nose2.tools.decorators import with_setup, with_teardown
 
 import tests
 from utilities.version_parser import get_versions
+
+tc = unittest.TestCase()
+
 
 with open('tests/json/versions.json') as json_file:
     json_content = json_file.read()
@@ -25,12 +29,13 @@ def tear_down():
     tests.tear_down()
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 def test_get_versions():
     """should fetch version list in proper format"""
     versions = get_versions('deu')
-    nose.assert_equal(len(versions), 6)
-    nose.assert_list_equal(versions, [
+    tc.assertEqual(len(versions), 6)
+    tc.assertListEqual(versions, [
         {
             'full_name': 'Amplified Bible, Classic Edition',
             'id': 8,
@@ -64,7 +69,8 @@ def test_get_versions():
     ])
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 @patch('httpx.get', return_value=NonCallableMock(text=json_content))
 def test_get_versions_url(requests_get):
     """should fetch version list for the given language ID"""
@@ -76,17 +82,19 @@ def test_get_versions_url(requests_get):
         headers={'user-agent': 'YouVersion Suggest'})
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 @patch('httpx.get', return_value=NonCallableMock(text='{"items":[]}'))
 def test_get_versions_empty(requests_get):
     """should raise error when version list is empty"""
-    with nose.assert_raises(RuntimeError):
+    with tc.assertRaises(RuntimeError):
         get_versions('eng')
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 @patch('httpx.get', return_value=NonCallableMock(text='{}'))
 def test_get_versions_nonexistent(requests_get):
     """should raise error when language does not exist"""
-    with nose.assert_raises(RuntimeError):
+    with tc.assertRaises(RuntimeError):
         get_versions('xyz')

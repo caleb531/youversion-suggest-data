@@ -4,12 +4,15 @@
 import json
 import os
 import os.path
+import unittest
 
-import nose.tools as nose
+from nose2.tools.decorators import with_setup, with_teardown
 
 import utilities
 import utilities.add_language as add_lang
 from tests import set_up, tear_down
+
+tc = unittest.TestCase()
 
 
 def get_languages():
@@ -28,7 +31,8 @@ def get_language(languages, language_id):
     return None
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 def test_update_languge_list_add():
     """should add new languages to language list"""
     new_lang_id = 'kln'
@@ -37,13 +41,14 @@ def test_update_languge_list_add():
     add_lang.update_language_list(new_lang_id, new_lang_name)
     langs = get_languages()
     num_langs = len(langs)
-    nose.assert_equal(num_langs, orig_num_langs + 1)
+    tc.assertEqual(num_langs, orig_num_langs + 1)
     new_lang = get_language(langs, new_lang_id)
-    nose.assert_is_not_none(new_lang)
-    nose.assert_equal(new_lang['name'], new_lang_name)
+    tc.assertIsNotNone(new_lang)
+    tc.assertEqual(new_lang['name'], new_lang_name)
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 def test_update_languge_list_update():
     """should update existing languages in language list"""
     updated_lang_id = 'spa'
@@ -52,7 +57,7 @@ def test_update_languge_list_update():
     add_lang.update_language_list(updated_lang_id, updated_lang_name)
     langs = get_languages()
     num_langs = len(langs)
-    nose.assert_equal(num_langs, orig_num_langs)
+    tc.assertEqual(num_langs, orig_num_langs)
     updated_lang = get_language(langs, updated_lang_id)
-    nose.assert_is_not_none(updated_lang)
-    nose.assert_equal(updated_lang['name'], updated_lang_name)
+    tc.assertIsNotNone(updated_lang)
+    tc.assertEqual(updated_lang['name'], updated_lang_name)

@@ -3,8 +3,9 @@
 
 import glob
 import json
+import unittest
 
-import nose.tools as nose
+tc = unittest.TestCase()
 
 
 def get_book_metadata():
@@ -31,7 +32,7 @@ def test_book_consistency():
         extra_books = bible_book_ids - metadata_book_ids
         fail_msg = '{} has extra books: {}'.format(
             bible_path, ', '.join(extra_books))
-        yield nose.assert_equal, len(extra_books), 0, fail_msg
+        yield tc.assertEqual, len(extra_books), 0, fail_msg
 
 
 def test_consistent_language():
@@ -40,7 +41,7 @@ def test_consistent_language():
     for bible_path, bible in get_language_bibles():
         fail_msg = '{} has incorrect or missing language data'.format(
             bible_path)
-        yield nose.assert_in, bible.get('language'), languages, fail_msg
+        yield tc.assertIn, bible.get('language'), languages, fail_msg
 
 
 def test_valid_default_version():
@@ -51,4 +52,4 @@ def test_valid_default_version():
             bible_path, default_version)
         default_version_is_valid = any(
             version['id'] == default_version for version in bible['versions'])
-        yield nose.assert_true, default_version_is_valid, fail_msg
+        yield tc.assertTrue, default_version_is_valid, fail_msg

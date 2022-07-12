@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
 # coding=utf-8
 
+import unittest
 from unittest.mock import patch
 
-import nose.tools as nose
+from nose2.tools.decorators import with_setup, with_teardown
 
 import utilities.add_language as add_lang
 from tests import set_up, tear_down
 from tests.decorators import redirect_stdout
 
+tc = unittest.TestCase()
 
-@nose.with_setup(set_up, tear_down)
+
+@with_setup(set_up)
+@with_teardown(tear_down)
 @patch('utilities.add_language.update_language_list')
 @patch('utilities.add_language.save_bible')
 @patch('utilities.add_language.get_bible', return_value={})
@@ -68,4 +72,4 @@ def test_main_normalize_language_id_case(out, add_language):
 @redirect_stdout
 def test_main_keyboardinterrupt(out, parse_cli_args, add_language):
     """main function should quit gracefully when ^C is pressed"""
-    nose.assert_is_none(add_lang.main())
+    tc.assertIsNone(add_lang.main())

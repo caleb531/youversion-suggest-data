@@ -5,13 +5,16 @@ import glob
 import json
 import os
 import os.path
+import unittest
 
 import isort
 import jsonschema
-import nose.tools as nose
 import pycodestyle
 
 # import radon.complexity as radon
+
+
+tc = unittest.TestCase()
 
 
 def test_pycodestyle():
@@ -21,7 +24,7 @@ def test_pycodestyle():
         style_guide = pycodestyle.StyleGuide(quiet=True)
         total_errors = style_guide.input_file(file_path)
         fail_msg = '{} does not comply with PEP 8'.format(file_path)
-        yield nose.assert_equal, total_errors, 0, fail_msg
+        yield tc.assertEqual, total_errors, 0, fail_msg
 
 
 # Commented until radon supports colorama >= 1
@@ -34,7 +37,7 @@ def test_pycodestyle():
 #         for block in blocks:
 #             fail_msg = '{} ({}) has a cyclomatic complexity of {}'.format(
 #                 block.name, file_path, block.complexity)
-#             yield nose.assert_less_equal, block.complexity, 10, fail_msg
+#             yield tc.assertLessEqual, block.complexity, 10, fail_msg
 
 
 def test_json():
@@ -64,7 +67,7 @@ def test_import_order():
         new_file_contents = isort.code(file_contents)
         fail_msg = '{} imports are not compliant'.format(
             file_path)
-        yield nose.assert_equal, new_file_contents, file_contents, fail_msg
+        yield tc.assertEqual, new_file_contents, file_contents, fail_msg
 
 
 def test_language_id_correspondence():
@@ -72,7 +75,7 @@ def test_language_id_correspondence():
     with open('bible/languages.json', 'r') as languages_file:
         languages = json.load(languages_file)
     for language in languages:
-        nose.assert_true(
+        tc.assertTrue(
             os.path.exists(os.path.join(
                 'bible', 'bible-{}.json'.format(language['id']))),
             'bible-{}.json does not exist'.format(language['id']))

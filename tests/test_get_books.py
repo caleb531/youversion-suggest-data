@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 # coding=utf-8
 
+import unittest
 from unittest.mock import NonCallableMock, patch
 
-import nose.tools as nose
+from nose2.tools.decorators import with_setup, with_teardown
 
 import tests
 from utilities.book_parser import get_books
+
+tc = unittest.TestCase()
+
 
 with open('tests/json/books.json') as json_file:
     json_content = json_file.read()
@@ -25,12 +29,13 @@ def tear_down():
     tests.tear_down()
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 def test_get_books():
     """should fetch book list in proper format"""
     books = get_books(default_version=75)
-    nose.assert_equal(len(books), 3)
-    nose.assert_list_equal(books, [
+    tc.assertEqual(len(books), 3)
+    tc.assertListEqual(books, [
         {
             'id': 'gen',
             'name': 'Genesis',
@@ -46,7 +51,8 @@ def test_get_books():
     ])
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 @patch('httpx.get', return_value=NonCallableMock(text=json_content))
 def test_get_books_url(requests_get):
     """should fetch book list for the given default version"""
@@ -57,18 +63,20 @@ def test_get_books_url(requests_get):
         headers={'user-agent': 'YouVersion Suggest'})
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 @patch('httpx.get', return_value=NonCallableMock(text='{}'))
 def test_get_books_nonexistent(requests_get):
     """should raise error when book list cannot be found"""
-    with nose.assert_raises(RuntimeError):
+    with tc.assertRaises(RuntimeError):
         get_books(default_version=123)
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 @patch('httpx.get', return_value=NonCallableMock(text=json_content))
 @patch('utilities.book_parser.get_book_metadata', return_value={'books': {}})
 def test_get_books_empty(get_book_metadata, requests_get):
     """should raise error when book list is empty"""
-    with nose.assert_raises(RuntimeError):
+    with tc.assertRaises(RuntimeError):
         get_books(default_version=123)

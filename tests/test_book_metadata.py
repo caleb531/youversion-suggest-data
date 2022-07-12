@@ -2,8 +2,9 @@
 # coding=utf-8
 
 import json
+import unittest
 
-import nose.tools as nose
+tc = unittest.TestCase()
 
 
 def get_book_metadata():
@@ -19,4 +20,4 @@ def test_chapter_verse_correspondence():
         verse_count = len(book_metadata_item['verses'])
         fail_msg = 'book {} has {} chapters but {} verse counts'.format(
             book_id, chapter_count, verse_count)
-        yield nose.assert_equal, verse_count, chapter_count, fail_msg
+        yield tc.assertEqual, verse_count, chapter_count, fail_msg

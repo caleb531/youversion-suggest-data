@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 # coding=utf-8
 
+import unittest
 from unittest.mock import NonCallableMock, patch
 
 import httpx
-import nose.tools as nose
+from nose2.tools.decorators import with_setup, with_teardown
 
 import tests
 from utilities.language_parser import get_language_name, get_languages_json
+
+tc = unittest.TestCase()
+
 
 with open('tests/json/languages.json') as json_file:
     json_content = json_file.read()
@@ -27,14 +31,16 @@ def tear_down():
     get_languages_json.cache_clear()
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 def test_get_language_name():
     """should fetch language name for the given language ID"""
     language_name = get_language_name('spa_es')
-    nose.assert_equal(language_name, 'Español (España)')
+    tc.assertEqual(language_name, 'Español (España)')
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 def test_get_language_name_cache():
     """should cache languages HTML after initial fetch"""
     if hasattr(get_languages_json, 'cache_clear'):
@@ -42,19 +48,21 @@ def test_get_language_name_cache():
     get_language_name('spa')
     language_name = get_language_name('fra')
     httpx.get.assert_called_once()
-    nose.assert_equal(language_name, 'Français')
+    tc.assertEqual(language_name, 'Français')
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 @patch('httpx.get', return_value=NonCallableMock(text='{}'))
 def test_get_language_name_no_data(requests_get):
     """should raise error when language list cannot be found"""
-    with nose.assert_raises(RuntimeError):
+    with tc.assertRaises(RuntimeError):
         get_language_name(language_id='eng')
 
 
-@nose.with_setup(set_up, tear_down)
+@with_setup(set_up)
+@with_teardown(tear_down)
 def test_get_language_name_nonexistent():
     """should raise error when language name cannot be found"""
-    with nose.assert_raises(RuntimeError):
+    with tc.assertRaises(RuntimeError):
         get_language_name(language_id='xyz')
