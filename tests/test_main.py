@@ -10,7 +10,7 @@ import utilities.add_language as add_lang
 from tests import set_up, tear_down
 from tests.decorators import redirect_stdout
 
-tc = unittest.TestCase()
+case = unittest.TestCase()
 
 
 @with_setup(set_up)
@@ -72,4 +72,4 @@ def test_main_normalize_language_id_case(out, add_language):
 @redirect_stdout
 def test_main_keyboardinterrupt(out, parse_cli_args, add_language):
     """main function should quit gracefully when ^C is pressed"""
-    tc.assertIsNone(add_lang.main())
+    case.assertIsNone(add_lang.main())

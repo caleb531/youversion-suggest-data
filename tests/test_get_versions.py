@@ -9,7 +9,7 @@ from nose2.tools.decorators import with_setup, with_teardown
 import tests
 from utilities.version_parser import get_versions
 
-tc = unittest.TestCase()
+case = unittest.TestCase()
 
 
 with open('tests/json/versions.json') as json_file:
@@ -34,8 +34,8 @@ def tear_down():
 def test_get_versions():
     """should fetch version list in proper format"""
     versions = get_versions('deu')
-    tc.assertEqual(len(versions), 6)
-    tc.assertListEqual(versions, [
+    case.assertEqual(len(versions), 6)
+    case.assertListEqual(versions, [
         {
             'full_name': 'Amplified Bible, Classic Edition',
             'id': 8,
@@ -87,7 +87,7 @@ def test_get_versions_url(requests_get):
 @patch('httpx.get', return_value=NonCallableMock(text='{"items":[]}'))
 def test_get_versions_empty(requests_get):
     """should raise error when version list is empty"""
-    with tc.assertRaises(RuntimeError):
+    with case.assertRaises(RuntimeError):
         get_versions('eng')
 
 
@@ -96,5 +96,5 @@ def test_get_versions_empty(requests_get):
 @patch('httpx.get', return_value=NonCallableMock(text='{}'))
 def test_get_versions_nonexistent(requests_get):
     """should raise error when language does not exist"""
-    with tc.assertRaises(RuntimeError):
+    with case.assertRaises(RuntimeError):
         get_versions('xyz')

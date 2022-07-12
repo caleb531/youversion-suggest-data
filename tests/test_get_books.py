@@ -9,7 +9,7 @@ from nose2.tools.decorators import with_setup, with_teardown
 import tests
 from utilities.book_parser import get_books
 
-tc = unittest.TestCase()
+case = unittest.TestCase()
 
 
 with open('tests/json/books.json') as json_file:
@@ -34,8 +34,8 @@ def tear_down():
 def test_get_books():
     """should fetch book list in proper format"""
     books = get_books(default_version=75)
-    tc.assertEqual(len(books), 3)
-    tc.assertListEqual(books, [
+    case.assertEqual(len(books), 3)
+    case.assertListEqual(books, [
         {
             'id': 'gen',
             'name': 'Genesis',
@@ -68,7 +68,7 @@ def test_get_books_url(requests_get):
 @patch('httpx.get', return_value=NonCallableMock(text='{}'))
 def test_get_books_nonexistent(requests_get):
     """should raise error when book list cannot be found"""
-    with tc.assertRaises(RuntimeError):
+    with case.assertRaises(RuntimeError):
         get_books(default_version=123)
 
 
@@ -78,5 +78,5 @@ def test_get_books_nonexistent(requests_get):
 @patch('utilities.book_parser.get_book_metadata', return_value={'books': {}})
 def test_get_books_empty(get_book_metadata, requests_get):
     """should raise error when book list is empty"""
-    with tc.assertRaises(RuntimeError):
+    with case.assertRaises(RuntimeError):
         get_books(default_version=123)

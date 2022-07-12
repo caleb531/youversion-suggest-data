@@ -10,7 +10,7 @@ from nose2.tools.decorators import with_setup, with_teardown
 import tests
 from utilities.language_parser import get_language_name, get_languages_json
 
-tc = unittest.TestCase()
+case = unittest.TestCase()
 
 
 with open('tests/json/languages.json') as json_file:
@@ -36,7 +36,7 @@ def tear_down():
 def test_get_language_name():
     """should fetch language name for the given language ID"""
     language_name = get_language_name('spa_es')
-    tc.assertEqual(language_name, 'Español (España)')
+    case.assertEqual(language_name, 'Español (España)')
 
 
 @with_setup(set_up)
@@ -48,7 +48,7 @@ def test_get_language_name_cache():
     get_language_name('spa')
     language_name = get_language_name('fra')
     httpx.get.assert_called_once()
-    tc.assertEqual(language_name, 'Français')
+    case.assertEqual(language_name, 'Français')
 
 
 @with_setup(set_up)
@@ -56,7 +56,7 @@ def test_get_language_name_cache():
 @patch('httpx.get', return_value=NonCallableMock(text='{}'))
 def test_get_language_name_no_data(requests_get):
     """should raise error when language list cannot be found"""
-    with tc.assertRaises(RuntimeError):
+    with case.assertRaises(RuntimeError):
         get_language_name(language_id='eng')
 
 
@@ -64,5 +64,5 @@ def test_get_language_name_no_data(requests_get):
 @with_teardown(tear_down)
 def test_get_language_name_nonexistent():
     """should raise error when language name cannot be found"""
-    with tc.assertRaises(RuntimeError):
+    with case.assertRaises(RuntimeError):
         get_language_name(language_id='xyz')

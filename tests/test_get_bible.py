@@ -9,7 +9,7 @@ from nose2.tools.decorators import with_setup, with_teardown
 from tests import set_up, tear_down
 from utilities.add_language import get_bible
 
-tc = unittest.TestCase()
+case = unittest.TestCase()
 
 
 VERSIONS = [
@@ -36,13 +36,13 @@ def test_get_bible_default_version_explicit(get_versions, get_books):
     default_version = 345
     bible = get_bible(language_id, language_name, default_version)
     get_versions.assert_called_once_with(language_id)
-    tc.assertEqual(bible['books'], BOOKS)
-    tc.assertEqual(bible['default_version'], default_version)
-    tc.assertEqual(bible['language'], {
+    case.assertEqual(bible['books'], BOOKS)
+    case.assertEqual(bible['default_version'], default_version)
+    case.assertEqual(bible['language'], {
         'id': language_id,
         'name': language_name
     })
-    tc.assertEqual(bible['versions'], VERSIONS)
+    case.assertEqual(bible['versions'], VERSIONS)
 
 
 @with_setup(set_up)
@@ -52,13 +52,13 @@ def test_get_bible_default_version_explicit(get_versions, get_books):
 def test_get_bible_default_version_implicit(get_versions, get_books):
     """should retrieve implicit default version if none is explicitly given"""
     bible = get_bible(language_id='spa', language_name='Español')
-    tc.assertEqual(bible['books'], BOOKS)
-    tc.assertEqual(bible['default_version'], 123)
-    tc.assertEqual(bible['language'], {
+    case.assertEqual(bible['books'], BOOKS)
+    case.assertEqual(bible['default_version'], 123)
+    case.assertEqual(bible['language'], {
         'id': 'spa',
         'name': 'Español'
     })
-    tc.assertEqual(bible['versions'], VERSIONS)
+    case.assertEqual(bible['versions'], VERSIONS)
 
 
 @with_setup(set_up)
@@ -67,7 +67,7 @@ def test_get_bible_default_version_implicit(get_versions, get_books):
 @patch('utilities.version_parser.get_versions', return_value=VERSIONS)
 def test_get_bible_default_version_nonexistent(get_versions, get_books):
     """should raise error if given default version does not exist in list"""
-    with tc.assertRaises(RuntimeError):
+    with case.assertRaises(RuntimeError):
         get_bible(
             language_id='spa',
             language_name='Español',

@@ -12,7 +12,7 @@ import utilities
 import utilities.add_language as add_lang
 from tests import set_up, tear_down
 
-tc = unittest.TestCase()
+case = unittest.TestCase()
 
 
 def get_languages():
@@ -41,10 +41,10 @@ def test_update_languge_list_add():
     add_lang.update_language_list(new_lang_id, new_lang_name)
     langs = get_languages()
     num_langs = len(langs)
-    tc.assertEqual(num_langs, orig_num_langs + 1)
+    case.assertEqual(num_langs, orig_num_langs + 1)
     new_lang = get_language(langs, new_lang_id)
-    tc.assertIsNotNone(new_lang)
-    tc.assertEqual(new_lang['name'], new_lang_name)
+    case.assertIsNotNone(new_lang)
+    case.assertEqual(new_lang['name'], new_lang_name)
 
 
 @with_setup(set_up)
@@ -57,7 +57,7 @@ def test_update_languge_list_update():
     add_lang.update_language_list(updated_lang_id, updated_lang_name)
     langs = get_languages()
     num_langs = len(langs)
-    tc.assertEqual(num_langs, orig_num_langs)
+    case.assertEqual(num_langs, orig_num_langs)
     updated_lang = get_language(langs, updated_lang_id)
-    tc.assertIsNotNone(updated_lang)
-    tc.assertEqual(updated_lang['name'], updated_lang_name)
+    case.assertIsNotNone(updated_lang)
+    case.assertEqual(updated_lang['name'], updated_lang_name)

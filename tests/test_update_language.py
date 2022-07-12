@@ -7,7 +7,7 @@ from unittest.mock import patch
 import utilities.update_language as update_lang
 from tests.decorators import redirect_stdout
 
-tc = unittest.TestCase()
+case = unittest.TestCase()
 
 
 @patch('utilities.update_language.add_language')
@@ -15,7 +15,7 @@ tc = unittest.TestCase()
 def test_update_language(out, add_language):
     """should update language with correct default version"""
     update_lang.update_language('swe')
-    tc.assertIn('Updating language \'swe\'', out.getvalue())
+    case.assertIn('Updating language \'swe\'', out.getvalue())
     add_language.assert_called_once_with(
         language_id='swe',
         default_version=154)
@@ -37,4 +37,4 @@ def test_main(out, add_language):
 @redirect_stdout
 def test_main_keyboardinterrupt(out, parse_cli_args, update_language):
     """main function should quit gracefully when ^C is pressed"""
-    tc.assertIsNone(update_lang.main())
+    case.assertIsNone(update_lang.main())

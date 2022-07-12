@@ -13,7 +13,7 @@ import utilities
 import utilities.add_language as add_lang
 from tests import set_up, tear_down
 
-tc = unittest.TestCase()
+case = unittest.TestCase()
 
 LANGUAGE_ID = 'swe'
 BIBLE = {
@@ -31,10 +31,10 @@ def test_save_bible_new():
         utilities.PACKAGED_DATA_DIR_PATH, 'bible',
         'bible-{}.json'.format(LANGUAGE_ID))
     add_lang.save_bible(language_id=LANGUAGE_ID, bible=BIBLE)
-    tc.assertTrue(os.path.exists(bible_file_path))
+    case.assertTrue(os.path.exists(bible_file_path))
     with open(bible_file_path, 'r') as bible_file:
         saved_bible = json.load(bible_file)
-        tc.assertEqual(saved_bible, BIBLE)
+        case.assertEqual(saved_bible, BIBLE)
 
 
 @with_setup(set_up)
@@ -49,7 +49,7 @@ def test_save_bible_existing():
     new_bible = copy.deepcopy(BIBLE)
     new_bible['default_version'] = 154
     add_lang.save_bible(language_id=LANGUAGE_ID, bible=new_bible)
-    tc.assertTrue(os.path.exists(bible_file_path))
+    case.assertTrue(os.path.exists(bible_file_path))
     with open(bible_file_path, 'r') as bible_file:
         saved_bible = json.load(bible_file)
-        tc.assertEqual(saved_bible, new_bible)
+        case.assertEqual(saved_bible, new_bible)
