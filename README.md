@@ -6,7 +6,7 @@
 *This project is not affiliated with YouVersion, and all Bible content is
 copyright of the respective publishers.*
 
-[![Build Status](https://travis-ci.com/caleb531/youversion-suggest-data.svg?branch=master)](https://travis-ci.com/caleb531/youversion-suggest-data)
+[![tests](https://github.com/caleb531/youversion-suggest-data/actions/workflows/tests.yml/badge.svg)](https://github.com/caleb531/youversion-suggest-data/actions/workflows/tests.yml)
 [![Coverage Status](https://coveralls.io/repos/caleb531/youversion-suggest-data/badge.svg?branch=master)](https://coveralls.io/r/caleb531/youversion-suggest-data?branch=master)
 
 This repository consists of Bible language data gathered from the YouVersion
