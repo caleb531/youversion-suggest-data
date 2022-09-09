@@ -330,6 +330,11 @@
       "full_name": "luther.heute",
       "id": 3100,
       "name": "LUTHEUTE"
+    },
+    {
+      "full_name": "Die Bibel (Schlachter 2000)",
+      "id": 3372,
+      "name": "SCHL2000"
     }
   ]
 }
