@@ -1,6 +1,6 @@
 anyio==3.6.1
 attrs==21.4.0
-certifi==2022.6.15
+certifi==2022.12.7
 coverage==6.4.1
 flake8==4.0.1
 h11==0.12.0
