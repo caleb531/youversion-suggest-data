@@ -1,0 +1,325 @@
+{
+  "books": [
+    {
+      "id": "gen",
+      "name": "Geneza"
+    },
+    {
+      "id": "exo",
+      "name": "Exodul"
+    },
+    {
+      "id": "lev",
+      "name": "Leviticul"
+    },
+    {
+      "id": "num",
+      "name": "Numeri"
+    },
+    {
+      "id": "deu",
+      "name": "Deuteronomul"
+    },
+    {
+      "id": "jos",
+      "name": "Iosua"
+    },
+    {
+      "id": "jdg",
+      "name": "Judecătorii"
+    },
+    {
+      "id": "rut",
+      "name": "Rut"
+    },
+    {
+      "id": "1sa",
+      "name": "1 Samuel"
+    },
+    {
+      "id": "2sa",
+      "name": "2 Samuel"
+    },
+    {
+      "id": "1ki",
+      "name": "1 Împăraţilor"
+    },
+    {
+      "id": "2ki",
+      "name": "2 Împăraţilor"
+    },
+    {
+      "id": "1ch",
+      "name": "1 Cronici"
+    },
+    {
+      "id": "2ch",
+      "name": "2 Cronici"
+    },
+    {
+      "id": "ezr",
+      "name": "Ezra"
+    },
+    {
+      "id": "neh",
+      "name": "Neemia"
+    },
+    {
+      "id": "est",
+      "name": "Estera"
+    },
+    {
+      "id": "job",
+      "name": "Iov"
+    },
+    {
+      "id": "psa",
+      "name": "Psalmul"
+    },
+    {
+      "id": "pro",
+      "name": "Proverbele"
+    },
+    {
+      "id": "ecc",
+      "name": "Eclesiastul"
+    },
+    {
+      "id": "sng",
+      "name": "Cântarea Cântărilor"
+    },
+    {
+      "id": "isa",
+      "name": "Isaia"
+    },
+    {
+      "id": "jer",
+      "name": "Ieremia"
+    },
+    {
+      "id": "lam",
+      "name": "Plângerile"
+    },
+    {
+      "id": "ezk",
+      "name": "Ezechiel"
+    },
+    {
+      "id": "dan",
+      "name": "Daniel"
+    },
+    {
+      "id": "hos",
+      "name": "Osea"
+    },
+    {
+      "id": "jol",
+      "name": "Ioel"
+    },
+    {
+      "id": "amo",
+      "name": "Amos"
+    },
+    {
+      "id": "oba",
+      "name": "Obadia"
+    },
+    {
+      "id": "jon",
+      "name": "Iona"
+    },
+    {
+      "id": "mic",
+      "name": "Mica"
+    },
+    {
+      "id": "nam",
+      "name": "Naum"
+    },
+    {
+      "id": "hab",
+      "name": "Habacuc"
+    },
+    {
+      "id": "zep",
+      "name": "Ţefania"
+    },
+    {
+      "id": "hag",
+      "name": "Hagai"
+    },
+    {
+      "id": "zec",
+      "name": "Zaharia"
+    },
+    {
+      "id": "mal",
+      "name": "Maleahi"
+    },
+    {
+      "id": "mat",
+      "name": "Matei"
+    },
+    {
+      "id": "mrk",
+      "name": "Marcu"
+    },
+    {
+      "id": "luk",
+      "name": "Luca"
+    },
+    {
+      "id": "jhn",
+      "name": "Ioan"
+    },
+    {
+      "id": "act",
+      "name": "Faptele Apostolilor"
+    },
+    {
+      "id": "rom",
+      "name": "Romani"
+    },
+    {
+      "id": "1co",
+      "name": "1 Corinteni"
+    },
+    {
+      "id": "2co",
+      "name": "2 Corinteni"
+    },
+    {
+      "id": "gal",
+      "name": "Galateni"
+    },
+    {
+      "id": "eph",
+      "name": "Efeseni"
+    },
+    {
+      "id": "php",
+      "name": "Filipeni"
+    },
+    {
+      "id": "col",
+      "name": "Coloseni"
+    },
+    {
+      "id": "1th",
+      "name": "1 Tesaloniceni"
+    },
+    {
+      "id": "2th",
+      "name": "2 Tesaloniceni"
+    },
+    {
+      "id": "1ti",
+      "name": "1 Timotei"
+    },
+    {
+      "id": "2ti",
+      "name": "2 Timotei"
+    },
+    {
+      "id": "tit",
+      "name": "Tit"
+    },
+    {
+      "id": "phm",
+      "name": "Filimon"
+    },
+    {
+      "id": "heb",
+      "name": "Evrei"
+    },
+    {
+      "id": "jas",
+      "name": "Iacov"
+    },
+    {
+      "id": "1pe",
+      "name": "1 Petru"
+    },
+    {
+      "id": "2pe",
+      "name": "2 Petru"
+    },
+    {
+      "id": "1jn",
+      "name": "1 Ioan"
+    },
+    {
+      "id": "2jn",
+      "name": "2 Ioan"
+    },
+    {
+      "id": "3jn",
+      "name": "3 Ioan"
+    },
+    {
+      "id": "jud",
+      "name": "Iuda"
+    },
+    {
+      "id": "rev",
+      "name": "Apocalipsa"
+    }
+  ],
+  "default_version": 191,
+  "language": {
+    "id": "ron",
+    "name": "Română"
+  },
+  "versions": [
+    {
+      "full_name": "Noua Traducere Românească",
+      "id": 126,
+      "name": "NTR"
+    },
+    {
+      "full_name": "Biblia sau Sfânta Scriptură cu Trimiteri 1924, Dumitru Cornilescu",
+      "id": 191,
+      "name": "VDC"
+    },
+    {
+      "full_name": "Biblia Traducerea Fidela 2015",
+      "id": 903,
+      "name": "BTF2015"
+    },
+    {
+      "full_name": "Biblia în Versiune Actualizată 2018",
+      "id": 1454,
+      "name": "BVA"
+    },
+    {
+      "full_name": "Biblia în versuri 2014",
+      "id": 1466,
+      "name": "BIV2014"
+    },
+    {
+      "full_name": "Versiunea Biblia Romano-Catolică 2020",
+      "id": 1467,
+      "name": "VBRC2020"
+    },
+    {
+      "full_name": "Română Noul Testament Interconfesional 2009",
+      "id": 1506,
+      "name": "BINT09"
+    },
+    {
+      "full_name": "Traducere Literală Cornilescu 1931",
+      "id": 1996,
+      "name": "VDCL"
+    },
+    {
+      "full_name": "Библия Думитру Корнилеску 1924",
+      "id": 2072,
+      "name": "БДК"
+    },
+    {
+      "full_name": "Ediția Dumitru Cornilescu revizuită 2022",
+      "id": 2311,
+      "name": "EDCR"
+    }
+  ]
+}
