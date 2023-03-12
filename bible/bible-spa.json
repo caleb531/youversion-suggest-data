@@ -377,7 +377,7 @@
       "name": "DHHDK"
     },
     {
-      "full_name": "Dios habla Hoy Estándar 1994",
+      "full_name": "Dios habla Hoy Estándar",
       "id": 1846,
       "name": "DHHS94"
     },
@@ -395,6 +395,11 @@
       "full_name": "Palabla de Dios para ti",
       "id": 3365,
       "name": "PDDPT"
+    },
+    {
+      "full_name": "Segun el Texto Bizantino 2005",
+      "id": 3539,
+      "name": "NTBIZ"
     }
   ]
 }

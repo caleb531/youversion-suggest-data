@@ -345,6 +345,16 @@
       "full_name": "La Bible expliquée",
       "id": 3286,
       "name": "BEX2004"
+    },
+    {
+      "full_name": "Traduction Française de Modèle",
+      "id": 3447,
+      "name": "TFM"
+    },
+    {
+      "full_name": "Lou Saint Evaindgile Suvant Saint Maitthieu 1864 (Frainc-Comtou - Thuriet)",
+      "id": 3547,
+      "name": "THU"
     }
   ]
 }
