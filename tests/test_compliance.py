@@ -10,9 +10,7 @@ import unittest
 import isort
 import jsonschema
 import pycodestyle
-
-# import radon.complexity as radon
-
+import radon.complexity as radon
 
 case = unittest.TestCase()
 
@@ -27,17 +25,16 @@ def test_pycodestyle():
         yield case.assertEqual, total_errors, 0, fail_msg
 
 
-# Commented until radon supports colorama >= 1
-# def test_complexity():
-#     """All source and test files should have a low cyclomatic complexity"""
-#     file_paths = glob.iglob('*/*.py')
-#     for file_path in file_paths:
-#         with open(file_path, 'r') as file_obj:
-#             blocks = radon.cc_visit(file_obj.read())
-#         for block in blocks:
-#             fail_msg = '{} ({}) has a cyclomatic complexity of {}'.format(
-#                 block.name, file_path, block.complexity)
-#             yield case.assertLessEqual, block.complexity, 10, fail_msg
+def test_complexity():
+    """All source and test files should have a low cyclomatic complexity"""
+    file_paths = glob.iglob('*/*.py')
+    for file_path in file_paths:
+        with open(file_path, 'r') as file_obj:
+            blocks = radon.cc_visit(file_obj.read())
+        for block in blocks:
+            fail_msg = '{} ({}) has a cyclomatic complexity of {}'.format(
+                block.name, file_path, block.complexity)
+            yield case.assertLessEqual, block.complexity, 10, fail_msg
 
 
 def test_json():
