@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
       "id": {
-        "description": "The ISO 639-3 code for this language",
+        "description": "The IETF language tag for this language",
         "type": "string",
         "pattern": "^[a-z]{3}(_[a-z]{2,3})?$"
       },

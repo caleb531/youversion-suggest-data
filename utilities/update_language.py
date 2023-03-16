@@ -21,7 +21,7 @@ def parse_cli_args():
     parser.add_argument(
         'language_id',
         metavar='code',
-        help='the ISO 639-3 code of the language')
+        help='the IETF language tag of the language')
 
     return parser.parse_args()
 
