@@ -18,6 +18,6 @@ def test_chapter_verse_correspondence():
     for book_id, book_metadata_item in book_metadata.items():
         chapter_count = book_metadata_item['chapters']
         verse_count = len(book_metadata_item['verses'])
-        fail_msg = 'book {} has {} chapters but {} verse counts'.format(
+        fail_msg = 'book {} has {} chapters but {} verse counts found'.format(
             book_id, chapter_count, verse_count)
         yield case.assertEqual, verse_count, chapter_count, fail_msg
