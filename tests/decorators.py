@@ -2,17 +2,19 @@
 # coding=utf-8
 
 import sys
-from contextlib import contextmanager
+from functools import wraps
 from io import StringIO
 
 
-@contextmanager
 def redirect_stdout(func):
     """temporarily redirect stdout to new Unicode output stream"""
-    original_stdout = sys.stdout
-    out = StringIO()
-    try:
-        sys.stdout = out
-        yield
-    finally:
-        sys.stdout = original_stdout
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        original_stdout = sys.stdout
+        out = StringIO()
+        try:
+            sys.stdout = out
+            return func(out, *args, **kwargs)
+        finally:
+            sys.stdout = original_stdout
+    return wrapper
