@@ -325,6 +325,11 @@
       "full_name": "Biblia Livre Para Todos",
       "id": 3254,
       "name": "BLT"
+    },
+    {
+      "full_name": "Portuguese Bible Old Orthography",
+      "id": 3658,
+      "name": "RC60DO"
     }
   ]
 }

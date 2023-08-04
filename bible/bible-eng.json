@@ -597,7 +597,7 @@
       "name": "TEG"
     },
     {
-      "full_name": "English: Berean Study Bible",
+      "full_name": "English: Berean Standard Bible",
       "id": 3034,
       "name": "BSB"
     },
@@ -620,6 +620,11 @@
       "full_name": "Revised Standard Version",
       "id": 3548,
       "name": "RSVCI"
+    },
+    {
+      "full_name": "First Nations Version",
+      "id": 3633,
+      "name": "FNVNT"
     }
   ]
 }
