@@ -1,6 +1,6 @@
 anyio==3.6.2
 attrs==22.2.0
-certifi==2022.12.7
+certifi==2023.7.22
 colorama==0.4.6
 coverage==7.2.1
 flake8==6.0.0
