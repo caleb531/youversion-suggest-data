@@ -55,7 +55,7 @@ language in this repository's `bible/languages.json`.
 python3 -m utilities.update_language spa_es
 ```
 
-## Update Bible data for all languages in dataset
+### Update Bible data for all languages in dataset
 
 You can fetch the latest Bible data for all language in this repository by
 running the `update_languages` utility.
