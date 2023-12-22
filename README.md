@@ -63,3 +63,19 @@ running the `update_languages` utility.
 ```sh
 python3 -m utilities.update_languages
 ```
+
+## Including YVS Data in another project
+
+To include this project's Bible data in another project, add
+`youversion-suggest-data` as a Git submodule to your consuming project's
+repository:
+
+```sh
+git submodule add https://github.com/caleb531/youversion-suggest-data.git
+```
+
+To update the submodule to the latest release of YVS data:
+
+```sh
+git submodule update --recursive --remote
+```
