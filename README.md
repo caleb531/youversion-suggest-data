@@ -22,7 +22,7 @@ and my [Node library][node].
 ```sh
 # Install virtualenv package globally
 pip3 install virtualenv
-# Setup virtualenv for project
+# Set up virtualenv for project
 virtualenv --python=python3 ./.virtualenv
 source ./.virtualenv/bin/activate
 # Install project dependencies
@@ -42,7 +42,7 @@ argument (supported YouVersion language codes can be found
 [language-list]: https://www.bible.com/languages
 
 ```sh
-python3 -m utilities.add_language mya_zaw
+python3 -m utilities.add_language kud
 ```
 
 ### Update Bible data for existing language in dataset
