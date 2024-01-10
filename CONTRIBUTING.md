@@ -60,11 +60,11 @@ pip install -r requirements.txt
 ### Running unit tests
 
 The project's unit tests are written using and managed under the [nose][nose]
-Python package. You can run all unit tests via the `nosetests` command (you can
+Python package. You can run all unit tests via the `nose2` command (you can
 also pass `--rednose` for colored test output):
 
 ```bash
-nosetests --rednose
+nose2 --rednose
 ```
 
 ## Code coverage
