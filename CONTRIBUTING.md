@@ -23,8 +23,8 @@ this language; click the language name on the page linked above to view the
 versions available for the language
 
 If you're feeling adventurous, you may also try adding your own language using
-the language utility apart the data module. See the section on **Adding language
-support** below for more information.
+the language utility that's part of the data module. See the section on **Adding
+language support** below for more information.
 
 ## Contributing code
 
