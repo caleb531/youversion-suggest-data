@@ -11,8 +11,8 @@ import utilities
 
 temp_dir = tempfile.gettempdir()
 packaged_data_dir_path_patcher = patch(
-    'utilities.PACKAGED_DATA_DIR_PATH',
-    os.path.join(temp_dir, 'yvs-core'))
+    "utilities.PACKAGED_DATA_DIR_PATH", os.path.join(temp_dir, "yvs-core")
+)
 
 
 def set_up():
@@ -20,8 +20,9 @@ def set_up():
     packaged_data_dir_path_patcher.start()
     try:
         shutil.copytree(
-            os.path.join(orig_packaged_data_dir_path, 'bible'),
-            os.path.join(utilities.PACKAGED_DATA_DIR_PATH, 'bible'))
+            os.path.join(orig_packaged_data_dir_path, "bible"),
+            os.path.join(utilities.PACKAGED_DATA_DIR_PATH, "bible"),
+        )
     except shutil.Error:
         pass
 

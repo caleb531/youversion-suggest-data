@@ -20,10 +20,10 @@ import utilities.version_parser as version_parser
 
 # Parameters for structuring JSON data
 JSON_PARAMS = {
-    'indent': 2,
-    'separators': (',', ': '),
-    'ensure_ascii': False,
-    'sort_keys': True
+    "indent": 2,
+    "separators": (",", ": "),
+    "ensure_ascii": False,
+    "sort_keys": True,
 }
 
 
@@ -32,22 +32,17 @@ JSON_PARAMS = {
 def get_bible(language_id, language_name, default_version=None):
 
     bible = {}
-    bible['language'] = {
-        'id': language_id,
-        'name': language_name
-    }
-    bible['versions'] = version_parser.get_versions(language_id)
+    bible["language"] = {"id": language_id, "name": language_name}
+    bible["versions"] = version_parser.get_versions(language_id)
 
     # If no explicit default version is given, use version with smallest ID
     if not default_version:
-        default_version = min(bible['versions'], key=itemgetter('id'))['id']
-    elif not any(version['id'] == default_version for version in
-                 bible['versions']):
-        raise RuntimeError(
-            'Given default version does not exist in language')
+        default_version = min(bible["versions"], key=itemgetter("id"))["id"]
+    elif not any(version["id"] == default_version for version in bible["versions"]):
+        raise RuntimeError("Given default version does not exist in language")
 
-    bible['default_version'] = default_version
-    bible['books'] = book_parser.get_books(default_version=default_version)
+    bible["default_version"] = default_version
+    bible["books"] = book_parser.get_books(default_version=default_version)
     return bible
 
 
@@ -56,16 +51,16 @@ def write_json(json_object, json_file):
 
     json_str = json.dumps(json_object, **JSON_PARAMS)
     json_file.write(json_str)
-    json_file.write('\n')
+    json_file.write("\n")
 
 
 # Constructs the Bible data object and save it to a JSON file
 def save_bible(language_id, bible):
 
     bible_path = os.path.join(
-        utilities.PACKAGED_DATA_DIR_PATH, 'bible',
-        'bible-{}.json'.format(language_id))
-    with io.open(bible_path, 'w', encoding='utf-8') as bible_file:
+        utilities.PACKAGED_DATA_DIR_PATH, "bible", "bible-{}.json".format(language_id)
+    )
+    with io.open(bible_path, "w", encoding="utf-8") as bible_file:
         write_json(bible, bible_file)
 
 
@@ -73,15 +68,13 @@ def save_bible(language_id, bible):
 def update_language_list(language_id, language_name):
 
     langs_path = os.path.join(
-        utilities.PACKAGED_DATA_DIR_PATH, 'bible', 'languages.json')
-    with io.open(langs_path, 'r+', encoding='utf-8') as langs_file:
+        utilities.PACKAGED_DATA_DIR_PATH, "bible", "languages.json"
+    )
+    with io.open(langs_path, "r+", encoding="utf-8") as langs_file:
         langs = json.load(langs_file)
-        langs[:] = [lang for lang in langs if lang['id'] != language_id]
-        langs.append({
-            'id': language_id,
-            'name': language_name
-        })
-        langs.sort(key=itemgetter('id'))
+        langs[:] = [lang for lang in langs if lang["id"] != language_id]
+        langs.append({"id": language_id, "name": language_name})
+        langs.sort(key=itemgetter("id"))
         langs_file.truncate(0)
         langs_file.seek(0)
         write_json(langs, langs_file)
@@ -90,17 +83,18 @@ def update_language_list(language_id, language_name):
 # Adds to the worklow support for the language with the given parameters
 def add_language(language_id, default_version=None):
 
-    print('- Fetching language data...')
+    print("- Fetching language data...")
     language_name = language_parser.get_language_name(language_id)
 
-    print('- Adding Bible data...')
+    print("- Adding Bible data...")
     bible = get_bible(
         language_id=language_id,
         language_name=language_name,
-        default_version=default_version)
+        default_version=default_version,
+    )
     save_bible(language_id, bible)
 
-    print('- Updating language list...')
+    print("- Updating language list...")
     update_language_list(language_id, language_name)
 
 
@@ -109,13 +103,13 @@ def parse_cli_args():
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        'language_id',
-        metavar='code',
-        help='the IETF language tag of the language')
+        "language_id", metavar="code", help="the IETF language tag of the language"
+    )
     parser.add_argument(
-        '--default-version',
+        "--default-version",
         type=int,
-        help='the default version to use for this language')
+        help="the default version to use for this language",
+    )
 
     return parser.parse_args()
 
@@ -124,16 +118,15 @@ def main():
 
     try:
         cli_args = parse_cli_args()
-        print('Adding language \'{}\' data...'.format(
-            cli_args.language_id))
+        print("Adding language '{}' data...".format(cli_args.language_id))
         add_language(
-            language_id=cli_args.language_id.replace('-', '_').lower(),
-            default_version=cli_args.default_version)
-        print('Added language \'{}\' data!'.format(
-            cli_args.language_id))
+            language_id=cli_args.language_id.replace("-", "_").lower(),
+            default_version=cli_args.default_version,
+        )
+        print("Added language '{}' data!".format(cli_args.language_id))
     except KeyboardInterrupt:
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

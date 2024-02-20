@@ -9,7 +9,7 @@ from utilities.update_language import update_language
 
 # Retrieve the basic JSON data for all languages
 def get_languages():
-    with open('bible/languages.json', 'r') as languages_file:
+    with open("bible/languages.json", "r") as languages_file:
         return json.load(languages_file)
 
 
@@ -17,8 +17,8 @@ def get_languages():
 def update_languages():
 
     for language in get_languages():
-        update_language(language['id'])
-        print('')
+        update_language(language["id"])
+        print("")
 
 
 def main():
@@ -29,5 +29,5 @@ def main():
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

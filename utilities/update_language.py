@@ -19,9 +19,8 @@ def parse_cli_args():
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        'language_id',
-        metavar='code',
-        help='the IETF language tag of the language')
+        "language_id", metavar="code", help="the IETF language tag of the language"
+    )
 
     return parser.parse_args()
 
@@ -30,9 +29,9 @@ def parse_cli_args():
 def get_bible(language_id):
 
     bible_path = os.path.join(
-        utilities.PACKAGED_DATA_DIR_PATH, 'bible',
-        'bible-{}.json'.format(language_id))
-    with open(bible_path, 'r') as bible_file:
+        utilities.PACKAGED_DATA_DIR_PATH, "bible", "bible-{}.json".format(language_id)
+    )
+    with open(bible_path, "r") as bible_file:
         return json.load(bible_file)
 
 
@@ -40,15 +39,11 @@ def get_bible(language_id):
 def update_language(language_id):
 
     bible = get_bible(language_id)
-    default_version = bible['default_version']
+    default_version = bible["default_version"]
 
-    print('Updating language \'{}\' data...'.format(
-        language_id))
-    add_language(
-        language_id=language_id,
-        default_version=default_version)
-    print('Updated language \'{}\' data!'.format(
-        language_id))
+    print("Updating language '{}' data...".format(language_id))
+    add_language(language_id=language_id, default_version=default_version)
+    print("Updated language '{}' data!".format(language_id))
 
 
 def main():
@@ -60,5 +55,5 @@ def main():
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

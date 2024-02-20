@@ -3,9 +3,7 @@
 import httpx
 
 # The default headers for all HTTP requests
-DEFAULT_HEADERS = {
-    'user-agent': 'YouVersion Suggest'
-}
+DEFAULT_HEADERS = {"user-agent": "YouVersion Suggest"}
 
 
 # A wrapper around the httpx.get() function that injects a user-agent into

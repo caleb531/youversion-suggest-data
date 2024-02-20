@@ -8,6 +8,7 @@ from io import StringIO
 
 def redirect_stdout(func):
     """temporarily redirect stdout to new Unicode output stream"""
+
     @wraps(func)
     def wrapper(*args, **kwargs):
         original_stdout = sys.stdout
@@ -17,4 +18,5 @@ def redirect_stdout(func):
             return func(out, *args, **kwargs)
         finally:
             sys.stdout = original_stdout
+
     return wrapper
