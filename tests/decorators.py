@@ -15,7 +15,13 @@ def redirect_stdout(func):
         out = StringIO()
         try:
             sys.stdout = out
-            return func(out, *args, **kwargs)
+            # If the decorated function is a method, the `self` argument should
+            # still be first
+            if args and hasattr(args[0], "__class__"):
+                self_arg, *rest_args = args
+                return func(self_arg, out, *rest_args, **kwargs)
+            else:
+                return func(out, *args, **kwargs)
         finally:
             sys.stdout = original_stdout
 

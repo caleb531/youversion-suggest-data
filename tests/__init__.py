@@ -5,6 +5,7 @@ import os
 import os.path
 import shutil
 import tempfile
+import unittest
 from unittest.mock import patch
 
 import utilities
@@ -15,21 +16,22 @@ packaged_data_dir_path_patcher = patch(
 )
 
 
-def set_up():
-    orig_packaged_data_dir_path = utilities.PACKAGED_DATA_DIR_PATH
-    packaged_data_dir_path_patcher.start()
-    try:
-        shutil.copytree(
-            os.path.join(orig_packaged_data_dir_path, "bible"),
-            os.path.join(utilities.PACKAGED_DATA_DIR_PATH, "bible"),
-        )
-    except shutil.Error:
-        pass
+class YVSTestCase(unittest.TestCase):
 
+    def setUp(self):
+        orig_packaged_data_dir_path = utilities.PACKAGED_DATA_DIR_PATH
+        packaged_data_dir_path_patcher.start()
+        try:
+            shutil.copytree(
+                os.path.join(orig_packaged_data_dir_path, "bible"),
+                os.path.join(utilities.PACKAGED_DATA_DIR_PATH, "bible"),
+            )
+        except shutil.Error:
+            pass
 
-def tear_down():
-    try:
-        shutil.rmtree(utilities.PACKAGED_DATA_DIR_PATH)
-    except OSError:
-        pass
-    packaged_data_dir_path_patcher.stop()
+    def tearDown(self):
+        try:
+            shutil.rmtree(utilities.PACKAGED_DATA_DIR_PATH)
+        except OSError:
+            pass
+        packaged_data_dir_path_patcher.stop()

@@ -25,7 +25,7 @@ def parse_cli_args():
     return parser.parse_args()
 
 
-# Retrieves bible data object (books, versions, ecase.) for the given language
+# Retrieves bible data object (books, versions, eself.) for the given language
 def get_bible(language_id):
 
     bible_path = os.path.join(
