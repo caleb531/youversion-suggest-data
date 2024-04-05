@@ -108,7 +108,7 @@ def parse_cli_args():
     parser.add_argument(
         "--default-version",
         type=int,
-        help="the default version to use for this language",
+        help="the numeric ID of the default version to use for this language",
     )
 
     return parser.parse_args()

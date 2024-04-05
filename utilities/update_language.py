@@ -21,6 +21,11 @@ def parse_cli_args():
     parser.add_argument(
         "language_id", metavar="code", help="the IETF language tag of the language"
     )
+    parser.add_argument(
+        "--default-version",
+        type=int,
+        help="the numeric ID of the new default version to use for this language",
+    )
 
     return parser.parse_args()
 
@@ -36,10 +41,11 @@ def get_bible(language_id):
 
 
 # Updates the Bible data file for the language with the given ID
-def update_language(language_id):
+def update_language(language_id, default_version=None):
 
     bible = get_bible(language_id)
-    default_version = bible["default_version"]
+    if not default_version:
+        default_version = bible["default_version"]
 
     print("Updating language '{}' data...".format(language_id))
     add_language(language_id=language_id, default_version=default_version)
@@ -50,7 +56,10 @@ def main():
 
     try:
         cli_args = parse_cli_args()
-        update_language(language_id=cli_args.language_id)
+        update_language(
+            language_id=cli_args.language_id,
+            default_version=cli_args.default_version,
+        )
     except KeyboardInterrupt:
         pass
 
