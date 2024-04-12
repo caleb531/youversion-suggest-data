@@ -32,7 +32,10 @@ JSON_PARAMS = {
 def get_bible(language_id, language_name, default_version=None):
 
     bible = {}
-    bible["language"] = {"id": language_id, "name": language_name}
+    bible["language"] = {
+        "id": language_id.strip(),
+        "name": language_name.strip(),
+    }
     bible["versions"] = version_parser.get_versions(language_id)
 
     # If no explicit default version is given, use version with smallest ID
@@ -73,7 +76,7 @@ def update_language_list(language_id, language_name):
     with io.open(langs_path, "r+", encoding="utf-8") as langs_file:
         langs = json.load(langs_file)
         langs[:] = [lang for lang in langs if lang["id"] != language_id]
-        langs.append({"id": language_id, "name": language_name})
+        langs.append({"id": language_id.strip(), "name": language_name.strip()})
         langs.sort(key=itemgetter("id"))
         langs_file.truncate(0)
         langs_file.seek(0)
