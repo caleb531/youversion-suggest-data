@@ -277,9 +277,9 @@
       "name": "HTB"
     },
     {
-      "full_name": "Statenvertaling Jongbloed-editie",
+      "full_name": "Statenvertaling (Importantia edition)",
       "id": 165,
-      "name": "SV-RJ"
+      "name": "STV"
     },
     {
       "full_name": "NBG-vertaling 1951",
@@ -300,6 +300,16 @@
       "full_name": "De Heilige Schrift, Petrus Canisiusvertaling, 1939",
       "id": 2307,
       "name": "NLD1939"
+    },
+    {
+      "full_name": "EBV24 een eigentijdse Bijbelvertaling",
+      "id": 3699,
+      "name": "EBV24"
+    },
+    {
+      "full_name": "VensterBijbel",
+      "id": 3743,
+      "name": "VB"
     }
   ]
 }

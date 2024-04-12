@@ -121,7 +121,7 @@
       "name": "CSLAV"
     },
     {
-      "full_name": "Новый Русский Перевод",
+      "full_name": "Новый русский перевод",
       "id": 143,
       "name": "НРП"
     },
@@ -169,6 +169,21 @@
       "full_name": "Современный русский перевод (2-е изд.)",
       "id": 1999,
       "name": "СРП-2"
+    },
+    {
+      "full_name": "Устный перевод Руфи на русский язык  (Russian Oral Translation of Ruth)",
+      "id": 3764,
+      "name": "ROTR"
+    },
+    {
+      "full_name": "Священное Писание, Устный Восточный перевода Руфи",
+      "id": 3830,
+      "name": "CAROS"
+    },
+    {
+      "full_name": "Аудио-спектакль «Руфь» (Dramatized Russian Oral Translation of Ruth)",
+      "id": 3873,
+      "name": "DROTR"
     }
   ]
 }

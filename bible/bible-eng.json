@@ -397,7 +397,7 @@
       "name": "CEVUK"
     },
     {
-      "full_name": "Good News Bible (Anglicised) 1994",
+      "full_name": "Good News Bible (British Version) 2017",
       "id": 296,
       "name": "GNBUK"
     },
@@ -427,12 +427,12 @@
       "name": "ERV"
     },
     {
-      "full_name": "Good News Bible (Anglicised)",
+      "full_name": "Good News Bible (British) with DC section 2017",
       "id": 416,
       "name": "GNBDC"
     },
     {
-      "full_name": "Good News Bible (Catholic edition in Septuagint order)",
+      "full_name": "Good News Bible (British) Catholic Edition 2017",
       "id": 431,
       "name": "GNBDK"
     },
@@ -610,6 +610,11 @@
       "full_name": "Legacy Standard Bible",
       "id": 3345,
       "name": "LSB"
+    },
+    {
+      "full_name": "The Text-Critical English New Testament",
+      "id": 3427,
+      "name": "TCENT"
     },
     {
       "full_name": "New Revised Standard Version Updated Edition 2021",

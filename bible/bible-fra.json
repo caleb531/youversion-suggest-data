@@ -352,9 +352,14 @@
       "name": "TFM"
     },
     {
-      "full_name": "Lou Saint Evaindgile Suvant Saint Maitthieu 1864 (Frainc-Comtou - Thuriet)",
+      "full_name": "Saint Maitthieu 1864 (Frainc-Comtou - Thuriet)",
       "id": 3547,
       "name": "THU"
+    },
+    {
+      "full_name": "Version Segond Nouvelle Edition de Genève 1979",
+      "id": 3877,
+      "name": "NEG 1979"
     }
   ]
 }

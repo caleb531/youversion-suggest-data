@@ -34,27 +34,27 @@
     },
     {
       "id": "1sa",
-      "name": "1 Samuel"
+      "name": "1Samuel"
     },
     {
       "id": "2sa",
-      "name": "2 Samuel"
+      "name": "2Samuel"
     },
     {
       "id": "1ki",
-      "name": "1 Reis"
+      "name": "1Reis"
     },
     {
       "id": "2ki",
-      "name": "2 Reis"
+      "name": "2Reis"
     },
     {
       "id": "1ch",
-      "name": "1 Crônicas"
+      "name": "1Crônicas"
     },
     {
       "id": "2ch",
-      "name": "2 Crônicas"
+      "name": "2Crônicas"
     },
     {
       "id": "ezr",
@@ -182,11 +182,11 @@
     },
     {
       "id": "1co",
-      "name": "1 Coríntios"
+      "name": "1Coríntios"
     },
     {
       "id": "2co",
-      "name": "2 Coríntios"
+      "name": "2Coríntios"
     },
     {
       "id": "gal",
@@ -206,19 +206,19 @@
     },
     {
       "id": "1th",
-      "name": "1 Tessalonicenses"
+      "name": "1Tessalonicenses"
     },
     {
       "id": "2th",
-      "name": "2 Tessalonicenses"
+      "name": "2Tessalonicenses"
     },
     {
       "id": "1ti",
-      "name": "1 Timóteo"
+      "name": "1Timóteo"
     },
     {
       "id": "2ti",
-      "name": "2 Timóteo"
+      "name": "2Timóteo"
     },
     {
       "id": "tit",
@@ -238,23 +238,23 @@
     },
     {
       "id": "1pe",
-      "name": "1 Pedro"
+      "name": "1Pedro"
     },
     {
       "id": "2pe",
-      "name": "2 Pedro"
+      "name": "2Pedro"
     },
     {
       "id": "1jn",
-      "name": "1 João"
+      "name": "1João"
     },
     {
       "id": "2jn",
-      "name": "2 João"
+      "name": "2João"
     },
     {
       "id": "3jn",
-      "name": "3 João"
+      "name": "3João"
     },
     {
       "id": "jud",

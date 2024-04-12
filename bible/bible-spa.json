@@ -382,14 +382,14 @@
       "name": "DHHS94"
     },
     {
-      "full_name": "El Nuevo Testamento, Versión Biblia Libre",
-      "id": 1952,
-      "name": "VBL"
-    },
-    {
       "full_name": "La Santa Biblia, Nueva Versión Internacional Simplificada",
       "id": 2664,
       "name": "NVIS"
+    },
+    {
+      "full_name": "Versión Biblia Libre",
+      "id": 3291,
+      "name": "VBL"
     },
     {
       "full_name": "Palabla de Dios para ti",
