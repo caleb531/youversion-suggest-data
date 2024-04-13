@@ -45,6 +45,15 @@ argument (supported YouVersion language codes can be found
 python3 -m utilities.add_language kud
 ```
 
+You can explicitly set a default version for this Bible language file by passing
+the `--default-version` option. If you do not supply this option, the version
+with the lowest numeric ID will be used as the default version
+
+```sh
+# Versions from <https://www.bible.com/languages/tgl>
+python3 -m utilities.add_language tgl --default-version 2195
+```
+
 ### Update Bible data for existing language in dataset
 
 You can fetch the latest Bible data for an existing language in this repository
@@ -53,6 +62,14 @@ language in this repository's `bible/languages.json`.
 
 ```sh
 python3 -m utilities.update_language spa_es
+```
+
+You can also change the default version for that language by supplying the
+`--default-version` option with the numeric ID of your new default version:
+
+```sh
+# Versions from <https://www.bible.com/languages/eng>
+python3 -m utilities.update_language eng --default-version 59
 ```
 
 ### Update Bible data for all languages in dataset
