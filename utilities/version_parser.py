@@ -31,14 +31,17 @@ def get_unique_versions(versions):
 # Retrieves all versions listed on the chapter page in the given language code
 def get_versions(language_id):
 
-    url_base = "https://www.bible.com/json/bible"
-    versions_url = "{}/versions/{}?filter=".format(url_base, language_id)
+    url_base = "https://www.bible.com/api/bible"
+    versions_url = "{}/versions?language_tag={}&type=all".format(url_base, language_id)
     raw_versions = json.loads(get(versions_url).text)
 
     if not raw_versions:
         raise RuntimeError("Cannot fetch version list")
 
-    versions = [get_version(raw_version) for raw_version in raw_versions["items"]]
+    versions = [
+        get_version(raw_version)
+        for raw_version in raw_versions["response"]["data"]["versions"]
+    ]
     if not versions:
         raise RuntimeError("Version list is empty")
 

@@ -70,11 +70,16 @@ class TestGetVersions(YVSTestCase):
         language_id = "nld"
         get_versions(language_id)
         requests_get.assert_called_once_with(
-            "https://www.bible.com/json/bible/versions/{}?filter=".format(language_id),
+            "https://www.bible.com/api/bible/versions?language_tag={}&type=all".format(
+                language_id
+            ),
             headers={"user-agent": "YouVersion Suggest"},
         )
 
-    @patch("httpx.get", return_value=NonCallableMock(text='{"items":[]}'))
+    @patch(
+        "httpx.get",
+        return_value=NonCallableMock(text='{"response":{"data":{"versions":[] } } }'),
+    )
     def test_get_versions_empty(self, requests_get):
         """should raise error when version list is empty"""
         with self.assertRaises(RuntimeError):
