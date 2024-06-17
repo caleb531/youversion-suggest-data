@@ -7,10 +7,6 @@ import os.path
 
 from utilities.requester import get
 
-# The pattern used to identify the <script> tag containing the relevant Bible
-# data
-raw_books_patt = r"window\.Bible\.__INITIAL_STATE__ = ({(?:.*?)});"
-
 
 # Retrieves metadata for every book of the Bible
 def get_book_metadata():
