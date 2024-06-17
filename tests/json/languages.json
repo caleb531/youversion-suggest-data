@@ -1,20 +1,24 @@
 {
-  "items": [
-    {
-      "tag": "eng",
-      "local_name": "English"
-    },
-    {
-      "tag": "spa",
-      "local_name": "Español"
-    },
-    {
-      "tag": "spa_es",
-      "local_name": "Español (España)"
-    },
-    {
-      "tag": "fra",
-      "local_name": "Français"
+  "response": {
+    "data": {
+      "default_versions": [
+        {
+          "language_tag": "eng",
+          "local_name": "English"
+        },
+        {
+          "language_tag": "spa",
+          "local_name": "Español"
+        },
+        {
+          "language_tag": "spa_es",
+          "local_name": "Español (España)"
+        },
+        {
+          "language_tag": "fra",
+          "local_name": "Français"
+        }
+      ]
     }
-  ]
+  }
 }
