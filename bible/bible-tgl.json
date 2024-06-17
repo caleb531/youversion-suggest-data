@@ -1,0 +1,310 @@
+{
+  "books": [
+    {
+      "id": "gen",
+      "name": "Genesis"
+    },
+    {
+      "id": "exo",
+      "name": "Exodo"
+    },
+    {
+      "id": "lev",
+      "name": "Levitico"
+    },
+    {
+      "id": "num",
+      "name": "Mga Bilang"
+    },
+    {
+      "id": "deu",
+      "name": "Deuteronomio"
+    },
+    {
+      "id": "jos",
+      "name": "Josue"
+    },
+    {
+      "id": "jdg",
+      "name": "Mga Hukom"
+    },
+    {
+      "id": "rut",
+      "name": "Ruth"
+    },
+    {
+      "id": "1sa",
+      "name": "1 Samuel"
+    },
+    {
+      "id": "2sa",
+      "name": "2 Samuel"
+    },
+    {
+      "id": "1ki",
+      "name": "1 Mga Hari"
+    },
+    {
+      "id": "2ki",
+      "name": "2 Mga Hari"
+    },
+    {
+      "id": "1ch",
+      "name": "1 Mga Cronica"
+    },
+    {
+      "id": "2ch",
+      "name": "2 Mga Cronica"
+    },
+    {
+      "id": "ezr",
+      "name": "Ezra"
+    },
+    {
+      "id": "neh",
+      "name": "Nehemias"
+    },
+    {
+      "id": "est",
+      "name": "Ester"
+    },
+    {
+      "id": "job",
+      "name": "Job"
+    },
+    {
+      "id": "psa",
+      "name": "Mga Awit"
+    },
+    {
+      "id": "pro",
+      "name": "Mga Kawikaan"
+    },
+    {
+      "id": "ecc",
+      "name": "Ang Mangangaral"
+    },
+    {
+      "id": "sng",
+      "name": "Ang Awit ni Solomon"
+    },
+    {
+      "id": "isa",
+      "name": "Isaias"
+    },
+    {
+      "id": "jer",
+      "name": "Jeremias"
+    },
+    {
+      "id": "lam",
+      "name": "Mga Panaghoy"
+    },
+    {
+      "id": "ezk",
+      "name": "Ezekiel"
+    },
+    {
+      "id": "dan",
+      "name": "Daniel"
+    },
+    {
+      "id": "hos",
+      "name": "Hosea"
+    },
+    {
+      "id": "jol",
+      "name": "Joel"
+    },
+    {
+      "id": "amo",
+      "name": "Amos"
+    },
+    {
+      "id": "oba",
+      "name": "Obadias"
+    },
+    {
+      "id": "jon",
+      "name": "Jonas"
+    },
+    {
+      "id": "mic",
+      "name": "Mikas"
+    },
+    {
+      "id": "nam",
+      "name": "Nahum"
+    },
+    {
+      "id": "hab",
+      "name": "Habakuk"
+    },
+    {
+      "id": "zep",
+      "name": "Zefanias"
+    },
+    {
+      "id": "hag",
+      "name": "Hagai"
+    },
+    {
+      "id": "zec",
+      "name": "Zacarias"
+    },
+    {
+      "id": "mal",
+      "name": "Malakias"
+    },
+    {
+      "id": "mat",
+      "name": "Mateo"
+    },
+    {
+      "id": "mrk",
+      "name": "Marcos"
+    },
+    {
+      "id": "luk",
+      "name": "Lucas"
+    },
+    {
+      "id": "jhn",
+      "name": "Juan"
+    },
+    {
+      "id": "act",
+      "name": "Mga Gawa"
+    },
+    {
+      "id": "rom",
+      "name": "Mga Taga-Roma"
+    },
+    {
+      "id": "1co",
+      "name": "1 Mga Taga-Corinto"
+    },
+    {
+      "id": "2co",
+      "name": "2 Mga Taga-Corinto"
+    },
+    {
+      "id": "gal",
+      "name": "Mga Taga-Galacia"
+    },
+    {
+      "id": "eph",
+      "name": "Mga Taga-Efeso"
+    },
+    {
+      "id": "php",
+      "name": "Mga Taga-Filipos"
+    },
+    {
+      "id": "col",
+      "name": "Mga Taga-Colosas"
+    },
+    {
+      "id": "1th",
+      "name": "1 Mga Taga-Tesalonica"
+    },
+    {
+      "id": "2th",
+      "name": "2 Mga Taga-Tesalonica"
+    },
+    {
+      "id": "1ti",
+      "name": "1 Timoteo"
+    },
+    {
+      "id": "2ti",
+      "name": "2 Timoteo"
+    },
+    {
+      "id": "tit",
+      "name": "Tito"
+    },
+    {
+      "id": "phm",
+      "name": "Filemon"
+    },
+    {
+      "id": "heb",
+      "name": "Mga Hebreo"
+    },
+    {
+      "id": "jas",
+      "name": "Santiago"
+    },
+    {
+      "id": "1pe",
+      "name": "1 Pedro"
+    },
+    {
+      "id": "2pe",
+      "name": "2 Pedro"
+    },
+    {
+      "id": "1jn",
+      "name": "1 Juan"
+    },
+    {
+      "id": "2jn",
+      "name": "2 Juan"
+    },
+    {
+      "id": "3jn",
+      "name": "3 Juan"
+    },
+    {
+      "id": "jud",
+      "name": "Judas"
+    },
+    {
+      "id": "rev",
+      "name": "Pahayag"
+    }
+  ],
+  "default_version": 144,
+  "language": {
+    "id": "tgl",
+    "name": "Filipino"
+  },
+  "versions": [
+    {
+      "full_name": "Magandang Balita Biblia (2005)",
+      "id": 144,
+      "name": "MBB05"
+    },
+    {
+      "full_name": "Ang Biblia",
+      "id": 177,
+      "name": "TLAB"
+    },
+    {
+      "full_name": "Magandang Balita Bible (Revised)",
+      "id": 399,
+      "name": "RTPV05"
+    },
+    {
+      "full_name": "Ang Salita ng Dios",
+      "id": 1264,
+      "name": "ASND"
+    },
+    {
+      "full_name": "Ang Biblia, 2001",
+      "id": 2195,
+      "name": "ABTAG01"
+    },
+    {
+      "full_name": "Ang Biblia (1905/1982)",
+      "id": 2196,
+      "name": "ABTAG"
+    },
+    {
+      "full_name": "Magandang Balita Biblia",
+      "id": 2197,
+      "name": "MBBTAG12"
+    }
+  ]
+}
