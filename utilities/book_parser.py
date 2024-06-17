@@ -35,13 +35,13 @@ def get_canon_books(books):
 # Retrieves all books listed on the chapter page in the given default version
 def get_books(default_version):
 
-    books_url = "https://www.bible.com/json/bible/books/{}".format(default_version)
+    books_url = "https://www.bible.com/api/bible/version/{}".format(default_version)
     raw_books = json.loads(get(books_url).text)
 
     if not raw_books:
         raise RuntimeError("Cannot fetch book list")
 
-    books = get_canon_books(get_book(raw_book) for raw_book in raw_books["items"])
+    books = get_canon_books(get_book(raw_book) for raw_book in raw_books["books"])
     if not books:
         raise RuntimeError("Book list is empty")
 

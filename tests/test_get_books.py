@@ -51,7 +51,7 @@ class TestGetBooks(YVSTestCase):
         default_version = 75
         get_books(default_version)
         requests_get.assert_called_once_with(
-            "https://www.bible.com/json/bible/books/{}".format(default_version),
+            "https://www.bible.com/api/bible/version/{}".format(default_version),
             headers={"user-agent": "YouVersion Suggest"},
         )
 
