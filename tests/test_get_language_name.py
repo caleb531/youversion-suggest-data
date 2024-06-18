@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # coding=utf-8
 
-from unittest.mock import NonCallableMock, patch
+import json
+from unittest.mock import Mock, NonCallableMock, patch
 
 import httpx
 
@@ -9,9 +10,10 @@ from tests import YVSTestCase
 from utilities.language_parser import get_language_name, get_languages_json
 
 with open("tests/json/languages.json") as json_file:
-    json_content = json_file.read()
+    json_dict = json.load(json_file)
     patch_requests_get = patch(
-        "httpx.get", return_value=NonCallableMock(text=json_content)
+        "httpx.get",
+        return_value=NonCallableMock(json=Mock(return_value=json_dict)),
     )
 
 
@@ -40,7 +42,7 @@ class TestGetLanguageName(YVSTestCase):
         httpx.get.assert_called_once()
         self.assertEqual(language_name, "Français")
 
-    @patch("httpx.get", return_value=NonCallableMock(text="{}"))
+    @patch("httpx.get", return_value=NonCallableMock(json=Mock(return_value={})))
     def test_get_language_name_no_data(self, requests_get):
         """should raise error when language list cannot be found"""
         with self.assertRaises(RuntimeError):

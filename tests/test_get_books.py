@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 # coding=utf-8
 
-from unittest.mock import NonCallableMock, patch
+import json
+from unittest.mock import Mock, NonCallableMock, patch
 
 from tests import YVSTestCase
 from utilities.book_parser import get_books
 
 with open("tests/json/books.json") as json_file:
-    json_content = json_file.read()
+    json_dict = json.load(json_file)
     patch_requests_get = patch(
-        "httpx.get", return_value=NonCallableMock(text=json_content)
+        "httpx.get", return_value=NonCallableMock(json=Mock(return_value=json_dict))
     )
 
 
@@ -45,7 +46,7 @@ class TestGetBooks(YVSTestCase):
             ],
         )
 
-    @patch("httpx.get", return_value=NonCallableMock(text=json_content))
+    @patch("httpx.get", return_value=NonCallableMock(json=Mock(return_value=json_dict)))
     def test_get_books_url(self, requests_get):
         """should fetch book list for the given default version"""
         default_version = 75
@@ -55,13 +56,13 @@ class TestGetBooks(YVSTestCase):
             headers={"user-agent": "YouVersion Suggest"},
         )
 
-    @patch("httpx.get", return_value=NonCallableMock(text="{}"))
+    @patch("httpx.get", return_value=NonCallableMock(json=Mock(return_value={})))
     def test_get_books_nonexistent(self, requests_get):
         """should raise error when book list cannot be found"""
         with self.assertRaises(RuntimeError):
             get_books(default_version=123)
 
-    @patch("httpx.get", return_value=NonCallableMock(text=json_content))
+    @patch("httpx.get", return_value=NonCallableMock(json=Mock(return_value=json_dict)))
     @patch("utilities.book_parser.get_book_metadata", return_value={"books": {}})
     def test_get_books_empty(self, get_book_metadata, requests_get):
         """should raise error when book list is empty"""

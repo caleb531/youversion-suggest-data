@@ -36,7 +36,7 @@ def get_canon_books(books):
 def get_books(default_version):
 
     books_url = "https://www.bible.com/api/bible/version/{}".format(default_version)
-    raw_books = json.loads(get(books_url).text)
+    raw_books = get(books_url).json()
 
     if not raw_books:
         raise RuntimeError("Cannot fetch book list")

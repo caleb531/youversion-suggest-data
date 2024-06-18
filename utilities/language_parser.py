@@ -2,14 +2,13 @@
 # coding=utf-8
 
 import functools
-import json
 
 from utilities.requester import get
 
 
 @functools.lru_cache(maxsize=1)
 def get_languages_json():
-    return json.loads(get("https://www.bible.com/api/bible/configuration").text)
+    return get("https://www.bible.com/api/bible/configuration").json()
 
 
 def get_language(raw_language):

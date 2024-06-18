@@ -2,15 +2,17 @@
 # coding=utf-8
 
 
-from unittest.mock import NonCallableMock, patch
+import json
+from unittest.mock import Mock, NonCallableMock, patch
 
 from tests import YVSTestCase
 from utilities.version_parser import get_versions
 
 with open("tests/json/versions.json") as json_file:
-    json_content = json_file.read()
+    json_dict = json.load(json_file)
     patch_requests_get = patch(
-        "httpx.get", return_value=NonCallableMock(text=json_content)
+        "httpx.get",
+        return_value=NonCallableMock(json=Mock(return_value=json_dict)),
     )
 
 
@@ -64,7 +66,10 @@ class TestGetVersions(YVSTestCase):
             ],
         )
 
-    @patch("httpx.get", return_value=NonCallableMock(text=json_content))
+    @patch(
+        "httpx.get",
+        return_value=NonCallableMock(json=Mock(return_value=json_dict)),
+    )
     def test_get_versions_url(self, requests_get):
         """should fetch version list for the given language ID"""
         language_id = "nld"
@@ -78,14 +83,16 @@ class TestGetVersions(YVSTestCase):
 
     @patch(
         "httpx.get",
-        return_value=NonCallableMock(text='{"response":{"data":{"versions":[] } } }'),
+        return_value=NonCallableMock(
+            json=Mock(return_value={"response": {"data": {"versions": []}}})
+        ),
     )
     def test_get_versions_empty(self, requests_get):
         """should raise error when version list is empty"""
         with self.assertRaises(RuntimeError):
             get_versions("eng")
 
-    @patch("httpx.get", return_value=NonCallableMock(text="{}"))
+    @patch("httpx.get", return_value=NonCallableMock(json=Mock(return_value={})))
     def test_get_versions_nonexistent(self, requests_get):
         """should raise error when language does not exist"""
         with self.assertRaises(RuntimeError):

@@ -2,7 +2,6 @@
 # coding=utf-8
 
 import itertools
-import json
 from operator import itemgetter
 
 from utilities.requester import get
@@ -33,7 +32,7 @@ def get_versions(language_id):
 
     url_base = "https://www.bible.com/api/bible"
     versions_url = "{}/versions?language_tag={}&type=all".format(url_base, language_id)
-    raw_versions = json.loads(get(versions_url).text)
+    raw_versions = get(versions_url).json()
 
     if not raw_versions:
         raise RuntimeError("Cannot fetch version list")
