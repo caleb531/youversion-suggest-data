@@ -11,9 +11,9 @@ copyright of the respective publishers.*
 
 This repository consists of Bible language data gathered from the YouVersion
 website, for use by my [Alfred workflow][alfred], [Raycast extension][raycast],
-and my [Node library][node].
+and my [JavaScript library][api].
 
-[node]: https://github.com/caleb531/youversion-suggest-node
+[api]: https://github.com/caleb531/youversion-suggest-api
 [alfred]: https://alfred.app/workflows/caleb531/youversion-suggest/
 [raycast]: https://www.raycast.com/caleb531/youversion-suggest
 
