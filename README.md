@@ -3,9 +3,6 @@
 *Copyright 2014-2024 Caleb Evans*  
 *Code released under the MIT license*
 
-*This project is not affiliated with YouVersion, and all Bible content is
-copyright of the respective publishers.*
-
 [![tests](https://github.com/caleb531/youversion-suggest-data/actions/workflows/tests.yml/badge.svg)](https://github.com/caleb531/youversion-suggest-data/actions/workflows/tests.yml)
 [![Coverage Status](https://coveralls.io/repos/caleb531/youversion-suggest-data/badge.svg?branch=master)](https://coveralls.io/r/caleb531/youversion-suggest-data?branch=master)
 
@@ -16,6 +13,15 @@ and my [JavaScript library][api].
 [api]: https://github.com/caleb531/youversion-suggest-api
 [alfred]: https://alfred.app/workflows/caleb531/youversion-suggest/
 [raycast]: https://www.raycast.com/caleb531/youversion-suggest
+
+## Disclaimer
+
+This project is not affiliated with YouVersion, and all Bible content is
+copyright of the respective publishers.
+
+This tool also retrieves Bible metadata directly from YouVersion. However,
+please be aware that this functionality does not fully comply with YouVersion's
+Terms of Use.
 
 ## Setup
 
