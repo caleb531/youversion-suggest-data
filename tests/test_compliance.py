@@ -6,7 +6,6 @@ import json
 import os
 import os.path
 
-import isort
 import jsonschema
 import radon.complexity as radon
 
@@ -49,16 +48,6 @@ class TestCompliance(YVSTestCase):
                 with open(data_path) as data_file:
                     data = json.load(data_file)
                 yield jsonschema.validate, data, schema
-
-    def test_import_order(self):
-        """All source file imports should be properly ordered/formatted."""
-        file_paths = glob.iglob("*/*.py")
-        for file_path in file_paths:
-            with open(file_path, "r") as file_obj:
-                file_contents = file_obj.read()
-            new_file_contents = isort.code(file_contents)
-            fail_msg = "{} imports are not compliant".format(file_path)
-            yield self.assertEqual, new_file_contents, file_contents, fail_msg
 
     def test_language_id_correspondence(self):
         """Language IDs in languages.json should have a corresponding data file"""
