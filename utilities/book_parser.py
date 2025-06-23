@@ -10,7 +10,6 @@ from utilities.requester import get
 
 # Retrieves metadata for every book of the Bible
 def get_book_metadata():
-
     book_metadata_path = os.path.join("bible", "book-metadata.json")
     with open(book_metadata_path, "r") as book_metadata_file:
         return json.load(book_metadata_file)
@@ -34,7 +33,6 @@ def get_canon_books(books):
 
 # Retrieves all books listed on the chapter page in the given default version
 def get_books(default_version):
-
     books_url = "https://www.bible.com/api/bible/version/{}".format(default_version)
     raw_books = get(books_url).json()
 

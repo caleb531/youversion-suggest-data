@@ -16,7 +16,6 @@ from utilities.add_language import add_language
 
 # Parses all command-line arguments
 def parse_cli_args():
-
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "language_id", metavar="code", help="the IETF language tag of the language"
@@ -32,7 +31,6 @@ def parse_cli_args():
 
 # Retrieves bible data object (books, versions, eself.) for the given language
 def get_bible(language_id):
-
     bible_path = os.path.join(
         utilities.PACKAGED_DATA_DIR_PATH, "bible", "bible-{}.json".format(language_id)
     )
@@ -42,7 +40,6 @@ def get_bible(language_id):
 
 # Updates the Bible data file for the language with the given ID
 def update_language(language_id, default_version=None):
-
     bible = get_bible(language_id)
     if not default_version:
         default_version = bible["default_version"]
@@ -53,7 +50,6 @@ def update_language(language_id, default_version=None):
 
 
 def main():
-
     try:
         cli_args = parse_cli_args()
         update_language(

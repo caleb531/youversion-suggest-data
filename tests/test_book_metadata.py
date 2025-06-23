@@ -12,7 +12,6 @@ def get_book_metadata():
 
 
 class TestBookMetadata(YVSTestCase):
-
     def setUp(self):
         pass
 

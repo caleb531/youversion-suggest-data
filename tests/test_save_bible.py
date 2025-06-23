@@ -19,7 +19,6 @@ BIBLE = {
 
 
 class TestSaveBible(YVSTestCase):
-
     def test_save_bible_new(self):
         """should save Bible data to new data file if it doesn't exist"""
         bible_file_path = os.path.join(

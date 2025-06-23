@@ -10,7 +10,6 @@ from tests.decorators import redirect_stdout
 
 
 class TestUpdateLanguages(YVSTestCase):
-
     @patch("utilities.update_languages.update_language")
     @redirect_stdout
     def test_update_languages(self, out, update_language):

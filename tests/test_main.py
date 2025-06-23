@@ -10,7 +10,6 @@ from tests.decorators import redirect_stdout
 
 
 class TestMain(YVSTestCase):
-
     @patch("utilities.add_language.update_language_list")
     @patch("utilities.add_language.save_bible")
     @patch("utilities.add_language.get_bible", return_value={})

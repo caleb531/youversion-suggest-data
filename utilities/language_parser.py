@@ -20,7 +20,6 @@ def get_language(raw_language):
 
 # Retrieves the language with
 def get_language_name(language_id):
-
     raw_languages = get_languages_json()
 
     if not raw_languages:

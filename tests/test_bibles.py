@@ -24,7 +24,6 @@ def get_language_bibles():
 
 
 class TestBibles(YVSTestCase):
-
     def setUp(self):
         pass
 

@@ -18,7 +18,6 @@ with open("tests/json/languages.json") as json_file:
 
 
 class TestGetLanguageName(YVSTestCase):
-
     def setUp(self):
         patch_requests_get.start()
         super().setUp()

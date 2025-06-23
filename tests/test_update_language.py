@@ -10,7 +10,6 @@ from tests.decorators import redirect_stdout
 
 
 class TestUpdateLanguage(YVSTestCase):
-
     def setUp(self):
         pass
 

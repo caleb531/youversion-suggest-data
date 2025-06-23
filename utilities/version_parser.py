@@ -18,7 +18,6 @@ def get_version(raw_version):
 
 # Returns a copy of the given version list with duplicates removed
 def get_unique_versions(versions):
-
     # When multiple versions with the same name are encountered, favor the
     # version with the lowest ID
     return [
@@ -29,7 +28,6 @@ def get_unique_versions(versions):
 
 # Retrieves all versions listed on the chapter page in the given language code
 def get_versions(language_id):
-
     url_base = "https://www.bible.com/api/bible"
     versions_url = "{}/versions?language_tag={}&type=all".format(url_base, language_id)
     raw_versions = get(versions_url).json()

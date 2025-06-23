@@ -17,7 +17,6 @@ packaged_data_dir_path_patcher = patch(
 
 
 class YVSTestCase(unittest.TestCase):
-
     def setUp(self):
         orig_packaged_data_dir_path = utilities.PACKAGED_DATA_DIR_PATH
         packaged_data_dir_path_patcher.start()

@@ -13,7 +13,6 @@ from tests import YVSTestCase
 
 
 class TestCompliance(YVSTestCase):
-
     def setUp(self):
         pass
 

@@ -28,7 +28,6 @@ def get_language(languages, language_id):
 
 
 class TestUpdateLanguageList(YVSTestCase):
-
     def test_update_languge_list_add(self):
         """should add new languages to language list"""
         new_lang_id = "kln"

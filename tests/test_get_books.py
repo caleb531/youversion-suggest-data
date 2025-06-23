@@ -15,7 +15,6 @@ with open("tests/json/books.json") as json_file:
 
 
 class TestGetBooks(YVSTestCase):
-
     def setUp(self):
         patch_requests_get.start()
         super().setUp()

@@ -15,14 +15,12 @@ def get_languages():
 
 # Updates the Bible data file for every stored language
 def update_languages():
-
     for language in get_languages():
         update_language(language["id"])
         print("")
 
 
 def main():
-
     try:
         update_languages()
     except KeyboardInterrupt:

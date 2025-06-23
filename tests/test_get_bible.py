@@ -20,7 +20,6 @@ BOOKS = [
 
 
 class TestGetBible(YVSTestCase):
-
     @patch("utilities.book_parser.get_books", return_value=BOOKS)
     @patch("utilities.version_parser.get_versions", return_value=VERSIONS)
     def test_get_bible_default_version_explicit(self, get_versions, get_books):

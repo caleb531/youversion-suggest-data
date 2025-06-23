@@ -30,7 +30,6 @@ JSON_PARAMS = {
 # Constructs object representing all Bible data for a particular version
 # This data includes the list of books, list of versions, and default version
 def get_bible(language_id, language_name, default_version=None):
-
     bible = {}
     bible["language"] = {
         "id": language_id.strip(),
@@ -51,7 +50,6 @@ def get_bible(language_id, language_name, default_version=None):
 
 # Writes the given JSON object to a file
 def write_json(json_object, json_file):
-
     json_str = json.dumps(json_object, **JSON_PARAMS)
     json_file.write(json_str)
     json_file.write("\n")
@@ -59,7 +57,6 @@ def write_json(json_object, json_file):
 
 # Constructs the Bible data object and save it to a JSON file
 def save_bible(language_id, bible):
-
     bible_path = os.path.join(
         utilities.PACKAGED_DATA_DIR_PATH, "bible", "bible-{}.json".format(language_id)
     )
@@ -69,7 +66,6 @@ def save_bible(language_id, bible):
 
 # Adds this language's details (name, code) to the list of supported languages
 def update_language_list(language_id, language_name):
-
     langs_path = os.path.join(
         utilities.PACKAGED_DATA_DIR_PATH, "bible", "languages.json"
     )
@@ -85,7 +81,6 @@ def update_language_list(language_id, language_name):
 
 # Adds to the worklow support for the language with the given parameters
 def add_language(language_id, default_version=None):
-
     print("- Fetching language data...")
     language_name = language_parser.get_language_name(language_id)
 
@@ -103,7 +98,6 @@ def add_language(language_id, default_version=None):
 
 # Parses all command-line arguments
 def parse_cli_args():
-
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "language_id", metavar="code", help="the IETF language tag of the language"
@@ -118,7 +112,6 @@ def parse_cli_args():
 
 
 def main():
-
     try:
         cli_args = parse_cli_args()
         print("Adding language '{}' data...".format(cli_args.language_id))
