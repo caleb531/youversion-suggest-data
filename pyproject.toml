@@ -21,6 +21,7 @@ dev = [
     "nose2==0.14.1",
     "radon==6.0.1",
     "ruff>=0.12.0",
+    "tomli>=2.2.1",
 ]
 
 [tool.ruff]
@@ -37,4 +38,16 @@ select = [
     "I",
     # perflint
     "PERF",
+]
+
+# Moved from .coveragerc
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "if __name__ == .__main__.:",
+]
+include = [
+    "utilities/*.py",
 ]
