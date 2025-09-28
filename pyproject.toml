@@ -48,6 +48,4 @@ branch = true
 exclude_lines = [
     "if __name__ == .__main__.:",
 ]
-include = [
-    "utilities/*.py",
-]
+include = ["utilities/*.py"]
