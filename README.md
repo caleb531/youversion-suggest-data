@@ -95,7 +95,7 @@ repository:
 git submodule add https://github.com/caleb531/youversion-suggest-data.git
 ```
 
-To update the submodule to the latest release of YVS data:
+To update the submodule to the latest release of youversion-suggest-data:
 
 ```sh
 git submodule update --recursive --remote
