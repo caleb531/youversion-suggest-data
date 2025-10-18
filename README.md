@@ -25,15 +25,13 @@ Terms of Use.
 
 ## Setup
 
+Using the [uv][uv] package manager:
+
 ```sh
-# Install virtualenv package globally
-pip3 install virtualenv
-# Set up virtualenv for project
-virtualenv --python=python3 ./.virtualenv
-source ./.virtualenv/bin/activate
-# Install project dependencies
-pip install -r requirements.txt
+uv sync
 ```
+
+[uv]: https://docs.astral.sh/uv/
 
 ## Available Utilities
 
@@ -48,7 +46,7 @@ argument (supported YouVersion language codes can be found
 [language-list]: https://www.bible.com/languages
 
 ```sh
-python3 -m utilities.add_language kud
+uv run -m utilities.add_language kud
 ```
 
 You can explicitly set a default version for this Bible language file by passing
@@ -57,7 +55,7 @@ with the lowest numeric ID will be used as the default version
 
 ```sh
 # Versions from <https://www.bible.com/languages/tgl>
-python3 -m utilities.add_language tgl --default-version 2195
+uv run -m utilities.add_language tgl --default-version 2195
 ```
 
 ### Update Bible data for existing language in dataset
@@ -67,7 +65,7 @@ by running the `update_language` utility. Just supply the language code of a
 language in this repository's `bible/languages.json`.
 
 ```sh
-python3 -m utilities.update_language spa_es
+uv run -m utilities.update_language spa_es
 ```
 
 You can also change the default version for that language by supplying the
@@ -75,7 +73,7 @@ You can also change the default version for that language by supplying the
 
 ```sh
 # Versions from <https://www.bible.com/languages/eng>
-python3 -m utilities.update_language eng --default-version 59
+uv run -m utilities.update_language eng --default-version 59
 ```
 
 ### Update Bible data for all languages in dataset
@@ -84,7 +82,7 @@ You can fetch the latest Bible data for all language in this repository by
 running the `update_languages` utility.
 
 ```sh
-python3 -m utilities.update_languages
+uv run -m utilities.update_languages
 ```
 
 ## Including YVS Data in another project
