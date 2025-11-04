@@ -51,30 +51,28 @@ uv sync
 
 ### Running unit tests
 
-The project's unit tests are written using and managed under the [nose][nose]
-Python package. You can run all unit tests via the `nose2` command (you can
-also pass `--rednose` for colored test output):
+The project's unit tests are written using and managed under [pytest][pytest].
+You can run all unit tests via `uv run`:
 
 ```bash
-nose2 --rednose
+uv run pytest
 ```
 
 ## Code coverage
 
 The project currently boasts high code coverage across all source files.
 Contributions are expected to maintain this high standard. You can view the
-current coverage report via the `coverage` command:
+current coverage report via `pytest`:
 
 ```bash
-coverage run -m nose --rednose
-coverage report
+uv run pytest --cov --cov-report=term-missing
 ```
 
 If you want to examine which lines are/aren't covered, you can generate and view
 a detailed HTML view of the coverage report like so:
 
 ```bash
-coverage html
+uv run pytest --cov --cov-report=html
 open htmlcov/index.html
 ```
 
@@ -109,4 +107,4 @@ python -m utilities.add_language zho_tw --default-version 46
 
 [issues-page]: https://github.com/caleb531/youversion-suggest/issues
 [language-list]: https://www.bible.com/languages
-[nose]: http://nose.readthedocs.io/en/latest/
+[pytest]: https://docs.pytest.org/en/stable/
