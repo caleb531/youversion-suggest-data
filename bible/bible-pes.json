@@ -274,7 +274,7 @@
     {
       "full_name": "هزارۀ نو",
       "id": 118,
-      "name": "NMV"
+      "name": "nmv"
     },
     {
       "full_name": "Persian Old Version",
@@ -295,6 +295,21 @@
       "full_name": "مژده برای عصر جدید - ویرایش ۲۰۲۳",
       "id": 3737,
       "name": "مژده"
+    },
+    {
+      "full_name": "Bandari Bible - Korpu",
+      "id": 3950,
+      "name": "PES"
+    },
+    {
+      "full_name": "کتاب مقدس به زبان بندری",
+      "id": 4204,
+      "name": "BBK"
+    },
+    {
+      "full_name": "کتاب مقدس - ترجمه کلاسیک بازنگری شده",
+      "id": 4205,
+      "name": "RCPV"
     }
   ]
 }

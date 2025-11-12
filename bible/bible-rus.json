@@ -128,7 +128,7 @@
     {
       "full_name": "Синодальный перевод",
       "id": 167,
-      "name": "СИНОД"
+      "name": "Синод"
     },
     {
       "full_name": "Святая Библия: Современный перевод",
@@ -141,7 +141,7 @@
       "name": "BTI"
     },
     {
-      "full_name": "Восточный Перевод",
+      "full_name": "Восточный перевод",
       "id": 385,
       "name": "CARS"
     },
@@ -156,14 +156,14 @@
       "name": "CASS70"
     },
     {
-      "full_name": "Восточный перевод, версия с «Аллахом»",
+      "full_name": "Восточный перевод",
       "id": 840,
-      "name": "CARS-A"
+      "name": "CARSA"
     },
     {
-      "full_name": "Central Asian Russian Scriptures (CARS-Tajikistan)",
+      "full_name": "Восточный перевод, версия для Таджикистана",
       "id": 853,
-      "name": "CARS-T"
+      "name": "CARST"
     },
     {
       "full_name": "Современный русский перевод (2-е изд.)",
@@ -171,19 +171,19 @@
       "name": "СРП-2"
     },
     {
-      "full_name": "Устный перевод Руфи на русский язык  (Russian Oral Translation of Ruth)",
+      "full_name": "Устный перевод на русский язык",
       "id": 3764,
-      "name": "ROTR"
+      "name": "ROT"
     },
     {
-      "full_name": "Священное Писание, Устный Восточный перевода Руфи",
+      "full_name": "Священное Писание, Устный Восточный перевода",
       "id": 3830,
       "name": "CAROS"
     },
     {
-      "full_name": "Аудио-спектакль «Руфь» (Dramatized Russian Oral Translation of Ruth)",
+      "full_name": "Dramatized Russian Oral Translation",
       "id": 3873,
-      "name": "DROTR"
+      "name": "DROT"
     }
   ]
 }

@@ -347,7 +347,7 @@
       "name": "DHH94PC"
     },
     {
-      "full_name": "Nueva Biblia Viva",
+      "full_name": "Biblica® Open Nueva Biblia Viva 2008",
       "id": 753,
       "name": "NBV"
     },
@@ -384,7 +384,7 @@
     {
       "full_name": "La Santa Biblia, Nueva Versión Internacional Simplificada",
       "id": 2664,
-      "name": "NVIS"
+      "name": "NVIs"
     },
     {
       "full_name": "Versión Biblia Libre",
@@ -394,12 +394,27 @@
     {
       "full_name": "Palabla de Dios para ti",
       "id": 3365,
-      "name": "PDDPT"
+      "name": "PdDpt"
     },
     {
-      "full_name": "Segun el Texto Bizantino 2005",
+      "full_name": "Nuevo Testamento: Segun el texto bizantino",
       "id": 3539,
       "name": "NTBIZ"
+    },
+    {
+      "full_name": "Traducción Contemporánea de la Biblia - NT +",
+      "id": 4013,
+      "name": "TCB"
+    },
+    {
+      "full_name": "Gloss Spanish",
+      "id": 4212,
+      "name": "GlossSP"
+    },
+    {
+      "full_name": "Dios habla hoy 4ta. edición. Estándar.",
+      "id": 4278,
+      "name": "DHH23ST"
     }
   ]
 }

@@ -300,6 +300,16 @@
       "full_name": "和合本修订版",
       "id": 140,
       "name": "RCUVSS"
+    },
+    {
+      "full_name": "免费的易读圣经 Simplified Chinese",
+      "id": 3354,
+      "name": "FEB"
+    },
+    {
+      "full_name": "圣经–普通话本",
+      "id": 3780,
+      "name": "普通话"
     }
   ]
 }

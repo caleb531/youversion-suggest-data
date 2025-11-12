@@ -304,12 +304,27 @@
     {
       "full_name": "Indonesian Tazi NT",
       "id": 2862,
-      "name": "INOTAZI"
+      "name": "inotazi"
     },
     {
       "full_name": "Perjanjian Baru Terjemahan Baru Edisi 2",
       "id": 2863,
       "name": "PBTB2"
+    },
+    {
+      "full_name": "Alkitab Gratis untuk Semua",
+      "id": 3384,
+      "name": "AGS"
+    },
+    {
+      "full_name": "Biblica® Open Kitab Kehidupan",
+      "id": 4522,
+      "name": "OKKH"
+    },
+    {
+      "full_name": "Kitab Kehidupan",
+      "id": 4548,
+      "name": "KKH"
     }
   ]
 }

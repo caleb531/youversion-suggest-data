@@ -287,9 +287,9 @@
       "name": "BFC"
     },
     {
-      "full_name": "Bible Darby en français",
+      "full_name": "Bible J.N. Darby",
       "id": 64,
-      "name": "FRDBY"
+      "name": "JND"
     },
     {
       "full_name": "La Sainte Bible par Louis Segond 1910",
@@ -317,7 +317,7 @@
       "name": "PDV2017"
     },
     {
-      "full_name": "Bible Segond 21",
+      "full_name": "La Bible Segond 21",
       "id": 152,
       "name": "S21"
     },
@@ -339,7 +339,7 @@
     {
       "full_name": "Évangile de Saint Matthieu 1855 (de Sacy)",
       "id": 2599,
-      "name": "SACY"
+      "name": "Sacy"
     },
     {
       "full_name": "La Bible expliquée",
@@ -360,6 +360,11 @@
       "full_name": "Version Segond Nouvelle Edition de Genève 1979",
       "id": 3877,
       "name": "NEG 1979"
+    },
+    {
+      "full_name": "Bible en FrançaisSimple 2023",
+      "id": 4410,
+      "name": "BenFS"
     }
   ]
 }

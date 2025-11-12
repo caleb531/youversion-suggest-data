@@ -277,21 +277,6 @@
       "name": "DHHE"
     },
     {
-      "full_name": "La Biblia de las Américas",
-      "id": 89,
-      "name": "LBLA"
-    },
-    {
-      "full_name": "Reina-Valera Antigua",
-      "id": 147,
-      "name": "RVES"
-    },
-    {
-      "full_name": "Biblia Reina Valera 1960",
-      "id": 149,
-      "name": "RVR1960"
-    },
-    {
       "full_name": "Biblia Reina Valera 1995",
       "id": 150,
       "name": "RVR95"
@@ -317,14 +302,14 @@
       "name": "NVI"
     },
     {
-      "full_name": "Biblia del Oso 1573",
-      "id": 1715,
-      "name": "BDO1573"
-    },
-    {
       "full_name": "Reina Valera 2020",
       "id": 3425,
       "name": "RV2020"
+    },
+    {
+      "full_name": "Biblia Lenguaje Básico",
+      "id": 4069,
+      "name": "BLB"
     }
   ]
 }

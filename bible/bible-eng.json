@@ -302,12 +302,12 @@
       "name": "CPDV"
     },
     {
-      "full_name": "Douay-Rheims Challoner Revision 1752",
+      "full_name": "Douay-Rheims Challoner Revision 1752 ✠",
       "id": 55,
       "name": "DRC1752"
     },
     {
-      "full_name": "English Standard Version 2016",
+      "full_name": "English Standard Version Revision 2016",
       "id": 59,
       "name": "ESV"
     },
@@ -359,7 +359,7 @@
     {
       "full_name": "New International Reader’s Version",
       "id": 110,
-      "name": "NIRV"
+      "name": "NIrV"
     },
     {
       "full_name": "New International Version",
@@ -542,11 +542,6 @@
       "name": "NRSV-CI"
     },
     {
-      "full_name": "New Revised Standard Version",
-      "id": 2016,
-      "name": "NRSV"
-    },
-    {
       "full_name": "Revised Standard Version Old Tradition 1952",
       "id": 2017,
       "name": "RSV-C"
@@ -557,7 +552,7 @@
       "name": "RSV"
     },
     {
-      "full_name": "EasyEnglish Bible 2018",
+      "full_name": "EasyEnglish Bible 2024",
       "id": 2079,
       "name": "EASY"
     },
@@ -580,6 +575,16 @@
       "full_name": "Plain English Version",
       "id": 2530,
       "name": "PEV"
+    },
+    {
+      "full_name": "Metrical Psalms and Scripture Selections 1696 (Brady & Tate)",
+      "id": 2593,
+      "name": "MP1696"
+    },
+    {
+      "full_name": "Literal Standard Version",
+      "id": 2660,
+      "name": "LSV"
     },
     {
       "full_name": "New American Standard Bible - NASB",
@@ -630,6 +635,61 @@
       "full_name": "First Nations Version",
       "id": 3633,
       "name": "FNVNT"
+    },
+    {
+      "full_name": "The third line (in English) translating the meaning of each word in the Orthodox Yiddish Brit Chadashah (New Testament)",
+      "id": 3915,
+      "name": "OYBCENGL"
+    },
+    {
+      "full_name": "Translation into English of Orthodox Yiddish Torah (OYTORAH)",
+      "id": 4070,
+      "name": "OYTORHEG"
+    },
+    {
+      "full_name": "Y'all Version Bible",
+      "id": 4108,
+      "name": "YALL"
+    },
+    {
+      "full_name": "Christian Standard Bible Anglicised",
+      "id": 4124,
+      "name": "CSBA"
+    },
+    {
+      "full_name": "Evangelical Heritage Version - 2021",
+      "id": 4224,
+      "name": "EHV"
+    },
+    {
+      "full_name": "New Living Translation Catholic Edition",
+      "id": 4249,
+      "name": "NLTCE"
+    },
+    {
+      "full_name": "A Faithful Version",
+      "id": 4253,
+      "name": "AFV"
+    },
+    {
+      "full_name": "Benamanga",
+      "id": 4455,
+      "name": "NTBnBL2025"
+    },
+    {
+      "full_name": "Afā Wanyɛnyɛ wu Nugé Wàpyóò",
+      "id": 4533,
+      "name": "WBTP"
+    },
+    {
+      "full_name": "Metrical Psalms and Scripture Selections 1562 (Sternhold and Hopkins)",
+      "id": 4540,
+      "name": "MP1562"
+    },
+    {
+      "full_name": "English word for word translation of Orthodox Yiddish Tanakh (OYTANAKH)",
+      "id": 4557,
+      "name": "OYTNKHEG"
     }
   ]
 }

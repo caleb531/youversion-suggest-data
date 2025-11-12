@@ -287,7 +287,7 @@
       "name": "NBG51"
     },
     {
-      "full_name": "BasisBijbel",
+      "full_name": "BasisBijbel, de bijbel in makkelijk Nederlands",
       "id": 1276,
       "name": "BB"
     },
@@ -307,9 +307,24 @@
       "name": "EBV24"
     },
     {
-      "full_name": "VensterBijbel",
+      "full_name": "De VensterBijbel",
       "id": 3743,
       "name": "VB"
+    },
+    {
+      "full_name": "Statenvertaling Jongbloed-editie",
+      "id": 3799,
+      "name": "SVV"
+    },
+    {
+      "full_name": "Het Woord",
+      "id": 3932,
+      "name": "HW"
+    },
+    {
+      "full_name": "Gods Boek - het Nieuwe Testament",
+      "id": 4209,
+      "name": "gbvnt"
     }
   ]
 }

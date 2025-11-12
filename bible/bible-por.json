@@ -327,9 +327,24 @@
       "name": "BLT"
     },
     {
-      "full_name": "Portuguese Bible Old Orthography",
-      "id": 3658,
-      "name": "RC60DO"
+      "full_name": "Nova Versão Internacional, Português de Moçambique",
+      "id": 4094,
+      "name": "mzNVI"
+    },
+    {
+      "full_name": "Biblica® Open Nova Bíblia Viva",
+      "id": 4272,
+      "name": "ONBV"
+    },
+    {
+      "full_name": "New Translation on Today’s Language Catholic Edition",
+      "id": 4539,
+      "name": "NTLH CE"
+    },
+    {
+      "full_name": "Bíblia Sagrada Ave-Maria",
+      "id": 4542,
+      "name": "AVM"
     }
   ]
 }
