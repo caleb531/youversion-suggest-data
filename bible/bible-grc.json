@@ -1,0 +1,169 @@
+{
+  "books": [
+    {
+      "id": "mat",
+      "name": "ΚΑΤΑ ΜΑΤΘΑΙΟΝ"
+    },
+    {
+      "id": "mrk",
+      "name": "ΚΑΤΑ ΜΑΡΚΟΝ"
+    },
+    {
+      "id": "luk",
+      "name": "ΚΑΤΑ ΛΟΥΚΑΝ"
+    },
+    {
+      "id": "jhn",
+      "name": "ΚΑΤΑ ΙΩΑΝΝΗΝ"
+    },
+    {
+      "id": "act",
+      "name": "ΠΡΑΞΕΙΣ ΤΩΝ ΑΠΟΣΤΟΛΩΝ"
+    },
+    {
+      "id": "rom",
+      "name": "ΠΡΟΣ ΡΩΜΑΙΟΥΣ"
+    },
+    {
+      "id": "1co",
+      "name": "ΠΡΟΣ ΚΟΡΙΝΘΙΟΥΣ Α΄"
+    },
+    {
+      "id": "2co",
+      "name": "ΠΡΟΣ ΚΟΡΙΝΘΙΟΥΣ Β΄"
+    },
+    {
+      "id": "gal",
+      "name": "ΠΡΟΣ ΓΑΛΑΤΑΣ"
+    },
+    {
+      "id": "eph",
+      "name": "ΠΡΟΣ ΕΦΕΣΙΟΥΣ"
+    },
+    {
+      "id": "php",
+      "name": "ΠΡΟΣ ΦΙΛΙΠΠΗΣΙΟΥΣ"
+    },
+    {
+      "id": "col",
+      "name": "ΠΡΟΣ ΚΟΛΟΣΣΑΕΙΣ"
+    },
+    {
+      "id": "1th",
+      "name": "ΠΡΟΣ ΘΕΣΣΑΛΟΝΙΚΕΙΣ Α΄"
+    },
+    {
+      "id": "2th",
+      "name": "ΠΡΟΣ ΘΕΣΣΑΛΟΝΙΚΕΙΣ Β΄"
+    },
+    {
+      "id": "1ti",
+      "name": "ΠΡΟΣ ΤΙΜΟΘΕΟΝ Α΄"
+    },
+    {
+      "id": "2ti",
+      "name": "ΠΡΟΣ ΤΙΜΟΘΕΟΝ Β΄"
+    },
+    {
+      "id": "tit",
+      "name": "ΠΡΟΣ ΤΙΤΟΝ"
+    },
+    {
+      "id": "phm",
+      "name": "ΠΡΟΣ ΦΙΛΗΜΟΝΑ"
+    },
+    {
+      "id": "heb",
+      "name": "ΠΡΟΣ ΕΒΡΑΙΟΥΣ"
+    },
+    {
+      "id": "jas",
+      "name": "ΙΑΚΩΒΟΥ"
+    },
+    {
+      "id": "1pe",
+      "name": "ΠΕΤΡΟΥ Α΄"
+    },
+    {
+      "id": "2pe",
+      "name": "ΠΕΤΡΟΥ Β΄"
+    },
+    {
+      "id": "1jn",
+      "name": "ΙΩΑΝΝΟΥ Α΄"
+    },
+    {
+      "id": "2jn",
+      "name": "ΙΩΑΝΝΟΥ Β΄"
+    },
+    {
+      "id": "3jn",
+      "name": "ΙΩΑΝΝΟΥ Γ΄"
+    },
+    {
+      "id": "jud",
+      "name": "ΙΟΥΔΑ"
+    },
+    {
+      "id": "rev",
+      "name": "ΑΠΟΚΑΛΥΨΙΣ ΙΩΑΝΝΟΥ"
+    }
+  ],
+  "default_version": 156,
+  "language": {
+    "id": "grc",
+    "name": "Ελληνιστική Κοινή"
+  },
+  "versions": [
+    {
+      "full_name": "SBL Greek New Testament",
+      "id": 156,
+      "name": "SBLG"
+    },
+    {
+      "full_name": "Elzevir Textus Receptus 1624",
+      "id": 182,
+      "name": "TR1624"
+    },
+    {
+      "full_name": "Scrivener’s Textus Receptus 1894",
+      "id": 183,
+      "name": "TR1894"
+    },
+    {
+      "full_name": "Πατριαρχικό Κείμενο (Έκδοση Αντωνιάδη, 1904)",
+      "id": 209,
+      "name": "BYZ04"
+    },
+    {
+      "full_name": "The Greek New Testament",
+      "id": 2270,
+      "name": "THGNT"
+    },
+    {
+      "full_name": "μετάφραση των εβδομήκοντα",
+      "id": 2503,
+      "name": "GRCBRENT"
+    },
+    {
+      "full_name": "Η Ελληνική Καινή Διαθήκη Σύμφωνα με την Οικογένεια 35",
+      "id": 3130,
+      "name": "F35"
+    },
+    {
+      "full_name": "Text-Critical Greek New Testament",
+      "id": 3428,
+      "name": "TCGNT"
+    },
+    {
+      "full_name": "Byzantine Textform 2018",
+      "id": 3449,
+      "name": "Byz18"
+    },
+    {
+      "full_name": "New Vellas Source Text",
+      "id": 4286,
+      "name": "NVST"
+    }
+  ]
+}

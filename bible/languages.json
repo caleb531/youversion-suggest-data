@@ -12,6 +12,10 @@
     "name": "Deutsch"
   },
   {
+    "id": "ell",
+    "name": "Ελληνικά"
+  },
+  {
     "id": "eng",
     "name": "English"
   },
@@ -22,6 +26,10 @@
   {
     "id": "fra",
     "name": "Français"
+  },
+  {
+    "id": "grc",
+    "name": "Ελληνιστική Κοινή"
   },
   {
     "id": "hin",
@@ -46,6 +54,10 @@
   {
     "id": "kor",
     "name": "한국어"
+  },
+  {
+    "id": "lat",
+    "name": "Latina"
   },
   {
     "id": "nld",

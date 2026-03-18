@@ -1,0 +1,280 @@
+{
+  "books": [
+    {
+      "id": "gen",
+      "name": "Genesis"
+    },
+    {
+      "id": "exo",
+      "name": "Exodus"
+    },
+    {
+      "id": "lev",
+      "name": "Leviticus"
+    },
+    {
+      "id": "num",
+      "name": "Numeri"
+    },
+    {
+      "id": "deu",
+      "name": "Deuteronomium"
+    },
+    {
+      "id": "jos",
+      "name": "Josue"
+    },
+    {
+      "id": "jdg",
+      "name": "Judicum"
+    },
+    {
+      "id": "rut",
+      "name": "Ruth"
+    },
+    {
+      "id": "1sa",
+      "name": "Regum I"
+    },
+    {
+      "id": "2sa",
+      "name": "Regum II"
+    },
+    {
+      "id": "1ki",
+      "name": "Regum III"
+    },
+    {
+      "id": "2ki",
+      "name": "Regum IV"
+    },
+    {
+      "id": "1ch",
+      "name": "Paralipomenon I"
+    },
+    {
+      "id": "2ch",
+      "name": "Paralipomenon II"
+    },
+    {
+      "id": "ezr",
+      "name": "Esdræ"
+    },
+    {
+      "id": "neh",
+      "name": "Nehemiæ"
+    },
+    {
+      "id": "est",
+      "name": "Esther"
+    },
+    {
+      "id": "job",
+      "name": "Job"
+    },
+    {
+      "id": "psa",
+      "name": "Psalmi"
+    },
+    {
+      "id": "pro",
+      "name": "Proverbia"
+    },
+    {
+      "id": "ecc",
+      "name": "Ecclesiastes"
+    },
+    {
+      "id": "sng",
+      "name": "Canticum Canticorum"
+    },
+    {
+      "id": "isa",
+      "name": "Isaias"
+    },
+    {
+      "id": "jer",
+      "name": "Jeremias"
+    },
+    {
+      "id": "lam",
+      "name": "Lamentationes"
+    },
+    {
+      "id": "ezk",
+      "name": "Ezechiel"
+    },
+    {
+      "id": "dan",
+      "name": "Daniel"
+    },
+    {
+      "id": "hos",
+      "name": "Osee"
+    },
+    {
+      "id": "jol",
+      "name": "Joël"
+    },
+    {
+      "id": "amo",
+      "name": "Amos"
+    },
+    {
+      "id": "oba",
+      "name": "Abdias"
+    },
+    {
+      "id": "jon",
+      "name": "Jonas"
+    },
+    {
+      "id": "mic",
+      "name": "Michæa"
+    },
+    {
+      "id": "nam",
+      "name": "Nahum"
+    },
+    {
+      "id": "hab",
+      "name": "Habacuc"
+    },
+    {
+      "id": "zep",
+      "name": "Sophonias"
+    },
+    {
+      "id": "hag",
+      "name": "Aggæus"
+    },
+    {
+      "id": "zec",
+      "name": "Zacharias"
+    },
+    {
+      "id": "mal",
+      "name": "Malachias"
+    },
+    {
+      "id": "mat",
+      "name": "Matthæus"
+    },
+    {
+      "id": "mrk",
+      "name": "Marcus"
+    },
+    {
+      "id": "luk",
+      "name": "Lucas"
+    },
+    {
+      "id": "jhn",
+      "name": "Joannes"
+    },
+    {
+      "id": "act",
+      "name": "Actus Apostolorum"
+    },
+    {
+      "id": "rom",
+      "name": "ad Romanos"
+    },
+    {
+      "id": "1co",
+      "name": "ad Corinthios I"
+    },
+    {
+      "id": "2co",
+      "name": "ad Corinthios II"
+    },
+    {
+      "id": "gal",
+      "name": "ad Galatas"
+    },
+    {
+      "id": "eph",
+      "name": "ad Ephesios"
+    },
+    {
+      "id": "php",
+      "name": "ad Philippenses"
+    },
+    {
+      "id": "col",
+      "name": "ad Colossenses"
+    },
+    {
+      "id": "1th",
+      "name": "ad Thessalonicenses I"
+    },
+    {
+      "id": "2th",
+      "name": "ad Thessalonicenses II"
+    },
+    {
+      "id": "1ti",
+      "name": "ad Timotheum I"
+    },
+    {
+      "id": "2ti",
+      "name": "ad Timotheum II"
+    },
+    {
+      "id": "tit",
+      "name": "ad Titum"
+    },
+    {
+      "id": "phm",
+      "name": "ad Philemonem"
+    },
+    {
+      "id": "heb",
+      "name": "ad Hebræos"
+    },
+    {
+      "id": "jas",
+      "name": "Jacobi"
+    },
+    {
+      "id": "1pe",
+      "name": "Petri I"
+    },
+    {
+      "id": "2pe",
+      "name": "Petri II"
+    },
+    {
+      "id": "1jn",
+      "name": "Joannis I"
+    },
+    {
+      "id": "2jn",
+      "name": "Joannis II"
+    },
+    {
+      "id": "3jn",
+      "name": "Joannis III"
+    },
+    {
+      "id": "jud",
+      "name": "Judæ"
+    },
+    {
+      "id": "rev",
+      "name": "Apocalypsis"
+    }
+  ],
+  "default_version": 823,
+  "language": {
+    "id": "lat",
+    "name": "Latina"
+  },
+  "versions": [
+    {
+      "full_name": "Vulgata latina",
+      "id": 823,
+      "name": "VULG"
+    }
+  ]
+}
