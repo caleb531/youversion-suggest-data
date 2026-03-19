@@ -701,7 +701,7 @@ wheels = [
 
 [[package]]
 name = "youversion-suggest-data"
-version = "6.1.0"
+version = "7.0.0"
 source = { virtual = "." }
 
 [package.dev-dependencies]
