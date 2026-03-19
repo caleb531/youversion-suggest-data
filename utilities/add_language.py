@@ -12,14 +12,23 @@ import json
 import os
 import os.path
 from operator import itemgetter
+from typing import TypedDict
 
 import utilities
 import utilities.book_parser as book_parser
 import utilities.language_parser as language_parser
 import utilities.version_parser as version_parser
 
+
 # Parameters for structuring JSON data
-JSON_PARAMS = {
+class JsonDumpsParams(TypedDict):
+    indent: int
+    separators: tuple[str, str]
+    ensure_ascii: bool
+    sort_keys: bool
+
+
+JSON_PARAMS: JsonDumpsParams = {
     "indent": 2,
     "separators": (",", ": "),
     "ensure_ascii": False,

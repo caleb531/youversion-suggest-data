@@ -4,7 +4,6 @@
 import json
 from unittest.mock import Mock, NonCallableMock, patch
 
-import httpx
 import pytest
 
 from utilities.language_parser import get_language_name, get_languages_json
@@ -28,8 +27,8 @@ def clear_languages_cache():
 
 @pytest.fixture
 def patched_languages_response():
-    with patch_requests_get:
-        yield
+    with patch_requests_get as requests_get:
+        yield requests_get
 
 
 def test_get_language_name(patched_languages_response):
@@ -42,7 +41,7 @@ def test_get_language_name_cache(patched_languages_response):
     """should cache languages HTML after initial fetch"""
     get_language_name("spa")
     language_name = get_language_name("fra")
-    assert httpx.get.call_count == 1
+    assert patched_languages_response.call_count == 1
     assert language_name == "Français"
 
 
