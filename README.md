@@ -1,6 +1,6 @@
 # YouVersion Suggest Data
 
-*Copyright 2014-2024 Caleb Evans*  
+*Copyright 2014-2026 Caleb Evans*  
 *Code released under the MIT license*
 
 [![tests](https://github.com/caleb531/youversion-suggest-data/actions/workflows/tests.yml/badge.svg)](https://github.com/caleb531/youversion-suggest-data/actions/workflows/tests.yml)
