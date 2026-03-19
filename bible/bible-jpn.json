@@ -295,6 +295,11 @@
       "full_name": "ERV 訳 ー 読みやすい聖書 ー",
       "id": 3802,
       "name": "ERV訳"
+    },
+    {
+      "full_name": "新改訳",
+      "id": 4637,
+      "name": "NJB"
     }
   ]
 }

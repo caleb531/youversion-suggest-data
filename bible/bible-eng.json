@@ -307,7 +307,7 @@
       "name": "DRC1752"
     },
     {
-      "full_name": "English Standard Version Revision 2016",
+      "full_name": "English Standard Version 2025",
       "id": 59,
       "name": "ESV"
     },
@@ -577,7 +577,7 @@
       "name": "PEV"
     },
     {
-      "full_name": "Metrical Psalms and Scripture Selections 1696 (Brady & Tate)",
+      "full_name": "Metrical Psalms and Scripture Selections 1698 (Brady & Tate)",
       "id": 2593,
       "name": "MP1696"
     },
@@ -602,7 +602,7 @@
       "name": "TEG"
     },
     {
-      "full_name": "English: Berean Standard Bible",
+      "full_name": "Berean Standard Bible",
       "id": 3034,
       "name": "BSB"
     },
@@ -672,16 +672,6 @@
       "name": "AFV"
     },
     {
-      "full_name": "Benamanga",
-      "id": 4455,
-      "name": "NTBnBL2025"
-    },
-    {
-      "full_name": "Afā Wanyɛnyɛ wu Nugé Wàpyóò",
-      "id": 4533,
-      "name": "WBTP"
-    },
-    {
       "full_name": "Metrical Psalms and Scripture Selections 1562 (Sternhold and Hopkins)",
       "id": 4540,
       "name": "MP1562"
@@ -690,6 +680,11 @@
       "full_name": "English word for word translation of Orthodox Yiddish Tanakh (OYTANAKH)",
       "id": 4557,
       "name": "OYTNKHEG"
+    },
+    {
+      "full_name": "African International New Testament: Explanatory Paraphrase (British English Edition)",
+      "id": 4668,
+      "name": "AFINT"
     }
   ]
 }

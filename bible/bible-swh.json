@@ -287,9 +287,9 @@
       "name": "BHND"
     },
     {
-      "full_name": "Neno: Bibilia Takatifu 2025",
+      "full_name": "Neno",
       "id": 1627,
-      "name": "NENO"
+      "name": "NEN"
     },
     {
       "full_name": "Swahili Revised Union Version",
@@ -330,6 +330,11 @@
       "full_name": "Swahili Roehl Bible 1937",
       "id": 3049,
       "name": "SRB37"
+    },
+    {
+      "full_name": "Neno: Maandiko Matakatifu 2024",
+      "id": 4369,
+      "name": "NENO"
     }
   ]
 }

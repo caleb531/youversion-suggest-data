@@ -295,6 +295,11 @@
       "full_name": "읽기 쉬운 성경",
       "id": 3803,
       "name": "KOERV"
+    },
+    {
+      "full_name": "Woorimal Bible 5th Edition",
+      "id": 4639,
+      "name": "WB"
     }
   ]
 }

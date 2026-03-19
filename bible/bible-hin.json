@@ -279,7 +279,7 @@
     {
       "full_name": "सरल हिन्दी बाइबल",
       "id": 1628,
-      "name": "HSS"
+      "name": "HCV"
     },
     {
       "full_name": "पवित्र बाइबिल CL Bible (BSI)",
@@ -310,6 +310,11 @@
       "full_name": "हिंदी लिटरल टेक्स्ट",
       "id": 4459,
       "name": "HLT"
+    },
+    {
+      "full_name": "Muktidata Yeshu Granth",
+      "id": 4679,
+      "name": "MYG"
     }
   ]
 }
