@@ -18,11 +18,11 @@ required-version = ">=0.13.5,<0.14"
 
 [dependency-groups]
 dev = [
-    "httpx==0.27.0",
-    "jsonschema==4.21.1",
+    "httpx>=0.27.0",
+    "jsonschema>=4.21.1",
     "pytest>=8.4.2",
     "pytest-cov>=7.0.0",
-    "radon==6.0.1",
+    "radon>=6.0.1",
     "ruff>=0.12.0",
     "tomli>=2.2.1",
 ]
